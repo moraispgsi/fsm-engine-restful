@@ -1,0 +1,17 @@
+{
+  "name": "fsm-engine-restful",
+  "version": "0.0.2",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ricardo José Horta Morais",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "fsm-engine": "0.0.2",
+    "json": "^9.0.6"
+  }
+}
