@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="827bfd08-2f73-4cc5-b80a-0408a680842d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/fsm-core/configuration-builder.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/io-core/.idea/io-core.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/io-core/.idea/jsLibraryMappings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/io-core/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/io-core/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/io-core/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/io-core/.idea/watcherTasks.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/io-core/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/io-core/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/io-core/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/io-core/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/io-core/teste.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/.Gruntfile.js.swo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/.Makefile.swn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/.Makefile.swo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/.README.md.swm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/.README.md.swn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/.README.md.swo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/.out.js.swo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/.package.json.swg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/.package.json.swh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/.package.json.swi" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/.package.json.swj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/.package.json.swk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/.package.json.swl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/.package.json.swm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/.package.json.swn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/.package.json.swo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/.swo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/.swp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/.test.xml.swo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/bin/.repl.js.swo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/lib/.util.js.swo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/lib/compiler/.scjson-to-module.js.swj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/lib/compiler/.scjson-to-module.js.swk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/lib/compiler/.scjson-to-module.js.swl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/lib/compiler/.scjson-to-module.js.swm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/lib/compiler/.scjson-to-module.js.swn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/lib/compiler/.scjson-to-module.js.swo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/lib/compiler/.scxml-to-scjson.js.swh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/lib/compiler/.scxml-to-scjson.js.swi" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/lib/compiler/.scxml-to-scjson.js.swj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/lib/compiler/.scxml-to-scjson.js.swk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/lib/compiler/.scxml-to-scjson.js.swl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/lib/compiler/.scxml-to-scjson.js.swm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/lib/compiler/.scxml-to-scjson.js.swn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/lib/compiler/.scxml-to-scjson.js.swo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/lib/compiler/.swp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/lib/compiler/static-analysis/.scjson-analyzer.js.swm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/lib/compiler/static-analysis/.scjson-analyzer.js.swn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/lib/compiler/static-analysis/.scjson-analyzer.js.swo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/lib/runtime/.document-string-to-model.js.swo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/lib/runtime/.facade.js.swn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/lib/runtime/.facade.js.swo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/lib/runtime/platform-bootstrap/node/.index.js.swo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/lib/runtime/platform-bootstrap/node/.platform.js.swo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/lib/runtime/platform-bootstrap/node/.swp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/test/.run-tests-node.sh.swn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/test/.run-tests-node.sh.swo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/test/nodeunit-test-harness/harness/browser/.harness.html.swo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/node/require/.runner.js.swn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/node/require/.runner.js.swo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/CNAME" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/arcgis-parser/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/assets/css/terraformer-02847305.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/assets/fonts/esri-logo-3a94862e.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/assets/fonts/esri-logo-71163913.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/assets/fonts/esri-logo-80bed756.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/assets/fonts/esri-logo-fc93d7bf.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/assets/fonts/esri-logo.dev-aed9f839.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/assets/images/terraformer-arcparser-a0228324.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/assets/images/terraformer-core-93b83c36.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/assets/images/terraformer-geostore-9e09ce2c.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/assets/images/terraformer-parser-a57c9c2d.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/assets/images/terraformer-wktparser-b18bc9d9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/assets/javascripts/all-da39a3ee.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/assets/javascripts/classie-b6db1f70.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/assets/javascripts/drawer-3a1490eb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/assets/javascripts/modernizr.custom-cadc78a2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/core/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/geostore/alternate-indexes/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/geostore/core-concepts/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/geostore/data-stores/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/geostore/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/geostore/spatial-indexes/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/getting-started/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/glossary/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/install/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/partials/cover/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/partials/doctoc/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/partials/footer/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/partials/index_partials/arcgis_parser/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/partials/index_partials/geostore/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/partials/index_partials/terraformer_core/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/partials/index_partials/wkt_parser/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/partials/nav/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/partials/subnav/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.grunt/grunt-gh-pages/gh-pages/src/wkt-parser/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/189b9f306113c6d88460a5e4a9c0964a988f6fb0/_utilities.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/1d32b7cff488bbb6038b096e9a8ed2b7fdccc537/_grid-background.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/469c760f7d5c0ed075b60193903e7026a19b13d2/_hover-link.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/469c760f7d5c0ed075b60193903e7026a19b13d2/_link-colors.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/469c760f7d5c0ed075b60193903e7026a19b13d2/_unstyled-link.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/78554d02a6c2d299abe26e715499ae872cef435a/_links.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/78554d02a6c2d299abe26e715499ae872cef435a/_lists.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/78554d02a6c2d299abe26e715499ae872cef435a/_text.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/78554d02a6c2d299abe26e715499ae872cef435a/_units.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/78554d02a6c2d299abe26e715499ae872cef435a/_vertical_rhythm.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/803b48265d666efc0cc6c8bfe52a6d8ee49a3e01/_config.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/803b48265d666efc0cc6c8bfe52a6d8ee49a3e01/terraformer.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/870d6bc188e9af01f1751aabd1880292171a2933/_ellipsis.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/870d6bc188e9af01f1751aabd1880292171a2933/_force-wrap.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/870d6bc188e9af01f1751aabd1880292171a2933/_nowrap.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/870d6bc188e9af01f1751aabd1880292171a2933/_replacement.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/8fc10cd74f9c030bd385321027d80d149c74a0b2/_bullets.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/8fc10cd74f9c030bd385321027d80d149c74a0b2/_horizontal-list.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/8fc10cd74f9c030bd385321027d80d149c74a0b2/_inline-block-list.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/8fc10cd74f9c030bd385321027d80d149c74a0b2/_inline-list.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/9482cf83fc5c839b43e0d47f4ef67088b542dcae/_drawer.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/9482cf83fc5c839b43e0d47f4ef67088b542dcae/_header.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/9482cf83fc5c839b43e0d47f4ef67088b542dcae/_icons.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/9482cf83fc5c839b43e0d47f4ef67088b542dcae/_nav.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/9482cf83fc5c839b43e0d47f4ef67088b542dcae/_semantic-toc.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_animation.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_appearance.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_background-clip.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_background-origin.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_background-size.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_border-radius.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_box-shadow.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_box-sizing.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_columns.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_deprecated-support.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_filter.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_flexbox.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_font-face.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_hyphenation.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_images.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_inline-block.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_opacity.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_regions.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_text-shadow.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_transform.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_transition.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_user-interface.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/a5c303767308a603b0effc4ba8a9c3f1be1af80b/_color.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/a5c303767308a603b0effc4ba8a9c3f1be1af80b/_general.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/a5c303767308a603b0effc4ba8a9c3f1be1af80b/_sprites.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/a5c303767308a603b0effc4ba8a9c3f1be1af80b/_tables.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/b529db2ae5b1c1020f7dcae79f28568c93ae067d/_docs.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/b529db2ae5b1c1020f7dcae79f28568c93ae067d/_grid.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/bdab7ae8017f1c4185a71d074abb92d723834c28/_css3.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/bdab7ae8017f1c4185a71d074abb92d723834c28/_support.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/bdab7ae8017f1c4185a71d074abb92d723834c28/_typography.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/bdab7ae8017f1c4185a71d074abb92d723834c28/_utilities.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/c7898b6539bf23c81d6fbecc8807ed2c2400d1ea/_alternating-rows-and-columns.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/c7898b6539bf23c81d6fbecc8807ed2c2400d1ea/_borders.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/c7898b6539bf23c81d6fbecc8807ed2c2400d1ea/_scaffolding.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/c9ffcfeee3bee6db95218bb659a79e86852d7e40/_compass.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/d44d59f48764d5cd8388db5a3a684e7eb5e100c3/_buttons.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/d44d59f48764d5cd8388db5a3a684e7eb5e100c3/_mixins.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/d44d59f48764d5cd8388db5a3a684e7eb5e100c3/_reset.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/d44d59f48764d5cd8388db5a3a684e7eb5e100c3/_solarized-dark.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/d44d59f48764d5cd8388db5a3a684e7eb5e100c3/_typecabinet.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/d44d59f48764d5cd8388db5a3a684e7eb5e100c3/_typography.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/ee313cbec439e784b7ba76062eea946a437c76d0/_brightness.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/ee313cbec439e784b7ba76062eea946a437c76d0/_contrast.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/f85899fe49e1d095431d57544e34d15126e324bf/_clearfix.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/f85899fe49e1d095431d57544e34d15126e324bf/_float.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/f85899fe49e1d095431d57544e34d15126e324bf/_hacks.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/f85899fe49e1d095431d57544e34d15126e324bf/_min.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/f85899fe49e1d095431d57544e34d15126e324bf/_reset.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/f85899fe49e1d095431d57544e34d15126e324bf/_tag-cloud.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/fee463c460fb03734c519db441f99858641895b7/_base.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/.sass-cache/fee463c460fb03734c519db441f99858641895b7/_sprite-img.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/config.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/playing-around.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/terraformer-1.0.7.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/typings.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/typings/globals/geojson/index.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/typings/globals/geojson/typings.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/terraformer/typings/index.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/Utility.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLAttribute.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLCData.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLComment.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLDTDAttList.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLDTDElement.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLDTDEntity.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLDTDNotation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLDeclaration.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLDocType.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLDocument.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLDocumentCB.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLElement.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLNode.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLProcessingInstruction.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLRaw.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLStreamWriter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLStringWriter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLStringifier.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLText.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLWriterBase.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/npm-debug.log" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ajv/README.md" afterPath="$PROJECT_DIR$/node_modules/ajv/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ajv/dist/ajv.min.js" afterPath="$PROJECT_DIR$/node_modules/ajv/dist/ajv.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ajv/package.json" afterPath="$PROJECT_DIR$/node_modules/ajv/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ajv/scripts/travis-gh-pages" afterPath="$PROJECT_DIR$/node_modules/ajv/scripts/travis-gh-pages" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/fsm-core/.idea/workspace.xml" afterPath="$PROJECT_DIR$/node_modules/fsm-core/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/fsm-core/examples/example1.js" afterPath="$PROJECT_DIR$/node_modules/fsm-core/examples/example1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/fsm-core/examples/example2.js" afterPath="$PROJECT_DIR$/node_modules/fsm-core/examples/example2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/fsm-core/index.js" afterPath="$PROJECT_DIR$/node_modules/fsm-core/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/fsm-core/package.json" afterPath="$PROJECT_DIR$/node_modules/fsm-core/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/fsm-engine/.idea/workspace.xml" afterPath="$PROJECT_DIR$/node_modules/fsm-engine/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/fsm-engine/actions/highLevelActions.js" afterPath="$PROJECT_DIR$/node_modules/fsm-engine/actions/highLevelActions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/fsm-engine/examples/example2.js" afterPath="$PROJECT_DIR$/node_modules/fsm-engine/examples/example2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/fsm-engine/examples/example3.js" afterPath="$PROJECT_DIR$/node_modules/fsm-engine/examples/example3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/fsm-engine/index.js" afterPath="$PROJECT_DIR$/node_modules/fsm-engine/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/fsm-engine/package.json" afterPath="$PROJECT_DIR$/node_modules/fsm-engine/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scion-core/README.md" afterPath="$PROJECT_DIR$/node_modules/scion-core/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scion-core/bower.json" afterPath="$PROJECT_DIR$/node_modules/scion-core/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scion-core/dist/scion.js" afterPath="$PROJECT_DIR$/node_modules/scion-core/dist/scion.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scion-core/dist/scion.js.map" afterPath="$PROJECT_DIR$/node_modules/scion-core/dist/scion.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scion-core/dist/scion.min.js" afterPath="$PROJECT_DIR$/node_modules/scion-core/dist/scion.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scion-core/lib/scion.js" afterPath="$PROJECT_DIR$/node_modules/scion-core/lib/scion.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scion-core/package.json" afterPath="$PROJECT_DIR$/node_modules/scion-core/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scion-core/test/harness/common/setup-nodeunit-tests.js" afterPath="$PROJECT_DIR$/node_modules/scion-core/test/harness/common/setup-nodeunit-tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/.npmignore" afterPath="$PROJECT_DIR$/node_modules/scxml/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/scxml/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/CHANGES.md" afterPath="$PROJECT_DIR$/node_modules/scxml/CHANGES.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/Gruntfile.js" afterPath="$PROJECT_DIR$/node_modules/scxml/Gruntfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/LICENSE.txt" afterPath="$PROJECT_DIR$/node_modules/scxml/LICENSE.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/README.md" afterPath="$PROJECT_DIR$/node_modules/scxml/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/bin/repl.js" afterPath="$PROJECT_DIR$/node_modules/scxml/bin/repl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/bower.json" afterPath="$PROJECT_DIR$/node_modules/scxml/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/dist/scxml.js" afterPath="$PROJECT_DIR$/node_modules/scxml/dist/scxml.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/dist/scxml.min.js" afterPath="$PROJECT_DIR$/node_modules/scxml/dist/scxml.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/grunt/browsers.js" afterPath="$PROJECT_DIR$/node_modules/scxml/grunt/browsers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/grunt/config/karma/index.js" afterPath="$PROJECT_DIR$/node_modules/scxml/grunt/config/karma/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/grunt/config/karma/karma.conf.js" afterPath="$PROJECT_DIR$/node_modules/scxml/grunt/config/karma/karma.conf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/grunt/scxml-tests.json" afterPath="$PROJECT_DIR$/node_modules/scxml/grunt/scxml-tests.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/grunt/server.js" afterPath="$PROJECT_DIR$/node_modules/scxml/grunt/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/grunt/test-pairs.js" afterPath="$PROJECT_DIR$/node_modules/scxml/grunt/test-pairs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/lib/compiler/scjson-to-module.js" afterPath="$PROJECT_DIR$/node_modules/scxml/lib/compiler/scjson-to-module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/lib/compiler/scxml-to-scjson.js" afterPath="$PROJECT_DIR$/node_modules/scxml/lib/compiler/scxml-to-scjson.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/lib/compiler/static-analysis/file-utils.js" afterPath="$PROJECT_DIR$/node_modules/scxml/lib/compiler/static-analysis/file-utils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/lib/compiler/static-analysis/scjson-analyzer.js" afterPath="$PROJECT_DIR$/node_modules/scxml/lib/compiler/static-analysis/scjson-analyzer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/lib/runtime/compiler-internals.js" afterPath="$PROJECT_DIR$/node_modules/scxml/lib/runtime/compiler-internals.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/lib/runtime/document-string-to-model.js" afterPath="$PROJECT_DIR$/node_modules/scxml/lib/runtime/document-string-to-model.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/lib/runtime/facade.js" afterPath="$PROJECT_DIR$/node_modules/scxml/lib/runtime/facade.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/lib/runtime/platform-bootstrap/node/get.js" afterPath="$PROJECT_DIR$/node_modules/scxml/lib/runtime/platform-bootstrap/node/get.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/lib/runtime/platform-bootstrap/node/platform.js" afterPath="$PROJECT_DIR$/node_modules/scxml/lib/runtime/platform-bootstrap/node/platform.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/lib/runtime/platform-bootstrap/node/url.js" afterPath="$PROJECT_DIR$/node_modules/scxml/lib/runtime/platform-bootstrap/node/url.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/lib/runtime/transform/util.js" afterPath="$PROJECT_DIR$/node_modules/scxml/lib/runtime/transform/util.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/package.json" afterPath="$PROJECT_DIR$/node_modules/scxml/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/test/node-test-server.js" afterPath="$PROJECT_DIR$/node_modules/scxml/test/node-test-server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/test/nodeunit-test-harness/harness/browser/build/nodeunit-tests-bundle.js" afterPath="$PROJECT_DIR$/node_modules/scxml/test/nodeunit-test-harness/harness/browser/build/nodeunit-tests-bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/test/nodeunit-test-harness/harness/browser/lib/jquery.js" afterPath="$PROJECT_DIR$/node_modules/scxml/test/nodeunit-test-harness/harness/browser/lib/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/test/nodeunit-test-harness/harness/browser/lib/nodeunit.css" afterPath="$PROJECT_DIR$/node_modules/scxml/test/nodeunit-test-harness/harness/browser/lib/nodeunit.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/test/nodeunit-test-harness/harness/browser/lib/nodeunit.js" afterPath="$PROJECT_DIR$/node_modules/scxml/test/nodeunit-test-harness/harness/browser/lib/nodeunit.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/test/nodeunit-test-harness/harness/browser/nodeunit-runner.js" afterPath="$PROJECT_DIR$/node_modules/scxml/test/nodeunit-test-harness/harness/browser/nodeunit-runner.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/test/nodeunit-test-harness/harness/browser/views/harness.ejs" afterPath="$PROJECT_DIR$/node_modules/scxml/test/nodeunit-test-harness/harness/browser/views/harness.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/README.md" afterPath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/browser/generate-spec.sh" afterPath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/browser/generate-spec.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/browser/lib/async.js" afterPath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/browser/lib/async.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/browser/lib/jquery.js" afterPath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/browser/lib/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/browser/lib/qunit-1.11.0.css" afterPath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/browser/lib/qunit-1.11.0.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/browser/lib/qunit-1.11.0.js" afterPath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/browser/lib/qunit-1.11.0.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/browser/lib/underscore.js" afterPath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/browser/lib/underscore.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/browser/runner.html" afterPath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/browser/runner.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/browser/scxml.conf.js" afterPath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/browser/scxml.conf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/browser/spec.js" afterPath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/browser/spec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/browser/surface-test.html" afterPath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/browser/surface-test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/node/catch-script-syntax-errors-on-compile/bad.scxml" afterPath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/node/catch-script-syntax-errors-on-compile/bad.scxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/node/catch-script-syntax-errors-on-compile/runner.js" afterPath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/node/catch-script-syntax-errors-on-compile/runner.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/node/require/bundle.js" afterPath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/node/require/bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/node/require/bundle.scxml" afterPath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/node/require/bundle.scxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/node/require/require.json" afterPath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/node/require/require.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/node/require/runner.js" afterPath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/node/require/runner.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/node/require/script2.js" afterPath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/node/require/script2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/node/require/script3.js" afterPath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/node/require/script3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/node/require/script4.js" afterPath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/node/require/script4.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/node/require/submodule1.js" afterPath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/node/require/submodule1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/node/require/submodule2.js" afterPath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/node/require/submodule2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/node/require/submodule3.js" afterPath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/node/require/submodule3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/node/require/submodule4.js" afterPath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/node/require/submodule4.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/node/require/test.scxml" afterPath="$PROJECT_DIR$/node_modules/scxml/test/platform-tests/node/require/test.scxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/test/rhino-test-server.js" afterPath="$PROJECT_DIR$/node_modules/scxml/test/rhino-test-server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/test/run-surface-test.sh" afterPath="$PROJECT_DIR$/node_modules/scxml/test/run-surface-test.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/scxml/test/run-tests-rhino.sh" afterPath="$PROJECT_DIR$/node_modules/scxml/test/run-tests-rhino.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/terraformer/.coverage/__root__/index.html" afterPath="$PROJECT_DIR$/node_modules/terraformer/.coverage/__root__/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/terraformer/.coverage/__root__/terraformer.js.html" afterPath="$PROJECT_DIR$/node_modules/terraformer/.coverage/__root__/terraformer.js.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/terraformer/.coverage/base.css" afterPath="$PROJECT_DIR$/node_modules/terraformer/.coverage/base.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/terraformer/.coverage/index.html" afterPath="$PROJECT_DIR$/node_modules/terraformer/.coverage/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/terraformer/.npmignore" afterPath="$PROJECT_DIR$/node_modules/terraformer/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/terraformer/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/terraformer/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/terraformer/CHANGELOG.md" afterPath="$PROJECT_DIR$/node_modules/terraformer/CHANGELOG.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/terraformer/README.md" afterPath="$PROJECT_DIR$/node_modules/terraformer/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/terraformer/docs-build/arcgis-parser/index.html" afterPath="$PROJECT_DIR$/node_modules/terraformer/docs-build/arcgis-parser/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/terraformer/docs-build/geostore/index.html" afterPath="$PROJECT_DIR$/node_modules/terraformer/docs-build/geostore/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/terraformer/docs-build/getting-started/index.html" afterPath="$PROJECT_DIR$/node_modules/terraformer/docs-build/getting-started/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/terraformer/docs-build/install/index.html" afterPath="$PROJECT_DIR$/node_modules/terraformer/docs-build/install/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/terraformer/gruntfile.js" afterPath="$PROJECT_DIR$/node_modules/terraformer/gruntfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/terraformer/package.json" afterPath="$PROJECT_DIR$/node_modules/terraformer/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/terraformer/release.sh" afterPath="$PROJECT_DIR$/node_modules/terraformer/release.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/terraformer/terraformer.d.ts" afterPath="$PROJECT_DIR$/node_modules/terraformer/terraformer.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/terraformer/test.ts" afterPath="$PROJECT_DIR$/node_modules/terraformer/test.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/terraformer/tsconfig.json" afterPath="$PROJECT_DIR$/node_modules/terraformer/tsconfig.json" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="139" column="0" lean-forward="true" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#51#0" expanded="false" />
+                <element signature="e#558#1131#0" expanded="false" />
+                <element signature="e#1191#1938#0" expanded="false" />
+                <element signature="e#1994#2522#0" expanded="false" />
+                <element signature="e#2579#3333#0" expanded="false" />
+                <element signature="e#3389#3838#0" expanded="false" />
+                <element signature="e#3899#4375#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/index.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fsm-engine-restful" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fsm-engine-restful" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="827bfd08-2f73-4cc5-b80a-0408a680842d" name="Default" comment="" />
+      <created>1492194838271</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1492194838271</updated>
+      <workItem from="1492194839767" duration="278000" />
+      <workItem from="1492195167446" duration="8972000" />
+      <workItem from="1492360767256" duration="4470000" />
+      <workItem from="1492547591903" duration="12000" />
+      <workItem from="1492593444082" duration="352000" />
+      <workItem from="1493064103534" duration="4748000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="18832000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="36" column="34" lean-forward="false" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#51#0" expanded="false" />
+            <element signature="e#558#1131#0" expanded="false" />
+            <element signature="e#1191#1938#0" expanded="false" />
+            <element signature="e#1994#2522#0" expanded="false" />
+            <element signature="e#2579#3333#0" expanded="false" />
+            <element signature="e#3389#3838#0" expanded="false" />
+            <element signature="e#3899#4375#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#51#0" expanded="false" />
+            <element signature="e#558#1131#0" expanded="false" />
+            <element signature="e#1191#1938#0" expanded="false" />
+            <element signature="e#1994#2522#0" expanded="false" />
+            <element signature="e#2579#3333#0" expanded="false" />
+            <element signature="e#3389#3838#0" expanded="false" />
+            <element signature="e#3899#4375#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#51#0" expanded="false" />
+            <element signature="e#558#1131#0" expanded="false" />
+            <element signature="e#1191#1938#0" expanded="false" />
+            <element signature="e#1994#2522#0" expanded="false" />
+            <element signature="e#2579#3333#0" expanded="false" />
+            <element signature="e#3389#3838#0" expanded="false" />
+            <element signature="e#3899#4375#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/fsm-engine/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2856">
+          <caret line="168" column="13" lean-forward="false" selection-start-line="168" selection-start-column="13" selection-end-line="168" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1581">
+          <caret line="95" column="7" lean-forward="false" selection-start-line="95" selection-start-column="7" selection-end-line="95" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#51#0" expanded="false" />
+            <element signature="e#558#1131#0" expanded="false" />
+            <element signature="e#1191#1938#0" expanded="false" />
+            <element signature="e#1994#2522#0" expanded="false" />
+            <element signature="e#2579#3333#0" expanded="false" />
+            <element signature="e#3389#3838#0" expanded="false" />
+            <element signature="e#3899#4375#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#51#0" expanded="false" />
+            <element signature="e#558#1131#0" expanded="false" />
+            <element signature="e#1191#1938#0" expanded="false" />
+            <element signature="e#1994#2522#0" expanded="false" />
+            <element signature="e#2579#3333#0" expanded="false" />
+            <element signature="e#3389#3838#0" expanded="false" />
+            <element signature="e#3899#4375#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/fsm-engine/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="168" column="13" lean-forward="false" selection-start-line="168" selection-start-column="13" selection-end-line="168" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/npm-debug.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7569">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="139" column="0" lean-forward="true" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#51#0" expanded="false" />
+            <element signature="e#558#1131#0" expanded="false" />
+            <element signature="e#1191#1938#0" expanded="false" />
+            <element signature="e#1994#2522#0" expanded="false" />
+            <element signature="e#2579#3333#0" expanded="false" />
+            <element signature="e#3389#3838#0" expanded="false" />
+            <element signature="e#3899#4375#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -10,8 +10,8 @@ co(function*(){
     let fsmEngine = yield init('mysql', 'localhost', 'root', 'root', 'mydatabase');
     let express = require('express');
     let app = express();
-    let bodyParser = require('body-parser')
-    app.use(bodyParser.json());       // to support JSON-encoded bodies
+    let bodyParser = require('body-parser');
+    app.use(bodyParser.json());         // to support JSON-encoded bodies
     app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
         extended: true
     }));
@@ -38,7 +38,6 @@ co(function*(){
 
         }).then();
     });
-
 
     app.post('/API/model/setSCMXL', function (req, res) {
 
@@ -139,7 +138,6 @@ co(function*(){
         }).then();
     });
 
-
     app.post('/API/instance/create', function (req, res) {
 
         if(typeof req.body.versionID !== "number"){
@@ -179,12 +177,12 @@ co(function*(){
 
     });
 
-}).then();
+    //Start the server
+    let server = app.listen(8081, function () {
+        let host = server.address().address;
+        let port = server.address().port;
+        console.log("Example app listening at http://%s:%s", host, port)
+    });
 
-//Start the server
-let server = app.listen(8081, function () {
-    let host = server.address().address;
-    let port = server.address().port;
-    console.log("Example app listening at http://%s:%s", host, port)
-});
+}).then();
 

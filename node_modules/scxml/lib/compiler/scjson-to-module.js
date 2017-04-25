@@ -619,8 +619,10 @@ var actionTags = {
             name : 'Sandbox.action',
             data : action
         };
-
-        return "postMessage(" + JSON.stringify(customTagConfig, null, 4) + ");"
+        
+        return "var config = " + JSON.stringify(customTagConfig, null, 4) + ";\n" + 
+               "config._event = _event;" +
+               "postMessage(config);"
     }
 };
 

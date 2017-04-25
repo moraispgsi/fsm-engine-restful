@@ -5,6 +5,6 @@ let fsmEngine = require("../index")('mysql', 'localhost', 'root', 'root', 'mydat
 
 fsmEngine.meta.sequelize.sync().then(function() {
     fsmEngine.makeInstancePromise(1).then((instance) => {
-        instance.startPromise().then();
+        instance.start().then();
     });
 });
