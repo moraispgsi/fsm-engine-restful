@@ -7,7 +7,7 @@ let init = require("fsm-engine");
 
 co(function*(){
 
-    let fsmEngine = yield init('mysql', 'localhost', 'root', 'root', 'mydatabase');
+    let fsmEngine = yield init('mysql', 'mysql.fsm-engine-restful.svc', 'root', 'root', 'mydatabase');
     let express = require('express');
     let app = express();
     let bodyParser = require('body-parser');
@@ -176,6 +176,40 @@ co(function*(){
         }).then();
 
     });
+
+    app.post('/API/instance/sendLocalEvent', function (req, res) {
+
+        //todo validate
+        if(typeof req.body.instanceID !== 'number') {
+            res.sendStatus(400);
+            res.send("Missing property instanceID");
+        }
+
+        co(function*(){
+            try {
+                let instance = yield fsmEngine.getInstance(req.body.instanceID);
+                yield instance.sendEvent(req.body.event, req.body.data);
+                res.sendStatus(200);
+            } catch(error){
+                res.sendStatus(500);
+            }
+        }).then();
+
+    });
+
+    app.post('/API/instance/sendGlobalEvent', function (req, res) {
+        //todo validate
+        co(function*(){
+            try {
+                yield fsmEngine.sendGlobalEvent(req.body.event, req.body.data);
+                res.sendStatus(200);
+            } catch(error){
+                res.sendStatus(500);
+            }
+        }).then();
+    });
+    //todo - send global event
+    //todo - send local event
 
     //Start the server
     let server = app.listen(8081, function () {

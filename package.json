@@ -11,7 +11,7 @@
   "dependencies": {
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
-    "fsm-engine": "0.0.2",
+    "fsm-engine": "git@github.com:moraispgsi/fsm-engine.git",
     "json": "^9.0.6"
   }
 }
