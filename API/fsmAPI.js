@@ -9,10 +9,10 @@ module.exports = function (app, engine) {
                 if(typeof req.body.name !== "string"){
                     res.json({error: "Missing the name for the FSM"});
                 }
-                let data = yield engine.meta.action.createFSM(req.body.name);
+                let data = yield engine.createFSM(req.body.name);
                 res.json({
-                    fsmID: data.fsm.dataValues.id,
-                    versionID: data.version.dataValues.id,
+                    fsmID: data.fsm.id,
+                    versionID: data.version.id,
                 });
             } catch(err) {
                 res.json({error: err});

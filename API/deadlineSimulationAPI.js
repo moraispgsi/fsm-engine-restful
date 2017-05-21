@@ -67,11 +67,11 @@ module.exports = function (app, engine) {
         app.get('/API/simulation/deadline/deadlines', function (req, res) {
             co(function*() {
                 try {
-                    let fsm = yield engine.meta.query.getFsmByName("deadline");
-                    let version = yield engine.meta.query.getLatestSealedFsmVersion(fsm.dataValues.id);
+                    let fsm = yield engine.getFsmByName("deadline");
+                    let version = yield engine.getLatestSealedFsmVersion(fsm.id);
                     let data = {
-                        deadlineIds: yield engine.meta.query.getInstancesByFsmName("deadline"),
-                        deadlineSCXML: version.dataValues.scxml
+                        deadlineIds: yield engine.getInstancesByFsmName("deadline"),
+                        deadlineSCXML: version.scxml
                     };
                     if (data.deadlineIds === void 0) {
                         data.deadlineIds = [];
@@ -115,7 +115,7 @@ module.exports = function (app, engine) {
                     let deadline = new Date(req.body.date);
 
                     //Create the instance using the finite-state machine version
-                    let instance = yield engine.makeInstance(req.body.versionID);
+                    let instance = yield engine.createInstance(req.body.versionID);
 
                     //Start the instance
                     yield instance.start();
@@ -210,6 +210,7 @@ module.exports = function (app, engine) {
                 let instance = engine.getInstance(parseInt(req.body.instanceID));
                 let sc = instance.getStateChart();
                 let snapshot = sc.getSnapshot();
+                console.log(snapshot);
                 let data = {
                     simulationDate: engine.getCurrentSimulationDate(),
                     deadline: {

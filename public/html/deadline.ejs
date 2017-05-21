@@ -62,6 +62,7 @@
                 $("#datamodel").html(JSON.stringify(data, null, "\t"));
                 timeline.setCurrentTime(new Date(data.simulationDate));
 
+                console.log(data);
                 var items = new vis.DataSet();
                 items.add({
                     id: 1,

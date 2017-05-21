@@ -3,6 +3,7 @@
  */
 module.exports = function (app, engine) {
     let co = require("co");
+
     app.post('/API/instance/start', function (req, res) {
         co(function*(){
             try {
@@ -33,7 +34,6 @@ module.exports = function (app, engine) {
         }).then();
     });
 
-    //Queries
     app.post('/API/instance/getInstancesByFsmId', function (req, res) {
         co(function*(){
             try {
@@ -42,7 +42,7 @@ module.exports = function (app, engine) {
                     return;
                 }
                 res.json({
-                    instanceIds: yield engine.meta.query.getInstancesByFsmId(req.body.id)
+                    instanceIds: yield engine.getInstancesByFsmId(req.body.id)
                 });
                 res.sendStatus(200);
             } catch(err) {
@@ -59,11 +59,30 @@ module.exports = function (app, engine) {
                     return;
                 }
                 res.json({
-                    instanceIds: yield engine.meta.query.getInstancesByFsmName(req.body.name)
+                    instanceIds: yield engine.getInstancesByFsmName(req.body.name)
                 });
             } catch(err) {
                 res.json({error: err});
             }
         }).then();
+    });
+
+    app.post('/API/instance/data', function (req, res) {
+        try {
+            if(!req.body.instanceID) {
+                throw new Error("instanceID missing");
+            }
+            let instance = engine.getInstance(parseInt(req.body.instanceID));
+            let sc = instance.getStateChart();
+            let snapshot = sc.getSnapshot();
+            let data = {
+                id: req.body.instanceID,
+                state: snapshot[0],
+                datamodel: snapshot[3]
+            };
+            res.json(data);
+        } catch (err) {
+            res.json({error: err});
+        }
     });
 };
