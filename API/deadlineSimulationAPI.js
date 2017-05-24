@@ -94,23 +94,23 @@ module.exports = function (app, engine) {
         app.post('/API/simulation/deadline/create', function (req, res) {
             co(function*() {
                 try {
-                    //Validate the version id type
-                    if (typeof req.body.versionID !== "number") {
-                        res.json({error: "Missing the property versionID"});
-                        return;
-                    }
-
-                    //Validate the date type
-                    if (typeof req.body.date !== "string") {
-                        res.json({error: "Missing the property"});
-                        return;
-                    }
-
-                    //Validate the deadline id type
-                    if (typeof req.body.deadlineID !== "number") {
-                        res.json({error: "Missing the property"});
-                        return;
-                    }
+                    // //Validate the version id type
+                    // if (typeof req.body.versionID !== "number") {
+                    //     res.json({error: "Missing the property versionID"});
+                    //     return;
+                    // }
+                    //
+                    // //Validate the date type
+                    // if (typeof req.body.date !== "string") {
+                    //     res.json({error: "Missing the property"});
+                    //     return;
+                    // }
+                    //
+                    // //Validate the deadline id type
+                    // if (typeof req.body.deadlineID !== "number") {
+                    //     res.json({error: "Missing the property"});
+                    //     return;
+                    // }
 
                     let deadline = new Date(req.body.date);
 
@@ -210,7 +210,6 @@ module.exports = function (app, engine) {
                 let instance = engine.getInstance(parseInt(req.body.instanceID));
                 let sc = instance.getStateChart();
                 let snapshot = sc.getSnapshot();
-                console.log(snapshot);
                 let data = {
                     simulationDate: engine.getCurrentSimulationDate(),
                     deadline: {

@@ -43,6 +43,7 @@ co(function*(){
     require("./API/versionAPI")(app, engine);
     require("./API/instanceAPI")(app, engine);
     require("./API/globalAPI")(app, engine);
+    require("./API/backofficeAPI")(app, engine);
 
     //Start the server
     let server = app.listen(8081, '0.0.0.0', function () {
