@@ -105,7 +105,6 @@ module.exports = function (app, engine) {
                     //     res.json({error: "Missing the property"});
                     //     return;
                     // }
-                    //
                     // //Validate the deadline id type
                     // if (typeof req.body.deadlineID !== "number") {
                     //     res.json({error: "Missing the property"});
