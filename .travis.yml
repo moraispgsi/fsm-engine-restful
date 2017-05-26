@@ -8,14 +8,14 @@ jobs:
       script: skip
       deploy: &heroku
         provider: heroku
-        app: sf-stages-staging
+        app: fsm-engine-restful
         api_key: 246542ac-8051-4867-aa1b-89abe4fb5dc9
-    - stage: test staging
-      script: 'curl http://sf-stages-staging.herokuapp.com'
+#    - stage: test staging
+#      script: 'curl http://fsm-engine-restful-staging.herokuapp.com'
     - stage: deploy to production
       script: skip
       deploy:
         <<: *heroku
-        app: sf-stages-production
+        app: fsm-engine-restful
     - stage: test production
-      script: 'curl http://sf-stages-production.herokuapp.com'
+      script: 'curl http://fsm-engine-restful.herokuapp.com'
