@@ -35,15 +35,13 @@ co(function*(){
     app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
         extended: true
     }));
-    app.use(express.static('public'));
+    // app.use(express.static('public'));
 
     //API
-    require("./API/deadlineSimulationAPI")(app, engine);
     require("./API/fsmAPI")(app, engine);
     require("./API/versionAPI")(app, engine);
     require("./API/instanceAPI")(app, engine);
     require("./API/globalAPI")(app, engine);
-    require("./API/backofficeAPI")(app, engine);
 
     //Start the server
     let server = app.listen(process.env.PORT || 8080, '0.0.0.0', function () {

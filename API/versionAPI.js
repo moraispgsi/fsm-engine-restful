@@ -22,24 +22,6 @@ module.exports = function (app, engine) {
             }
         }).then();
     });
-
-    app.post('/API/version/newVersion', function (req, res) {
-        co(function*(){
-            try {
-                if (typeof req.body.versionID !== "number") {
-                    res.send(400);
-                    res.json({error: "Missing the property versionID"});
-                }
-                let version = yield engine.newVersion(req.body.versionID);
-                res.json({
-                    versionID: version.id,
-                });
-            } catch(err) {
-                res.json({error: err});
-            }
-        }).then();
-    });
-
     app.post('/API/version/seal', function (req, res) {
         co(function*(){
             try {
@@ -54,27 +36,26 @@ module.exports = function (app, engine) {
             }
         }).then();
     });
-
-    app.post('/API/version/getVersionsByFsmName', function (req, res) {
+    app.post('/API/version/allInstances', function (req, res) {
         co(function*(){
             try {
-                //todo
+                //todo Method implementation
+
                 res.sendStatus(200);
             } catch(err) {
                 res.json({error: err});
             }
         }).then();
     });
-
-    app.post('/API/version/getVersionsByFsmId', function (req, res) {
+    app.post('/API/version/allRunningInstances', function (req, res) {
         co(function*(){
             try {
-                //todo
+                //todo Method implementation
+
                 res.sendStatus(200);
             } catch(err) {
                 res.json({error: err});
             }
         }).then();
     });
-
 };

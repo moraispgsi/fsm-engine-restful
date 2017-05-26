@@ -3,7 +3,6 @@
  */
 module.exports = function (app, engine) {
     let co = require("co");
-
     app.post('/API/instance/create', function (req, res) {
         co(function*(){
             try {
@@ -20,7 +19,6 @@ module.exports = function (app, engine) {
             }
         }).then();
     });
-
     app.post('/API/instance/start', function (req, res) {
         co(function*(){
             try {
@@ -35,7 +33,6 @@ module.exports = function (app, engine) {
             }
         }).then();
     });
-
     app.post('/API/instance/sendEvent', function (req, res) {
         co(function*(){
             try {
@@ -50,44 +47,43 @@ module.exports = function (app, engine) {
             }
         }).then();
     });
-
-    app.post('/API/instance/getInstancesByFsmId', function (req, res) {
+    app.post('/API/instance/all', function (req, res) {
         co(function*(){
             try {
-                if(!req.body.id) {
-                    res.sendStatus(400);
-                    return;
-                }
-                res.json({
-                    instanceIds: yield engine.getInstancesByFsmId(req.body.id)
-                });
+                //todo Method implementation
+
                 res.sendStatus(200);
             } catch(err) {
                 res.json({error: err});
             }
         }).then();
     });
-
-    app.post('/API/instance/getInstancesByFsmName', function (req, res) {
+    app.post('/API/instance/allRunning', function (req, res) {
         co(function*(){
             try {
-                if(!req.body.name) {
-                    res.sendStatus(400);
-                    return;
-                }
-                res.json({
-                    instanceIds: yield engine.getInstancesByFsmName(req.body.name)
-                });
+                //todo Method implementation
+
+                res.sendStatus(200);
             } catch(err) {
                 res.json({error: err});
             }
         }).then();
     });
+    app.post('/API/instance/allStopped', function (req, res) {
+        co(function*(){
+            try {
+                //todo Method implementation
 
-    app.post('/API/instance/data', function (req, res) {
+                res.sendStatus(200);
+            } catch(err) {
+                res.json({error: err});
+            }
+        }).then();
+    });
+    app.post('/API/instance/snapshot', function (req, res) {
         try {
             if(!req.body.instanceID) {
-                throw new Error("instanceID missing");
+                res.json({error: "instanceID missing"});
             }
             let instance = engine.getInstance(parseInt(req.body.instanceID));
             let sc = instance.getStateChart();
@@ -101,5 +97,16 @@ module.exports = function (app, engine) {
         } catch (err) {
             res.json({error: err});
         }
+    });
+    app.post('/API/instance/revert', function (req, res) {
+        co(function*(){
+            try {
+                //todo Method implementation
+
+                res.sendStatus(200);
+            } catch(err) {
+                res.json({error: err});
+            }
+        }).then();
     });
 };

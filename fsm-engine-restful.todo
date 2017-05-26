@@ -1,43 +1,29 @@
-base: 
- ✔ try catch na API @done (17-05-20 03:55)  
+Base: 
+ ✔ try catch in API @done (17-05-20 03:55)  
  ✔ get the latest version of a finite-state machine by name @done (17-05-20 03:55)
  ☐ Create the github wiki
- ☐ refactoring
-backoffice:
-    fsm dashboard:
-      ☐ creating new finite-state machine models
-      ☐ global version information 
-      ☐ creation and last update dates
-      ☐ selecting a version to go to the version dashboard
-      ☐ list all the instances
-      ☐ select a instance to go to its dashboard
-    version dashboard:
-      ☐ information about sealing of the version
-      ☐ creation and last update dates
-      ☐ drag and drop scxml file
-      ☐ the scxml code
-      ☐ validate the scxml in the browser using the xsd
-      ☐ information about available actions
-      ☐ editor for the scxml code in case the version is not sealed
-      ☐ option to seal the version if the version is not sealed yet and a warning before sealing
-      ☐ list all the instances of the version if it is sealed
-      ☐ select an instance to go to its dashboard
-    instance dashboard:
-      ☐ information about the version and the finite-state machine
-      ☐ creation and last update dates
-      ☐ the state of the state machine and the data model
-      ☐ revert an instance to a former snapshot
-      ☐ restart an instance in a custom snapshot
-Simulator:
-  ✔ Use an array of dates to simulate with an offset of 10 sec (minus) @done (17-05-18 19:34)
-  ✔ Create a variable in the scxml to simulate the time. @done (17-05-19 02:40)
-  ✔ Get the states of the instances @done (17-05-19 23:00)
-  ✔ Get the datamodel of the instance @done (17-05-19 21:27)
-  ✔ Make the simulated time a server variable for all the instances @done (17-05-19 02:40)
-  ✔ Save server configurations in the server @done (17-05-19 21:27)
-  ✔ get simulation date @done (17-05-19 21:27)
-  ✔ set simulation date @done (17-05-19 21:27)
-  ✔ html control simulation time @done (17-05-20 03:12)
-  ✔ increase and decrease simulation velocity @done (17-05-20 03:12)
-  ✔ add the hide date to the graph @done (17-05-20 03:55)
-  ☐ Each tick in the slider shoud be a unit of time, 1 sec 1 min 1hour 1 day 1 month ...
+API:
+  instanceAPI:
+       ✔ /API/instance/create @done (17-05-27 00:04)
+       ✔ /API/instance/start @done (17-05-27 00:04)
+       ✔ /API/instance/sendEvent @done (17-05-27 00:04)
+       ☐ /API/instance/all
+       ☐ /API/instance/allRunning
+       ☐ /API/instance/allStopped
+       ✔ /API/instance/snapshot @done (17-05-27 00:04)
+   versionAPI:      
+       ✔ /API/version/setSCXML @done (17-05-27 00:28)
+       ✔ /API/version/seal @done (17-05-27 00:28)
+       ☐ /API/version/allInstances
+       ☐ /API/version/allRunningInstances
+    fsmAPI:
+       ✔ /API/fsm/create @done (17-05-27 00:28)
+       ☐ /API/fsm/allVersions
+       ☐ /API/fsm/latestVersion
+       ☐ /API/fsm/latestSealedVersion
+       ☐ /API/fsm/newVersion
+    globalAPI:
+       ✔ /api/global/sendEvent @done (17-05-27 00:28)
+       ☐ /api/global/turnSimulationOn
+       ☐ /api/global/turnSimulationOff
+       ☐ /api/global/setSimulationDate
