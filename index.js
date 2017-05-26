@@ -27,7 +27,7 @@ let co = require('co');
 let init = require("fsm-engine");
 
 co(function*(){
-    let engine = yield init('mysql', 'localhost', 'root', 'root', 'mydatabase', {logging: false});
+    let engine = yield init('mysql', 'localhost', 'root', 'root', 'mydatabase', {logging: false}, "http://localhost:2000");
     let express = require('express');
     let app = express();
     let bodyParser = require('body-parser');
@@ -46,7 +46,7 @@ co(function*(){
     require("./API/backofficeAPI")(app, engine);
 
     //Start the server
-    let server = app.listen(8081, '0.0.0.0', function () {
+    let server = app.listen(8100, '127.0.0.1', function () {
         let host = server.address().address;
         let port = server.address().port;
         console.log("listening at http://%s:%s", host, port)

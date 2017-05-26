@@ -13,7 +13,7 @@
 //                                                                             aa,    ,88
 //                                                                              "Y8bbdP"
 
-module.exports = function (dialect, host, user, password, database, config) {
+module.exports = function (dialect, host, user, password, database, config, actionDispatcherHost) {
 
     //Load dependencies
     let co = require('co');               //For a easier promise handling experience
@@ -29,7 +29,7 @@ module.exports = function (dialect, host, user, password, database, config) {
 
         //Returns a promise that will sync the database definition and return the module interface
         return co(function*() {
-            let engine = yield require("./engine")(core);  //Build and start the engine
+            let engine = yield require("./engine")(core, actionDispatcherHost);  //Build and start the engine
             return engine; //Return this module interface
         });
     });

@@ -5,9 +5,11 @@
 module.exports = function (app, engine) {
     let co = require("co");
     let ejs = require('ejs');
+    let debug = require('debug')("backoffice");
 
     app.get('/backoffice/statemachines', function (req, res) {
         co(function*(){
+            debug("GET REQUEST: /backoffice/statemachines");
             ejs.renderFile("public/statemachines.ejs", null, null, function (err, html) {
                 if (err) {
                     res.sendStatus(400);
@@ -23,6 +25,7 @@ module.exports = function (app, engine) {
 
     app.get('/backoffice/statemachine', function (req, res) {
         co(function*(){
+            debug("GET REQUEST: /backoffice/statemachine");
             let data = {
                 id: req.query.id,
                 fsm: JSON.stringify(yield engine.getFsmById(req.query.id))

@@ -10,6 +10,6 @@ co(function*(){
     let version = yield engine.getLatestSealedFsmVersion(fsm.id);
     let instance = yield engine.createInstance(version.id);
     yield instance.start();
-    let date = new Date(new Date().getTime() + 1000 * 20);
+    let date = new Date(new Date().getTime() + 1000 * 10);
     yield instance.sendEvent('init', {date: date, deadlineId: 1, now: new Date()});
 }).catch((err)=> console.log(err));

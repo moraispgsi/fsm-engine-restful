@@ -55,23 +55,6 @@ module.exports = function (app, engine) {
         }).then();
     });
 
-    app.post('/API/version/createInstance', function (req, res) {
-        co(function*(){
-            try {
-                if (typeof req.body.versionID !== "number") {
-                    res.json({error: "Missing the property versionID"});
-                    return;
-                }
-                let instance = yield engine.createInstance(req.body.versionID);
-                res.json({
-                    instanceID: instance.id,
-                });
-            } catch(err) {
-                res.json({error: err});
-            }
-        }).then();
-    });
-
     app.post('/API/version/getVersionsByFsmName', function (req, res) {
         co(function*(){
             try {
