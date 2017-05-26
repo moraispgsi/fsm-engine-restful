@@ -20,5 +20,9 @@
     "json": "^9.0.6",
     "jsonfile": "^3.0.0",
     "mysql": "^2.13.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:moraispgsi/fsm-engine-restful.git"
   }
 }
