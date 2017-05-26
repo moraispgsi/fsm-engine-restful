@@ -27,7 +27,7 @@ let co = require('co');
 let init = require("fsm-engine");
 
 co(function*(){
-    let engine = yield init('mysql', 'fsm-engine-restful.000webhostapp.com', 'id1778227_root', '12345', 'id1778227_mydatabase', {logging: false}, "http://localhost:2000");
+    let engine = yield init('mysql', 'db4free.net', 'moraispgsi', '123456', 'fsmengine', {logging: false, port: 3307}, "http://localhost:2000");
     let express = require('express');
     let app = express();
     let bodyParser = require('body-parser');
