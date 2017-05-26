@@ -4,7 +4,7 @@
     <list default="true" id="827bfd08-2f73-4cc5-b80a-0408a680842d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap" afterPath="$PROJECT_DIR$/public/bootstrap" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,21 +19,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="190">
               <caret line="18" column="104" lean-forward="false" selection-start-line="18" selection-start-column="104" selection-end-line="18" selection-end-column="104" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="false">
+      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="224">
+              <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -186,8 +186,8 @@
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/node_modules/fsm-engine/actions/actions.js" />
         <option value="$PROJECT_DIR$/API/backofficeAPI.js" />
-        <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -202,6 +202,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -383,7 +386,7 @@
       <workItem from="1494956696758" duration="39487000" />
       <workItem from="1495157851150" duration="48094000" />
       <workItem from="1495328028937" duration="34190000" />
-      <workItem from="1495729145180" duration="11750000" />
+      <workItem from="1495729145180" duration="12464000" />
     </task>
     <task id="LOCAL-00001" summary="changeView ddm action simplified">
       <created>1495325119970</created>
@@ -448,11 +451,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495775697393</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="replace github commit">
+      <created>1495775891002</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1495775891002</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182962000" />
+    <option name="totallyTimeSpent" value="183676000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
@@ -511,7 +521,8 @@
     <MESSAGE value="git@github.com:moraispgsi/fsm-engine.git" />
     <MESSAGE value="tests" />
     <MESSAGE value="repo" />
-    <option name="LAST_COMMIT_MESSAGE" value="repo" />
+    <MESSAGE value="replace github commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="replace github commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -914,18 +925,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="190">
+          <caret line="18" column="104" lean-forward="false" selection-start-line="18" selection-start-column="104" selection-end-line="18" selection-end-column="104" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="18" column="104" lean-forward="false" selection-start-line="18" selection-start-column="104" selection-end-line="18" selection-end-column="104" />
+        <state relative-caret-position="224">
+          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
           <folding />
         </state>
       </provider>

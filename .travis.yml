@@ -1,4 +1,24 @@
 language: node_js
 node_js:
   - "iojs"
-  - "7"
+jobs:
+  include:
+    - stage: unit tests
+      script: "Running unit tests (1)"
+    - stage: unit tests
+      script: "Running unit tests (2)"
+    - stage: deploy to staging
+      script: skip
+      deploy: &heroku
+        provider: heroku
+        app: sf-stages-staging
+        api_key: "246542ac-8051-4867-aa1b-89abe4fb5dc9"
+    - stage: test staging
+      script: 'curl http://sf-stages-staging.herokuapp.com'
+    - stage: deploy to production
+      script: skip
+      deploy:
+        <<: *heroku
+        app: sf-stages-production
+    - stage: test production
+      script: 'curl http://sf-stages-production.herokuapp.com'- "7"
