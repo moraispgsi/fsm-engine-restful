@@ -1,6 +1,20 @@
 module.exports = function (app, engine) {
     let debug = require("debug")("version-api");
     let co = require("co");
+    app.post('/API/version/getById', function (req, res) {
+        co(function*(){
+            try {
+                //todo Method implementation
+
+                res.sendStatus(200);
+            } catch(err) {
+                res.json({error: err});
+            }
+        }).catch((err)=> {
+            debug("Error: " + err);
+            res.json({error: err});
+        });
+    });
     app.post('/API/version/setSCXML', function (req, res) {
         co(function*() {
             debug("setSCXML");
