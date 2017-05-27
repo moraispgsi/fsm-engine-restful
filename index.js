@@ -27,12 +27,12 @@ let co = require('co');
 let init = require("fsm-engine");
 co(function*(){
     let engine = yield init(
-        process.env.dialect,
-        process.env.databaseHost,
-        process.env.databaseUser,
-        process.env.databasePassword,
-        {logging: false, port: process.env.databasePort},
-        process.env.actionDispatcherHost
+        process.env.DIALECT,
+        process.env.DATABASE_HOST,
+        process.env.DATABASE_USER,
+        process.env.DATABASE_PASSWORD,
+        {logging: false, port: process.env.DATABASE_PORT},
+        process.env.ACTION_DISPATCHER_HOST
     );
 
     let express = require('express');
