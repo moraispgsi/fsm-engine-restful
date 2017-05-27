@@ -4,6 +4,15 @@
 module.exports = function (app, engine) {
     let debug = require("debug")("fsm-api");
     let co = require("co");
+    app.post('/API/fsm/all', function (req, res) {
+        co(function*(){
+            let fsms = yield engine.getAllFsms();
+            res.json(fsms);
+        }).catch((err)=> {
+            debug("Error: " + err);
+            res.json({error: err});
+        });
+    });
     app.post('/API/fsm/create', function (req, res) {
         co(function*() {
             debug("create");

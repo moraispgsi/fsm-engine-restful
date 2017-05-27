@@ -1,12 +1,24 @@
 module.exports = function (app, engine) {
     let debug = require("debug")("version-api");
     let co = require("co");
+    app.post('/API/version/all', function (req, res) {
+        co(function*(){
+            let versions = yield engine.getAllVersions();
+    	    res.json(versions);
+        }).catch((err)=> {
+            debug("Error: " + err);
+            res.json({error: err});
+        });
+    });
     app.post('/API/version/getById', function (req, res) {
         co(function*(){
             try {
-                //todo Method implementation
-
-                res.sendStatus(200);
+                if (!req.body.id) {
+                    debug("Error: " + "Missing the property id");
+                    res.json({error: "Missing the property id"});
+                }
+                let version = yield engine.getVersionById(req.body.id);
+                res.json(version);
             } catch(err) {
                 res.json({error: err});
             }
