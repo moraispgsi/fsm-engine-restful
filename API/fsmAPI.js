@@ -2,12 +2,14 @@
  * Created by Ricardo Morais on 16/05/2017.
  */
 module.exports = function (app, engine) {
+    let debug = require("debug")("fsm-api");
     let co = require("co");
     app.post('/API/fsm/create', function (req, res) {
         co(function*(){
             try {
-                if(typeof req.body.name !== "string"){
-                    res.json({error: "Missing the name for the FSM"});
+                if(!req.body.name){
+                    debug("Error: ", "missing the name for the fsm");
+                    res.json({error: "missing the name for the fsm"});
                 }
                 let data = yield engine.createFSM(req.body.name);
                 res.json({
@@ -15,6 +17,7 @@ module.exports = function (app, engine) {
                     versionID: data.version.id,
                 });
             } catch(err) {
+                debug("Error: ", err);
                 res.json({error: err});
             }
         }).then();
@@ -22,9 +25,14 @@ module.exports = function (app, engine) {
     app.post('/API/fsm/allVersions', function (req, res) {
         co(function*(){
             try {
-                //todo
-                res.sendStatus(200);
+                if(!req.body.id){
+                    debug("Error: ", "Missing the fsm id");
+                    res.json({error: "Missing the fsm id"});
+                }
+                let versions = yield engine.getFsmVersions(req.body.id);
+                res.json(versions);
             } catch(err) {
+                debug("Error: ", err);
                 res.json({error: err});
             }
         }).then();
@@ -32,9 +40,14 @@ module.exports = function (app, engine) {
     app.post('/API/fsm/latestVersion', function (req, res) {
         co(function*(){
             try {
-                //todo
-                res.sendStatus(200);
+                if(!req.body.id){
+                    debug("Error: ", "Missing the fsm id");
+                    res.json({error: "Missing the fsm id"});
+                }
+                let version = yield engine.getLatestFsmVersion(req.body.id);
+                res.json(version);
             } catch(err) {
+                debug("Error: ", err);
                 res.json({error: err});
             }
         }).then();
@@ -42,9 +55,14 @@ module.exports = function (app, engine) {
     app.post('/API/fsm/latestSealedVersion', function (req, res) {
         co(function*(){
             try {
-                //todo
-                res.sendStatus(200);
+                if(!req.body.id){
+                    debug("Error: ", "Missing the fsm id");
+                    res.json({error: "Missing the fsm id"});
+                }
+                let version = yield engine.getLatestSealedFsmVersion(req.body.id);
+                res.json(version);
             } catch(err) {
+                debug("Error: ", err);
                 res.json({error: err});
             }
         }).then();
@@ -52,8 +70,8 @@ module.exports = function (app, engine) {
     app.post('/API/fsm/newVersion', function (req, res) {
         co(function*(){
             try {
-                if (typeof req.body.versionID !== "number") {
-                    res.send(400);
+                if (!req.body.versionID) {
+                    debug("Error: ", "Missing the property versionID");
                     res.json({error: "Missing the property versionID"});
                 }
                 let version = yield engine.newVersion(req.body.versionID);
@@ -61,6 +79,7 @@ module.exports = function (app, engine) {
                     versionID: version.id,
                 });
             } catch(err) {
+                debug("Error: ", err);
                 res.json({error: err});
             }
         }).then();
