@@ -26,6 +26,7 @@
 let co = require('co');
 let init = require("fsm-engine");
 co(function*(){
+    console.log(process.env);
     let engine = yield init(
         process.env.DIALECT,
         process.env.DATABASE_HOST,
