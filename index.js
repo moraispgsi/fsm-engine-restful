@@ -28,10 +28,10 @@ let init = require("fsm-engine");
 co(function*(){
     let engine = yield init(
         process.env.dialect,
-        process.env.host,
-        process.env.user,
-        process.env.password,
-        {logging: false, port: process.env.port},
+        process.env.databaseHost,
+        process.env.databaseUser,
+        process.env.databasePassword,
+        {logging: false, port: process.env.databasePort},
         process.env.actionDispatcherHost
     );
 
