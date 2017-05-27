@@ -7,6 +7,7 @@ module.exports = function (app, engine) {
     app.post('/API/fsm/create', function (req, res) {
         co(function*(){
             try {
+                debug("create");
                 if(!req.body.name){
                     debug("Error: ", "missing the name for the fsm");
                     res.json({error: "missing the name for the fsm"});
@@ -25,6 +26,7 @@ module.exports = function (app, engine) {
     app.post('/API/fsm/allVersions', function (req, res) {
         co(function*(){
             try {
+                debug("allVersions");
                 if(!req.body.id){
                     debug("Error: ", "Missing the fsm id");
                     res.json({error: "Missing the fsm id"});
@@ -40,6 +42,7 @@ module.exports = function (app, engine) {
     app.post('/API/fsm/latestVersion', function (req, res) {
         co(function*(){
             try {
+                debug("latestVersion");
                 if(!req.body.id){
                     debug("Error: ", "Missing the fsm id");
                     res.json({error: "Missing the fsm id"});
@@ -55,6 +58,7 @@ module.exports = function (app, engine) {
     app.post('/API/fsm/latestSealedVersion', function (req, res) {
         co(function*(){
             try {
+                debug("latestSealedVersion");
                 if(!req.body.id){
                     debug("Error: ", "Missing the fsm id");
                     res.json({error: "Missing the fsm id"});
@@ -70,6 +74,7 @@ module.exports = function (app, engine) {
     app.post('/API/fsm/newVersion', function (req, res) {
         co(function*(){
             try {
+                debug("newVersion");
                 if (!req.body.id) {
                     debug("Error: ", "Missing the fsm id");
                     res.json({error: "Missing the fsm id"});

@@ -1,23 +1,23 @@
 module.exports = function (app, engine) {
+    let debug = require("debug")("version-api");
     let co = require("co");
     app.post('/API/version/setSCXML', function (req, res) {
         co(function*(){
             try {
-                if (typeof req.body.versionID !== "number") {
-                    res.json({error: "Missing the property versionID"});
+                debug("setSCXML");
+                if (!req.body.id) {
+                    debug("Error: " + "Missing the property id");
+                    res.json({error: "Missing the property id"});
                 }
-                if (typeof req.body.scxml !== "string") {
+                if (!req.body.scxml) {
+                    debug("Error: " + "Missing the property scxml");
                     res.json({error: "Missing the property scxml"});
                 }
 
-                let data = yield engine.meta.action.setScxml(req.body.versionID, req.body.scxml);
-                res.json({
-                    fsmID: data.fsm.dataValues.id,
-                    versionID: data.version.dataValues.id,
-                });
-
+                yield engine.meta.action.setScxml(req.body.id, req.body.scxml);
                 res.sendStatus(200);
             } catch(err) {
+                debug("Error: " + err);
                 res.json({error: err});
             }
         }).then();
@@ -25,13 +25,15 @@ module.exports = function (app, engine) {
     app.post('/API/version/seal', function (req, res) {
         co(function*(){
             try {
-                if (typeof req.body.versionID !== "number") {
-                    res.send(400);
-                    res.json({error: "Missing the property versionID"});
+                debug("seal");
+                if (!req.body.id) {
+                    debug("Error: " + "Missing the property id");
+                    res.json({error: "Missing the property id"});
                 }
-                yield engine.seal(req.body.versionID);
+                yield engine.seal(req.body.id);
                 res.sendStatus(200);
             } catch(err) {
+                debug("Error: " + err);
                 res.json({error: err});
             }
         }).then();
@@ -39,10 +41,15 @@ module.exports = function (app, engine) {
     app.post('/API/version/allInstances', function (req, res) {
         co(function*(){
             try {
-                //todo Method implementation
-
-                res.sendStatus(200);
+                debug("allInstances");
+                if (!req.body.id) {
+                    debug("Error: " + "Missing the property id");
+                    res.json({error: "Missing the property id"});
+                }
+                let instances = yield engine.getInstancesByFsmId(req.body.id);
+                res.json(instances);
             } catch(err) {
+                debug("Error: " + err);
                 res.json({error: err});
             }
         }).then();
@@ -50,10 +57,16 @@ module.exports = function (app, engine) {
     app.post('/API/version/allRunningInstances', function (req, res) {
         co(function*(){
             try {
-                //todo Method implementation
-
-                res.sendStatus(200);
+                debug("allRunningInstances");
+                if (!req.body.id) {
+                    debug("Error: " + "Missing the property id");
+                    res.json({error: "Missing the property id"});
+                }
+                let instances = yield engine.getInstancesByFsmId(req.body.id);
+                instances = instances.filter((instance)=>instance.hasStarted);
+                res.json(instances);
             } catch(err) {
+                debug("Error: " + err);
                 res.json({error: err});
             }
         }).then();
