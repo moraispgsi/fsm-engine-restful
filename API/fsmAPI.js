@@ -7,7 +7,9 @@ module.exports = function (app, engine) {
     app.post('/API/fsm/all', function (req, res) {
         co(function*(){
             let fsms = yield engine.getAllFsms();
-            res.json(fsms);
+            res.json({
+                fsms: fsms
+            });
         }).catch((err)=> {
             debug("Error: " + err);
             res.json({error: err});
@@ -38,7 +40,9 @@ module.exports = function (app, engine) {
                 res.json({error: "Missing the fsm id"});
             }
             let versions = yield engine.getFsmVersions(req.body.id);
-            res.json(versions);
+            res.json({
+                versions: versions
+            });
         }).then().catch((err) => {
             debug("Error: " + err);
             res.json({error: err});

@@ -4,7 +4,9 @@ module.exports = function (app, engine) {
     app.post('/API/version/all', function (req, res) {
         co(function*(){
             let versions = yield engine.getAllVersions();
-    	    res.json(versions);
+    	    res.json({
+                versions: versions
+            });
         }).catch((err)=> {
             debug("Error: " + err);
             res.json({error: err});
