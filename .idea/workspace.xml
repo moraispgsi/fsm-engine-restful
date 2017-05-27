@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="827bfd08-2f73-4cc5-b80a-0408a680842d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/API/instanceAPI.js" afterPath="$PROJECT_DIR$/API/instanceAPI.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -42,8 +41,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-119">
-              <caret line="29" column="160" lean-forward="false" selection-start-line="29" selection-start-column="160" selection-end-line="29" selection-end-column="160" />
+            <state relative-caret-position="170">
+              <caret line="33" column="47" lean-forward="false" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
               <folding>
                 <element signature="e#0#51#0" expanded="false" />
               </folding>
@@ -411,7 +410,7 @@
       <workItem from="1495157851150" duration="48094000" />
       <workItem from="1495328028937" duration="34190000" />
       <workItem from="1495729145180" duration="22272000" />
-      <workItem from="1495839336013" duration="10799000" />
+      <workItem from="1495839336013" duration="12973000" />
     </task>
     <task id="LOCAL-00001" summary="changeView ddm action simplified">
       <created>1495325119970</created>
@@ -588,11 +587,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495855653623</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="new host">
+      <created>1495857326802</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1495857326802</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="204283000" />
+    <option name="totallyTimeSpent" value="206457000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
@@ -660,7 +666,8 @@
     <MESSAGE value="fsm api" />
     <MESSAGE value="version api" />
     <MESSAGE value="instance api" />
-    <option name="LAST_COMMIT_MESSAGE" value="instance api" />
+    <MESSAGE value="new host" />
+    <option name="LAST_COMMIT_MESSAGE" value="new host" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -945,13 +952,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/fsm-engine/actions/actions.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/fsm-engine/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="31" column="45" lean-forward="true" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/fsm-engine/engine.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="113">
@@ -1085,10 +1085,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/fsm-engine/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="29" column="160" lean-forward="false" selection-start-line="29" selection-start-column="160" selection-end-line="29" selection-end-column="160" />
+        <state relative-caret-position="170">
+          <caret line="33" column="47" lean-forward="false" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
           <folding>
             <element signature="e#0#51#0" expanded="false" />
           </folding>
