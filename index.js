@@ -27,7 +27,7 @@ let co = require('co');
 let init = require("fsm-engine");
 
 co(function*(){
-    let engine = yield init('mysql', 'db4free.net', 'moraispgsi', '123456', 'fsmengine', {logging: false, port: 3307}, "http://localhost:2000");
+    let engine = yield init('mysql', 'db4free.net', 'moraispgsi', '123456', 'fsmengine', {logging: false, port: 3307}, "https://action-dispatcher.herokuapp.com/");
     let express = require('express');
     let app = express();
     let bodyParser = require('body-parser');
