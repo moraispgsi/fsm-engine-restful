@@ -2,70 +2,91 @@
  * Created by Ricardo Morais on 16/05/2017.
  */
 module.exports = function (app, engine) {
+    let debug = require("debug")("instance-api");
     let co = require("co");
     app.post('/API/instance/create', function (req, res) {
-        co(function*(){
-                if (typeof req.body.versionID !== "number") {
-                    res.json({error: "Missing the property versionID"});
-                    return;
-                }
-                let instance = yield engine.createInstance(req.body.versionID);
-                res.json({
-                    instanceID: instance.id,
-                });
+        co(function*() {
+            if (!req.body.id) {
+                debug("Error: " + "Missing the property id");
+                res.json({error: "Missing the property id"});
+                return;
+            }
+            let instance = yield engine.createInstance(req.body.id);
+            res.json({
+                instanceID: instance.id,
+            });
+        }).then().catch((err) => {
+            debug("Error: " + err);
+            res.json({error: err});
+        });
+    });
+    app.post('/API/instance/getVersion', function (req, res) {
+        co(function*() {
+            if (!req.body.id) {
+                debug("Error: " + "Missing the property id");
+                res.json({error: "Missing the property id"});
+                return;
+            }
+            let instance = yield engine.model.instance.findById(req.body.id);
+            res.json({
+                versionID: instance.dataValues.versionID,
+            });
         }).then().catch((err) => {
             debug("Error: " + err);
             res.json({error: err});
         });
     });
     app.post('/API/instance/start', function (req, res) {
-        co(function*(){
-                if(typeof req.body.instanceID !== 'number') {
-                    res.send("Missing property instanceID");
-                }
-                let instance = engine.getInstance(req.body.instanceID);
-                yield instance.start();
-                res.sendStatus(200);
+        co(function*() {
+            if (!req.body.id) {
+                debug("Error: " + "Missing the property id");
+                res.json({error: "Missing the property id"});
+                return;
+            }
+            let instance = engine.getInstance(req.body.instanceID);
+            yield instance.start();
+            res.sendStatus(200);
         }).then().catch((err) => {
             debug("Error: " + err);
             res.json({error: err});
         });
     });
     app.post('/API/instance/sendEvent', function (req, res) {
-        co(function*(){
-                if(typeof req.body.instanceID !== 'number') {
-                    res.send("Missing property instanceID");
-                }
-                let instance = engine.getInstance(req.body.instanceID);
-                yield instance.sendEvent(req.body.event, req.body.data);
-                res.sendStatus(200);
+        co(function*() {
+            if (!req.body.id) {
+                debug("Error: " + "Missing the property id");
+                res.send("Missing property instanceID");
+            }
+            let instance = engine.getInstance(req.body.instanceID);
+            yield instance.sendEvent(req.body.event, req.body.data);
+            res.sendStatus(200);
         }).then().catch((err) => {
             debug("Error: " + err);
             res.json({error: err});
         });
     });
     app.post('/API/instance/all', function (req, res) {
-        co(function*(){
-
-                res.sendStatus(200);
+        co(function*() {
+            //todo
+            res.sendStatus(500);
         }).then().catch((err) => {
             debug("Error: " + err);
             res.json({error: err});
         });
     });
     app.post('/API/instance/allRunning', function (req, res) {
-        co(function*(){
-
-            res.sendStatus(200);
+        co(function*() {
+            //todo
+            res.sendStatus(500);
         }).then().catch((err) => {
             debug("Error: " + err);
             res.json({error: err});
         });
     });
     app.post('/API/instance/allStopped', function (req, res) {
-        co(function*(){
-
-            res.sendStatus(200);
+        co(function*() {
+            //todo
+            res.sendStatus(500);
         }).then().catch((err) => {
             debug("Error: " + err);
             res.json({error: err});
@@ -73,10 +94,12 @@ module.exports = function (app, engine) {
     });
     app.post('/API/instance/snapshot', function (req, res) {
         try {
-            if(!req.body.instanceID) {
-                res.json({error: "instanceID missing"});
+            if (!req.body.id) {
+                debug("Error: " + "Missing the property id");
+                res.json({error: "Missing the property id"});
+                return;
             }
-            let instance = engine.getInstance(parseInt(req.body.instanceID));
+            let instance = engine.getInstance(parseInt(req.body.id));
             let sc = instance.getStateChart();
             let snapshot = sc.getSnapshot();
             let data = {
@@ -90,9 +113,10 @@ module.exports = function (app, engine) {
         }
     });
     app.post('/API/instance/revert', function (req, res) {
-        co(function*(){
+        co(function*() {
+            //todo
 
-            res.sendStatus(200);
+            res.sendStatus(500);
         }).then().catch((err) => {
             debug("Error: " + err);
             res.json({error: err});

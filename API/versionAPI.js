@@ -41,7 +41,7 @@ module.exports = function (app, engine) {
                 debug("Error: " + "Missing the property id");
                 res.json({error: "Missing the property id"});
             }
-            let instances = yield engine.getInstancesByFsmId(req.body.id);
+            let instances = yield engine.getInstancesByVersionId(req.body.id);
             res.json(instances);
         }).then().catch((err) => {
             debug("Error: " + err);
@@ -55,7 +55,7 @@ module.exports = function (app, engine) {
                 debug("Error: " + "Missing the property id");
                 res.json({error: "Missing the property id"});
             }
-            let instances = yield engine.getInstancesByFsmId(req.body.id);
+            let instances = yield engine.getInstancesByVersionId(req.body.id);
             instances = instances.filter((instance) => instance.hasStarted);
             res.json(instances);
         }).then().catch((err) => {
