@@ -16,12 +16,15 @@ API:
        ✔ /API/version/seal @done (17-05-27 00:28)
        ✔ /API/version/allInstances @done (17-05-27 03:48)
        ✔ /API/version/allRunningInstances @done (17-05-27 03:48)
+       ☐ /API/version/getById
     fsmAPI:
        ✔ /API/fsm/create @done (17-05-27 00:28)
        ✔ /API/fsm/allVersions @done (17-05-27 03:19)
        ✔ /API/fsm/latestVersion @done (17-05-27 03:19)
        ✔ /API/fsm/latestSealedVersion @done (17-05-27 03:19)
        ✔ /API/fsm/newVersion @done (17-05-27 03:19)
+       ☐ /API/fsm/getById
+       ☐ /API/fsm/getByName
     globalAPI:
        ✔ /api/global/sendEvent @done (17-05-27 0SS0:28)
        ☐ /api/global/turnSimulationOn

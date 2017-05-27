@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="827bfd08-2f73-4cc5-b80a-0408a680842d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/API/fsmAPI.js" afterPath="$PROJECT_DIR$/API/fsmAPI.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fsm-engine-restful.todo" afterPath="$PROJECT_DIR$/fsm-engine-restful.todo" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,24 +39,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="137">
+              <caret line="48" column="23" lean-forward="false" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
               <folding>
                 <element signature="e#0#51#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/fsm-engine/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="15" column="62" lean-forward="true" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -122,11 +113,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fsmAPI.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="fsmAPI.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/API/fsmAPI.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+            <state relative-caret-position="425">
+              <caret line="115" column="1" lean-forward="false" selection-start-line="115" selection-start-column="1" selection-end-line="115" selection-end-column="1" />
               <folding>
                 <element signature="e#0#51#0" expanded="false" />
                 <element signature="e#219#761#0" expanded="false" />
@@ -146,8 +137,6 @@
                 <element signature="e#1871#2193#0" expanded="false" />
                 <element signature="e#1945#2073#0" expanded="false" />
                 <element signature="e#2217#2300#0" expanded="false" />
-                <element signature="e#2367#2852#0" expanded="false" />
-                <element signature="e#2392#2737#0" expanded="false" />
                 <element signature="e#2457#2585#0" expanded="false" />
                 <element signature="e#2671#2725#0" expanded="false" />
                 <element signature="e#2761#2844#0" expanded="false" />
@@ -216,11 +205,11 @@
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/API/globalAPI.js" />
         <option value="$PROJECT_DIR$/fsm-engine-restful.todo" />
-        <option value="$PROJECT_DIR$/API/fsmAPI.js" />
         <option value="$PROJECT_DIR$/API/versionAPI.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/API/instanceAPI.js" />
         <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/API/fsmAPI.js" />
       </list>
     </option>
   </component>
@@ -420,7 +409,7 @@
       <workItem from="1495157851150" duration="48094000" />
       <workItem from="1495328028937" duration="34190000" />
       <workItem from="1495729145180" duration="22272000" />
-      <workItem from="1495839336013" duration="15201000" />
+      <workItem from="1495839336013" duration="16718000" />
     </task>
     <task id="LOCAL-00001" summary="changeView ddm action simplified">
       <created>1495325119970</created>
@@ -632,11 +621,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495900746539</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="env variables">
+      <created>1495901364839</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1495901364839</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="208685000" />
+    <option name="totallyTimeSpent" value="210202000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
@@ -1084,10 +1080,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="104" lean-forward="false" selection-start-line="19" selection-start-column="104" selection-end-line="19" selection-end-column="104" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/fsm-engine/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="15" column="62" lean-forward="true" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="48" column="23" lean-forward="false" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#51#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/API/fsmAPI.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+        <state relative-caret-position="425">
+          <caret line="115" column="1" lean-forward="false" selection-start-line="115" selection-start-column="1" selection-end-line="115" selection-end-column="1" />
           <folding>
             <element signature="e#0#51#0" expanded="false" />
             <element signature="e#219#761#0" expanded="false" />
@@ -1107,37 +1129,9 @@
             <element signature="e#1871#2193#0" expanded="false" />
             <element signature="e#1945#2073#0" expanded="false" />
             <element signature="e#2217#2300#0" expanded="false" />
-            <element signature="e#2367#2852#0" expanded="false" />
-            <element signature="e#2392#2737#0" expanded="false" />
             <element signature="e#2457#2585#0" expanded="false" />
             <element signature="e#2671#2725#0" expanded="false" />
             <element signature="e#2761#2844#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/fsm-engine/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="15" column="62" lean-forward="true" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="104" lean-forward="false" selection-start-line="19" selection-start-column="104" selection-end-line="19" selection-end-column="104" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#51#0" expanded="false" />
           </folding>
         </state>
       </provider>

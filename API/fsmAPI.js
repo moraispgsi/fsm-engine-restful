@@ -79,4 +79,38 @@ module.exports = function (app, engine) {
             res.json({error: err});
         });
     });
+    app.post('/API/fsm/getById', function (req, res) {
+        co(function*(){
+            try {
+                if (!req.body.id) {
+                    debug("Error: ", "Missing the fsm id");
+                    res.json({error: "Missing the fsm id"});
+                }
+                let fsm = yield engine.getFsmById(req.body.id);
+                res.json(fsm);
+            } catch(err) {
+                res.json({error: err});
+            }
+        }).then().catch((err) => {
+            debug("Error: " + err);
+            res.json({error: err});
+        });
+    });
+    app.post('/API/fsm/getByName', function (req, res) {
+        co(function*(){
+            try {
+                if (!req.body.name) {
+                    debug("Error: ", "Missing the fsm name");
+                    res.json({error: "Missing the fsm name"});
+                }
+                let fsm = yield engine.getFsmById(req.body.name);
+                res.json(fsm);
+            } catch(err) {
+                res.json({error: err});
+            }
+        }).catch((err)=> {
+            debug("Error: " + err);
+            res.json({error: err});
+        });
+    });
 };
