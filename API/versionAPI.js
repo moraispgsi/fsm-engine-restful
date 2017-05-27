@@ -14,7 +14,7 @@ module.exports = function (app, engine) {
                     res.json({error: "Missing the property scxml"});
                 }
 
-                yield engine.meta.action.setScxml(req.body.id, req.body.scxml);
+                yield engine.setScxml(req.body.id, req.body.scxml);
                 res.sendStatus(200);
             } catch(err) {
                 debug("Error: " + err);
