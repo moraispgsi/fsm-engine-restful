@@ -18,10 +18,10 @@ API:
        ☐ /API/version/allRunningInstances
     fsmAPI:
        ✔ /API/fsm/create @done (17-05-27 00:28)
-       ☐ /API/fsm/allVersions
-       ☐ /API/fsm/latestVersion
-       ☐ /API/fsm/latestSealedVersion
-       ☐ /API/fsm/newVersion
+       ✔ /API/fsm/allVersions @done (17-05-27 03:19)
+       ✔ /API/fsm/latestVersion @done (17-05-27 03:19)
+       ✔ /API/fsm/latestSealedVersion @done (17-05-27 03:19)
+       ✔ /API/fsm/newVersion @done (17-05-27 03:19)
     globalAPI:
        ✔ /api/global/sendEvent @done (17-05-27 00:28)
        ☐ /api/global/turnSimulationOn

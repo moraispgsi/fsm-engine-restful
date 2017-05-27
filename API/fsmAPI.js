@@ -70,11 +70,11 @@ module.exports = function (app, engine) {
     app.post('/API/fsm/newVersion', function (req, res) {
         co(function*(){
             try {
-                if (!req.body.versionID) {
-                    debug("Error: ", "Missing the property versionID");
-                    res.json({error: "Missing the property versionID"});
+                if (!req.body.id) {
+                    debug("Error: ", "Missing the fsm id");
+                    res.json({error: "Missing the fsm id"});
                 }
-                let version = yield engine.newVersion(req.body.versionID);
+                let version = yield engine.newVersion(req.body.id);
                 res.json({
                     versionID: version.id,
                 });
