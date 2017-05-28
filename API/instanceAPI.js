@@ -5,6 +5,20 @@ module.exports = function (app, engine) {
     let debug = require("debug")("instance-api");
     let co = require("co");
 
+    app.post('/API/instance/getById', function (req, res) {
+        co(function*() {
+            if (!req.body.id) {
+                debug("Error: " + "Missing the property id");
+                res.json({error: "Missing the property id"});
+                return;
+            }
+            let instance = yield engine.getInstanceById(req.body.id);
+            res.json(instance);
+        }).then().catch((err) => {
+            debug("Error: " + err);
+            res.json({error: err});
+        });
+    });
     //Creates an instance using the version id
     app.post('/API/instance/create', function (req, res) {
         co(function*() {
