@@ -1,6 +1,7 @@
 module.exports = function (app, engine) {
     let debug = require("debug")("version-api");
     let co = require("co");
+
     app.post('/API/version/all', function (req, res) {
         co(function*(){
             let versions = yield engine.getAllVersions();

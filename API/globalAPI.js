@@ -3,47 +3,51 @@
  */
 module.exports = function (app, engine) {
     let co = require("co");
+    let debug = require("debug")("global-api");
+
     app.post('/API/global/sendEvent', function (req, res) {
+        debug("POST: /API/global/sendEvent");
         co(function*() {
-            try {
-                yield engine.sendGlobalEvent(req.body.event, req.body.data);
-                res.sendStatus(200);
-            } catch (err) {
-                res.json({error: err});
-            }
-        }).then();
+            yield engine.sendGlobalEvent(req.body.event, req.body.data);
+            res.sendStatus(200);
+        }).catch((err)=>{
+            res.json({error: err});
+        });
     });
+
     app.post('/API/global/turnSimulationOn', function (req, res) {
+        debug("POST: /API/global/turnSimulationOn");
         co(function*(){
-            try {
-                //todo Method implementation
+    	    //todo Method implementation
 
-                res.sendStatus(200);
-            } catch(err) {
-                res.json({error: err});
-            }
-        }).then();
+    	    res.sendStatus(200);
+        }).catch((err)=> {
+            debug("Error: " + err);
+            res.json({error: err});
+        });
     });
+
     app.post('/API/global/turnSimulationOff', function (req, res) {
+        debug("POST: /API/global/turnSimulationOff");
         co(function*(){
-            try {
-                //todo Method implementation
+    	    //todo Method implementation
 
-                res.sendStatus(200);
-            } catch(err) {
-                res.json({error: err});
-            }
-        }).then();
+    	    res.sendStatus(200);
+        }).catch((err)=> {
+            debug("Error: " + err);
+            res.json({error: err});
+        });
     });
-    app.post('/API/global/setSimulationDate', function (req, res) {
-        co(function*(){
-            try {
-                //todo Method implementation
 
-                res.sendStatus(200);
-            } catch(err) {
-                res.json({error: err});
-            }
-        }).then();
+    app.post('/API/global/setSimulationDate', function (req, res) {
+        debug("POST: /API/global/setSimulationDate");
+        co(function*(){
+    	    //todo Method implementation
+
+    	    res.sendStatus(200);
+        }).catch((err)=> {
+            debug("Error: " + err);
+            res.json({error: err});
+        });
     });
 };

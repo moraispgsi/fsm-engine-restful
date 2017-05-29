@@ -5,6 +5,7 @@ module.exports = function (app, engine) {
     let debug = require("debug")("fsm-api");
     let co = require("co");
     app.post('/API/fsm/all', function (req, res) {
+        debug("POST: /API/fsm/all");
         co(function*(){
             let fsms = yield engine.getAllFsms();
             res.json({
@@ -16,8 +17,8 @@ module.exports = function (app, engine) {
         });
     });
     app.post('/API/fsm/create', function (req, res) {
+        debug("POST: /API/fsm/create");
         co(function*() {
-            debug("create");
             if (!req.body.name) {
                 debug("Error: ", "missing the name for the fsm");
                 res.json({error: "missing the name for the fsm"});
@@ -33,8 +34,8 @@ module.exports = function (app, engine) {
         });
     });
     app.post('/API/fsm/allVersions', function (req, res) {
+        debug("POST: /API/fsm/allVersions");
         co(function*() {
-            debug("allVersions");
             if (!req.body.id) {
                 debug("Error: ", "Missing the fsm id");
                 res.json({error: "Missing the fsm id"});
@@ -49,8 +50,8 @@ module.exports = function (app, engine) {
         });
     });
     app.post('/API/fsm/latestVersion', function (req, res) {
+        debug("POST: /API/fsm/latestVersion");
         co(function*() {
-            debug("latestVersion");
             if (!req.body.id) {
                 debug("Error: ", "Missing the fsm id");
                 res.json({error: "Missing the fsm id"});
@@ -63,8 +64,8 @@ module.exports = function (app, engine) {
         });
     });
     app.post('/API/fsm/latestSealedVersion', function (req, res) {
+        debug("POST: /API/fsm/latestSealedVersion");
         co(function*() {
-            debug("latestSealedVersion");
             if (!req.body.id) {
                 debug("Error: ", "Missing the fsm id");
                 res.json({error: "Missing the fsm id"});
@@ -77,8 +78,8 @@ module.exports = function (app, engine) {
         });
     });
     app.post('/API/fsm/newVersion', function (req, res) {
+        debug("POST: /API/fsm/newVersion");
         co(function*() {
-            debug("newVersion");
             if (!req.body.id) {
                 debug("Error: ", "Missing the fsm id");
                 res.json({error: "Missing the fsm id"});
@@ -93,34 +94,28 @@ module.exports = function (app, engine) {
         });
     });
     app.post('/API/fsm/getById', function (req, res) {
+        debug("POST: /API/fsm/getById");
         co(function*(){
-            try {
-                if (!req.body.id) {
-                    debug("Error: ", "Missing the fsm id");
-                    res.json({error: "Missing the fsm id"});
-                }
-                let fsm = yield engine.getFsmById(req.body.id);
-                res.json(fsm);
-            } catch(err) {
-                res.json({error: err});
+            if (!req.body.id) {
+                debug("Error: ", "Missing the fsm id");
+                res.json({error: "Missing the fsm id"});
             }
+            let fsm = yield engine.getFsmById(req.body.id);
+            res.json(fsm);
         }).then().catch((err) => {
             debug("Error: " + err);
             res.json({error: err});
         });
     });
     app.post('/API/fsm/getByName', function (req, res) {
+        debug("POST: /API/fsm/getByName");
         co(function*(){
-            try {
-                if (!req.body.name) {
-                    debug("Error: ", "Missing the fsm name");
-                    res.json({error: "Missing the fsm name"});
-                }
-                let fsm = yield engine.getFsmById(req.body.name);
-                res.json(fsm);
-            } catch(err) {
-                res.json({error: err});
+            if (!req.body.name) {
+                debug("Error: ", "Missing the fsm name");
+                res.json({error: "Missing the fsm name"});
             }
+            let fsm = yield engine.getFsmById(req.body.name);
+            res.json(fsm);
         }).catch((err)=> {
             debug("Error: " + err);
             res.json({error: err});

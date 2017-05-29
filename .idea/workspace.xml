@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="827bfd08-2f73-4cc5-b80a-0408a680842d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/API/fsmAPI.js" afterPath="$PROJECT_DIR$/API/fsmAPI.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/API/globalAPI.js" afterPath="$PROJECT_DIR$/API/globalAPI.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/API/versionAPI.js" afterPath="$PROJECT_DIR$/API/versionAPI.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,11 +20,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="19" column="104" lean-forward="false" selection-start-line="19" selection-start-column="104" selection-end-line="19" selection-end-column="104" />
+            <state relative-caret-position="102">
+              <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -31,7 +33,7 @@
       <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="77">
               <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
               <folding />
             </state>
@@ -41,7 +43,7 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
+            <state relative-caret-position="66">
               <caret line="48" column="22" lean-forward="false" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
               <folding>
                 <element signature="e#0#51#0" expanded="false" />
@@ -72,58 +74,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fsmAPI.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/API/fsmAPI.js">
+      <file leaf-file-name="globalAPI.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/API/globalAPI.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="34" column="57" lean-forward="false" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
-              <folding>
-                <element signature="e#0#51#0" expanded="false" />
-                <element signature="e#216#474#0" expanded="false" />
-                <element signature="e#529#1071#0" expanded="false" />
-                <element signature="e#617#765#0" expanded="false" />
-                <element signature="e#849#944#0" expanded="false" />
-                <element signature="e#980#1063#0" expanded="false" />
-                <element signature="e#1131#1618#0" expanded="false" />
-                <element signature="e#1222#1350#0" expanded="false" />
-                <element signature="e#1680#2130#0" expanded="false" />
-                <element signature="e#1705#2015#0" expanded="false" />
-                <element signature="e#1773#1901#0" expanded="false" />
-                <element signature="e#2039#2122#0" expanded="false" />
-                <element signature="e#2198#2660#0" expanded="false" />
-                <element signature="e#2223#2545#0" expanded="false" />
-                <element signature="e#2297#2425#0" expanded="false" />
-                <element signature="e#2569#2652#0" expanded="false" />
-                <element signature="e#2719#3204#0" expanded="false" />
-                <element signature="e#3113#3196#0" expanded="false" />
-                <element signature="e#3260#3779#0" expanded="false" />
-                <element signature="e#3284#3664#0" expanded="false" />
-                <element signature="e#3302#3587#0" expanded="false" />
-                <element signature="e#3338#3478#0" expanded="false" />
-                <element signature="e#3599#3654#0" expanded="false" />
-                <element signature="e#3688#3771#0" expanded="false" />
-                <element signature="e#3837#4356#0" expanded="false" />
-                <element signature="e#3861#4249#0" expanded="false" />
-                <element signature="e#3879#4172#0" expanded="false" />
-                <element signature="e#3917#4061#0" expanded="false" />
-                <element signature="e#4184#4239#0" expanded="false" />
-                <element signature="e#4265#4348#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="versionAPI.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="fsmAPI.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/API/fsmAPI.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="versionAPI.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/API/versionAPI.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="51">
+              <caret line="3" column="3" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
               <folding>
-                <element signature="e#172#443#0" expanded="false" />
-                <element signature="e#503#1037#0" expanded="false" />
-                <element signature="e#1098#1727#0" expanded="false" />
-                <element signature="e#1784#2209#0" expanded="false" />
-                <element signature="e#2814#3366#0" expanded="false" />
+                <element signature="e#177#448#0" expanded="false" />
+                <element signature="e#508#1042#0" expanded="false" />
+                <element signature="e#1103#1732#0" expanded="false" />
+                <element signature="e#1789#2214#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -186,14 +166,14 @@
         <option value="$PROJECT_DIR$/node_modules/fsm-engine/actions/actions.js" />
         <option value="$PROJECT_DIR$/API/backofficeAPI.js" />
         <option value="$PROJECT_DIR$/.travis.yml" />
-        <option value="$PROJECT_DIR$/API/globalAPI.js" />
         <option value="$PROJECT_DIR$/fsm-engine-restful.todo" />
-        <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/node_modules/fsm-core/index.js" />
-        <option value="$PROJECT_DIR$/API/versionAPI.js" />
-        <option value="$PROJECT_DIR$/API/fsmAPI.js" />
         <option value="$PROJECT_DIR$/API/instanceAPI.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/API/fsmAPI.js" />
+        <option value="$PROJECT_DIR$/API/globalAPI.js" />
+        <option value="$PROJECT_DIR$/API/versionAPI.js" />
       </list>
     </option>
   </component>
@@ -393,7 +373,7 @@
       <workItem from="1495157851150" duration="48094000" />
       <workItem from="1495328028937" duration="34190000" />
       <workItem from="1495729145180" duration="22272000" />
-      <workItem from="1495839336013" duration="31184000" />
+      <workItem from="1495839336013" duration="37880000" />
     </task>
     <task id="LOCAL-00001" summary="changeView ddm action simplified">
       <created>1495325119970</created>
@@ -675,11 +655,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495929844281</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="updating fsm-engine version">
+      <created>1495930656280</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1495930656280</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="224668000" />
+    <option name="totallyTimeSpent" value="231364000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
@@ -1058,14 +1045,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/fsm-engine/model.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
@@ -1082,20 +1061,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/API/globalAPI.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#51#0" expanded="false" />
-            <element signature="e#180#445#0" expanded="false" />
-            <element signature="e#513#745#0" expanded="false" />
-            <element signature="e#814#1046#0" expanded="false" />
-            <element signature="e#1115#1347#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fsm-engine-restful.todo">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -1109,69 +1074,6 @@
         <state relative-caret-position="-6326">
           <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="48" column="22" lean-forward="false" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#51#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API/fsmAPI.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="34" column="57" lean-forward="false" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#51#0" expanded="false" />
-            <element signature="e#216#474#0" expanded="false" />
-            <element signature="e#529#1071#0" expanded="false" />
-            <element signature="e#617#765#0" expanded="false" />
-            <element signature="e#849#944#0" expanded="false" />
-            <element signature="e#980#1063#0" expanded="false" />
-            <element signature="e#1131#1618#0" expanded="false" />
-            <element signature="e#1222#1350#0" expanded="false" />
-            <element signature="e#1680#2130#0" expanded="false" />
-            <element signature="e#1705#2015#0" expanded="false" />
-            <element signature="e#1773#1901#0" expanded="false" />
-            <element signature="e#2039#2122#0" expanded="false" />
-            <element signature="e#2198#2660#0" expanded="false" />
-            <element signature="e#2223#2545#0" expanded="false" />
-            <element signature="e#2297#2425#0" expanded="false" />
-            <element signature="e#2569#2652#0" expanded="false" />
-            <element signature="e#2719#3204#0" expanded="false" />
-            <element signature="e#3113#3196#0" expanded="false" />
-            <element signature="e#3260#3779#0" expanded="false" />
-            <element signature="e#3284#3664#0" expanded="false" />
-            <element signature="e#3302#3587#0" expanded="false" />
-            <element signature="e#3338#3478#0" expanded="false" />
-            <element signature="e#3599#3654#0" expanded="false" />
-            <element signature="e#3688#3771#0" expanded="false" />
-            <element signature="e#3837#4356#0" expanded="false" />
-            <element signature="e#3861#4249#0" expanded="false" />
-            <element signature="e#3879#4172#0" expanded="false" />
-            <element signature="e#3917#4061#0" expanded="false" />
-            <element signature="e#4184#4239#0" expanded="false" />
-            <element signature="e#4265#4348#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API/versionAPI.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#172#443#0" expanded="false" />
-            <element signature="e#503#1037#0" expanded="false" />
-            <element signature="e#1098#1727#0" expanded="false" />
-            <element signature="e#1784#2209#0" expanded="false" />
-            <element signature="e#2814#3366#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1195,11 +1097,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="19" column="104" lean-forward="false" selection-start-line="19" selection-start-column="104" selection-end-line="19" selection-end-column="104" />
+        <state relative-caret-position="102">
+          <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="48" column="22" lean-forward="false" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#51#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API/globalAPI.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API/fsmAPI.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API/versionAPI.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="3" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+          <folding>
+            <element signature="e#177#448#0" expanded="false" />
+            <element signature="e#508#1042#0" expanded="false" />
+            <element signature="e#1103#1732#0" expanded="false" />
+            <element signature="e#1789#2214#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
