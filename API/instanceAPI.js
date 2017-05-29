@@ -83,8 +83,10 @@ module.exports = function (app, engine) {
     });
     app.post('/API/instance/all', function (req, res) {
         co(function*() {
-            //todo
-            res.sendStatus(500);
+            let instances = yield engine.getAllInstances();
+            res.json({
+                instances: instances
+            });
         }).then().catch((err) => {
             debug("Error: " + err);
             res.json({error: err});
