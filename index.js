@@ -52,7 +52,7 @@ co(function*(){
     require("./API/globalAPI")(app, engine);
 
     //Start the server
-    let server = app.listen(process.env.PORT || 8081, '0.0.0.0', function () {
+    let server = app.listen(process.env.PORT || 8081, process.env.HOST || '0.0.0.0', function () {
         let host = server.address().address;
         let port = server.address().port;
         console.log("listening at http://%s:%s", host, port)
