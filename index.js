@@ -44,7 +44,12 @@ co(function*(){
         extended: true
     }));
     // app.use(express.static('public'));
-
+    app.all('*', function(req, res, next) {
+        res.header('Access-Control-Allow-Origin', '*');
+        res.header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS');
+        res.header('Access-Control-Allow-Headers', 'Content-Type');
+        next();
+    });
     //API
     require("./API/fsmAPI")(app, engine);
     require("./API/versionAPI")(app, engine);
