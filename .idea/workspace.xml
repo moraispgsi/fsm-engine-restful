@@ -2,113 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="827bfd08-2f73-4cc5-b80a-0408a680842d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/img/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidoc.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/api_data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/api_data.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/api_project.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/api_project.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/de.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/es.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/fr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/it.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/locale.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/nl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/pl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/pt_br.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/ro.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/ru.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/tr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/vi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/zh.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/zh_cn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/utils/handlebars_helper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/utils/send_sample_request.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/diff_match_patch.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/handlebars.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/list.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/lodash.custom.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/path-to-regexp/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/path-to-regexp/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/polyfill.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-Splus.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-aea.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-agc.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-apollo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-basic.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-cbm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-cl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-clj.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-css.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-dart.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-el.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-erl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-erlang.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-fs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-go.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-hs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-lasso.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-lassoscript.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-latex.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-lgt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-lisp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-ll.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-llvm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-logtalk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-ls.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-lsp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-lua.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-matlab.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-ml.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-mumps.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-n.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-nemerle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-pascal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-proto.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-r.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-rd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-rkt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-rust.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-s.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-scala.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-scm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-sql.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-ss.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-swift.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-tcl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-tex.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-vb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-vbs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-vhd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-vhdl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-wiki.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-xq.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-xquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-yaml.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-yml.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/prettify.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/prettify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/run_prettify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/require.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/semver.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/webfontloader.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/API/fsmAPI.js" afterPath="$PROJECT_DIR$/API/fsmAPI.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/API/instanceAPI.js" afterPath="$PROJECT_DIR$/API/instanceAPI.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/API/versionAPI.js" afterPath="$PROJECT_DIR$/API/versionAPI.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -530,14 +424,7 @@
       <workItem from="1496465252010" duration="161000" />
       <workItem from="1496465439526" duration="1063000" />
       <workItem from="1496473306568" duration="1203000" />
-      <workItem from="1496722662372" duration="13592000" />
-    </task>
-    <task id="LOCAL-00007" summary="git@github.com:moraispgsi/fsm-engine.git">
-      <created>1495775132205</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1495775132205</updated>
+      <workItem from="1496722662372" duration="13757000" />
     </task>
     <task id="LOCAL-00008" summary="tests">
       <created>1495775492263</created>
@@ -875,11 +762,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496369082168</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="api doc">
+      <created>1496801756233</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1496801756235</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="273452000" />
+    <option name="totallyTimeSpent" value="273617000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -940,7 +834,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="repo" />
     <MESSAGE value="replace github commit" />
     <MESSAGE value="travis.yml" />
     <MESSAGE value="database info" />
@@ -965,7 +858,8 @@
     <MESSAGE value="patch" />
     <MESSAGE value="update fsm-engine" />
     <MESSAGE value="cors" />
-    <option name="LAST_COMMIT_MESSAGE" value="cors" />
+    <MESSAGE value="api doc" />
+    <option name="LAST_COMMIT_MESSAGE" value="api doc" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
