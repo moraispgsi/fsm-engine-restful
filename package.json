@@ -17,9 +17,10 @@
     "debug": "^2.6.8",
     "ejs": "^2.5.6",
     "express": "^4.15.2",
-    "fsm-engine": "https://github.com/moraispgsi/fsm-engine.git#3b1918f0474a0fb851ebbc593251bbf930d13ca9",
+    "fsm-engine": "https://github.com/moraispgsi/fsm-engine.git#50195bed161332c38464f3944ed7ad633cceccaf",
     "json": "^9.0.6",
     "jsonfile": "^3.0.0",
+    "kue": "^0.11.6",
     "mysql": "^2.13.0"
   },
   "repository": {
