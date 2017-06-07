@@ -2,8 +2,113 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="827bfd08-2f73-4cc5-b80a-0408a680842d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/img/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidoc.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/api_data.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/api_data.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/api_project.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/api_project.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/locale.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/pt_br.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/vi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/zh.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/zh_cn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/utils/handlebars_helper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/utils/send_sample_request.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/diff_match_patch.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/handlebars.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/list.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/lodash.custom.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/path-to-regexp/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/path-to-regexp/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/polyfill.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-Splus.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-aea.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-agc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-apollo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-basic.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-cbm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-cl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-clj.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-css.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-dart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-erl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-erlang.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-fs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-go.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-hs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-lasso.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-lassoscript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-latex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-lgt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-lisp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-ll.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-llvm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-logtalk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-ls.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-lsp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-lua.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-matlab.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-ml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-mumps.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-n.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-nemerle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-pascal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-proto.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-r.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-rd.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-rkt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-rust.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-s.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-scala.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-scm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-sql.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-ss.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-swift.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-tcl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-tex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-vb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-vbs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-vhd.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-vhdl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-wiki.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-xq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-xquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-yaml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-yml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/prettify.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/prettify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/run_prettify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/require.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/semver.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/webfontloader.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/API/fsmAPI.js" afterPath="$PROJECT_DIR$/API/fsmAPI.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/API/instanceAPI.js" afterPath="$PROJECT_DIR$/API/instanceAPI.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/API/versionAPI.js" afterPath="$PROJECT_DIR$/API/versionAPI.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,12 +121,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="fsm-engine-restful" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="0">
               <caret line="19" column="104" lean-forward="false" selection-start-line="19" selection-start-column="104" selection-end-line="19" selection-end-column="104" />
               <folding />
             </state>
@@ -31,21 +139,19 @@
       <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
+            <state relative-caret-position="272">
               <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="50" column="4" lean-forward="false" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
-              <folding>
-                <element signature="e#0#51#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="56" column="24" lean-forward="false" selection-start-line="56" selection-start-column="24" selection-end-line="56" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -53,30 +159,18 @@
       <file leaf-file-name="instanceAPI.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/API/instanceAPI.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="55">
-              <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#51#0" expanded="false" />
-                <element signature="e#231#678#0" expanded="false" />
-                <element signature="e#785#1279#0" expanded="false" />
-                <element signature="e#1343#1863#0" expanded="false" />
-                <element signature="e#1922#2396#0" expanded="false" />
-                <element signature="e#2459#2937#0" expanded="false" />
-                <element signature="e#2994#3281#0" expanded="false" />
-                <element signature="e#3345#3548#0" expanded="false" />
-                <element signature="e#3612#3815#0" expanded="false" />
-                <element signature="e#3877#4508#0" expanded="false" />
-                <element signature="e#4568#4772#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="119">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="globalAPI.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/API/globalAPI.js">
+      <file leaf-file-name="apidoc.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apidoc.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+              <caret line="5" column="52" lean-forward="false" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -85,22 +179,42 @@
       <file leaf-file-name="fsmAPI.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/API/fsmAPI.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+            <state relative-caret-position="255">
+              <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="versionAPI.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="versionAPI.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/API/versionAPI.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="64" column="31" lean-forward="false" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
+            <state relative-caret-position="1084">
+              <caret line="191" column="17" lean-forward="false" selection-start-line="191" selection-start-column="17" selection-end-line="191" selection-end-column="17" />
               <folding>
-                <element signature="e#305#576#0" expanded="false" />
-                <element signature="e#1231#1860#0" expanded="false" />
-                <element signature="e#2947#3499#0" expanded="false" />
+                <element signature="e#170#249#0" expanded="false" />
+                <element signature="e#1093#1176#0" expanded="false" />
+                <element signature="e#1967#2501#0" expanded="false" />
+                <element signature="e#1991#2394#0" expanded="false" />
+                <element signature="e#2009#2317#0" expanded="false" />
+                <element signature="e#2045#2196#0" expanded="false" />
+                <element signature="e#2329#2384#0" expanded="false" />
+                <element signature="e#2410#2493#0" expanded="false" />
+                <element signature="e#3146#3285#0" expanded="false" />
+                <element signature="e#3319#3464#0" expanded="false" />
+                <element signature="e#3596#3679#0" expanded="false" />
+                <element signature="e#4146#4571#0" expanded="false" />
+                <element signature="e#4171#4456#0" expanded="false" />
+                <element signature="e#4230#4369#0" expanded="false" />
+                <element signature="e#4480#4563#0" expanded="false" />
+                <element signature="e#5642#6110#0" expanded="false" />
+                <element signature="e#5667#5995#0" expanded="false" />
+                <element signature="e#5734#5873#0" expanded="false" />
+                <element signature="e#6019#6102#0" expanded="false" />
+                <element signature="e#7202#7754#0" expanded="false" />
+                <element signature="e#7227#7639#0" expanded="false" />
+                <element signature="e#7301#7440#0" expanded="false" />
+                <element signature="e#7663#7746#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -165,13 +279,14 @@
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/fsm-engine-restful.todo" />
         <option value="$PROJECT_DIR$/node_modules/fsm-core/index.js" />
-        <option value="$PROJECT_DIR$/API/fsmAPI.js" />
         <option value="$PROJECT_DIR$/API/globalAPI.js" />
         <option value="$PROJECT_DIR$/../../FSM Engine/fsm-engine/model.js" />
-        <option value="$PROJECT_DIR$/API/instanceAPI.js" />
-        <option value="$PROJECT_DIR$/API/versionAPI.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/apidoc.json" />
+        <option value="$PROJECT_DIR$/API/instanceAPI.js" />
+        <option value="$PROJECT_DIR$/API/fsmAPI.js" />
+        <option value="$PROJECT_DIR$/API/versionAPI.js" />
       </list>
     </option>
   </component>
@@ -191,9 +306,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="width" value="1378" />
-    <option name="height" value="735" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -247,7 +363,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="com.maddyhome.idea.vim.ui.VimEmulationConfigurable" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
@@ -409,14 +525,12 @@
       <workItem from="1495839336013" duration="47311000" />
       <workItem from="1496115967247" duration="9000" />
       <workItem from="1496244258127" duration="5509000" />
-      <workItem from="1496312486229" duration="8721000" />
-    </task>
-    <task id="LOCAL-00006" summary="repo in package.json">
-      <created>1495774084485</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1495774084485</updated>
+      <workItem from="1496312486229" duration="10516000" />
+      <workItem from="1496464291569" duration="604000" />
+      <workItem from="1496465252010" duration="161000" />
+      <workItem from="1496465439526" duration="1063000" />
+      <workItem from="1496473306568" duration="1203000" />
+      <workItem from="1496722662372" duration="13592000" />
     </task>
     <task id="LOCAL-00007" summary="git@github.com:moraispgsi/fsm-engine.git">
       <created>1495775132205</created>
@@ -754,23 +868,38 @@
       <option name="project" value="LOCAL" />
       <updated>1496365633360</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="cors">
+      <created>1496369082168</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1496369082168</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="255034000" />
+    <option name="totallyTimeSpent" value="273452000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1378" height="735" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22462687" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20833333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25128207" sideWeight="0.5029762" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26153848" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22735043" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3263889" sideWeight="0.49702382" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32478634" sideWeight="0.49702382" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -811,7 +940,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="tests" />
     <MESSAGE value="repo" />
     <MESSAGE value="replace github commit" />
     <MESSAGE value="travis.yml" />
@@ -836,25 +964,16 @@
     <MESSAGE value="fsm-engine update" />
     <MESSAGE value="patch" />
     <MESSAGE value="update fsm-engine" />
-    <option name="LAST_COMMIT_MESSAGE" value="update fsm-engine" />
+    <MESSAGE value="cors" />
+    <option name="LAST_COMMIT_MESSAGE" value="cors" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="120" column="52" lean-forward="false" selection-start-line="120" selection-start-column="52" selection-end-line="120" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#51#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -867,9 +986,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="199" column="66" lean-forward="false" selection-start-line="199" selection-start-column="66" selection-end-line="199" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#51#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -885,9 +1002,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="139" column="0" lean-forward="true" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#51#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -903,9 +1018,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="36" column="34" lean-forward="false" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#51#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -921,9 +1034,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#51#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -939,9 +1050,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
           <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#51#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -964,9 +1073,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1581">
           <caret line="95" column="7" lean-forward="false" selection-start-line="95" selection-start-column="7" selection-end-line="95" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#51#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -982,9 +1089,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#51#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1035,22 +1140,8 @@
     <entry file="file://$PROJECT_DIR$/public/statemachines.ejs" />
     <entry file="file://$PROJECT_DIR$/public/statemachine.ejs" />
     <entry file="file://$PROJECT_DIR$/node_modules/fsm-engine/actions/actions.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/fsm-engine/engine.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="182" column="17" lean-forward="false" selection-start-line="182" selection-start-column="17" selection-end-line="182" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/API/backofficeAPI.js" />
     <entry file="file://$PROJECT_DIR$/API/deadlineSimulationAPI.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/fsm-engine/model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="72" column="5" lean-forward="false" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/fsm-engine/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="86">
@@ -1070,7 +1161,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="64" column="16" lean-forward="false" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1078,7 +1168,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="160" column="0" lean-forward="false" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1093,35 +1182,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="470" column="57" lean-forward="false" selection-start-line="470" selection-start-column="57" selection-end-line="470" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
+        <state relative-caret-position="272">
           <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/API/instanceAPI.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#51#0" expanded="false" />
-            <element signature="e#231#678#0" expanded="false" />
-            <element signature="e#785#1279#0" expanded="false" />
-            <element signature="e#1343#1863#0" expanded="false" />
-            <element signature="e#1922#2396#0" expanded="false" />
-            <element signature="e#2459#2937#0" expanded="false" />
-            <element signature="e#2994#3281#0" expanded="false" />
-            <element signature="e#3345#3548#0" expanded="false" />
-            <element signature="e#3612#3815#0" expanded="false" />
-            <element signature="e#3877#4508#0" expanded="false" />
-            <element signature="e#4568#4772#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="19" column="104" lean-forward="false" selection-start-line="19" selection-start-column="104" selection-end-line="19" selection-end-column="104" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1133,40 +1209,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="56" column="24" lean-forward="false" selection-start-line="56" selection-start-column="24" selection-end-line="56" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/fsm-engine/model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="115" column="4" lean-forward="false" selection-start-line="115" selection-start-column="4" selection-end-line="115" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/fsm-engine/engine.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="131" column="31" lean-forward="false" selection-start-line="131" selection-start-column="31" selection-end-line="131" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apidoc.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="52" lean-forward="false" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API/instanceAPI.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/API/fsmAPI.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        <state relative-caret-position="255">
+          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/API/versionAPI.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="64" column="31" lean-forward="false" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
+        <state relative-caret-position="1084">
+          <caret line="191" column="17" lean-forward="false" selection-start-line="191" selection-start-column="17" selection-end-line="191" selection-end-column="17" />
           <folding>
-            <element signature="e#305#576#0" expanded="false" />
-            <element signature="e#1231#1860#0" expanded="false" />
-            <element signature="e#2947#3499#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="19" column="104" lean-forward="false" selection-start-line="19" selection-start-column="104" selection-end-line="19" selection-end-column="104" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="50" column="4" lean-forward="false" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#51#0" expanded="false" />
+            <element signature="e#170#249#0" expanded="false" />
+            <element signature="e#1093#1176#0" expanded="false" />
+            <element signature="e#1967#2501#0" expanded="false" />
+            <element signature="e#1991#2394#0" expanded="false" />
+            <element signature="e#2009#2317#0" expanded="false" />
+            <element signature="e#2045#2196#0" expanded="false" />
+            <element signature="e#2329#2384#0" expanded="false" />
+            <element signature="e#2410#2493#0" expanded="false" />
+            <element signature="e#3146#3285#0" expanded="false" />
+            <element signature="e#3319#3464#0" expanded="false" />
+            <element signature="e#3596#3679#0" expanded="false" />
+            <element signature="e#4146#4571#0" expanded="false" />
+            <element signature="e#4171#4456#0" expanded="false" />
+            <element signature="e#4230#4369#0" expanded="false" />
+            <element signature="e#4480#4563#0" expanded="false" />
+            <element signature="e#5642#6110#0" expanded="false" />
+            <element signature="e#5667#5995#0" expanded="false" />
+            <element signature="e#5734#5873#0" expanded="false" />
+            <element signature="e#6019#6102#0" expanded="false" />
+            <element signature="e#7202#7754#0" expanded="false" />
+            <element signature="e#7227#7639#0" expanded="false" />
+            <element signature="e#7301#7440#0" expanded="false" />
+            <element signature="e#7663#7746#0" expanded="false" />
           </folding>
         </state>
       </provider>

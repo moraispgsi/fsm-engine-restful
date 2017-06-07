@@ -1,0 +1,11 @@
+{
+  "name": "fsm-engine-restful",
+  "version": "0.1.0",
+  "description": "apiDoc for fsm-engine-restful",
+  "title": "fsm-engine-resful API",
+  "url" : "https://fsm-engine-restful.herokuapp.com/",
+  "template": {
+    "withCompare": true,
+    "withGenerator": true
+  }
+}

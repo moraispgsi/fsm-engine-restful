@@ -5,6 +5,28 @@ module.exports = function (app, engine) {
         console.error(err);
         console.log("Node NOT Exiting...");
     });
+
+    /**
+     * @api {post} /API/version/all Gets all existing versions
+     * @apiGroup Version
+     * @apiSuccess {Object} data
+     * @apiSuccessExample {json} Success
+     *    HTTP/1.1 200 OK
+     *    [
+     *      {
+     *         "id": 1,
+     *         "fsmID": 1,
+     *         "parentVersionID": 1,
+     *         "updated_at": "2016-02-10T15:46:51.778Z",
+     *         "created_at": "2016-02-10T15:46:51.778Z"
+     *      }
+     *    ]
+     * @apiErrorExample {json} List error
+     *    HTTP/1.1 500 Internal Server Error
+     *    {
+     *      "Message": "error message"
+     *    }
+     */
     app.post('/API/version/all', function (req, res) {
         co(function*(){
             let versions = yield engine.getAllVersions();
@@ -16,6 +38,31 @@ module.exports = function (app, engine) {
             res.json({error: err});
         });
     });
+
+    /**
+     * @api {post} /API/version/getById Gets a version by its id
+     * @apiGroup Version
+     * @apiSuccess {Object} data
+     * @apiSuccess {Number} data.id
+     * @apiSuccessExample {json} Success
+     *    HTTP/1.1 200 OK
+     *    [
+     *      {
+     *         "id": 1,
+     *         "fsmID": 1,
+     *         "isSealed": false,
+     *         "scmxl": "<scxml></scxml>",
+     *         "parentVersionID": 1,
+     *         "updated_at": "2016-02-10T15:46:51.778Z",
+     *         "created_at": "2016-02-10T15:46:51.778Z"
+     *      }
+     *    ]
+     * @apiErrorExample {json} List error
+     *    HTTP/1.1 500 Internal Server Error
+     *    {
+     *      "Message": "error message"
+     *    }
+     */
     app.post('/API/version/getById', function (req, res) {
         co(function*(){
             try {
@@ -33,6 +80,21 @@ module.exports = function (app, engine) {
             res.json({error: err});
         });
     });
+
+    /**
+     * @api {post} /API/version/setSCXML Set the SCXML of a version
+     * @apiGroup Version
+     * @apiSuccess {Object} data
+     * @apiSuccess {Number} data.id The id of the version
+     * @apiSuccess {Number} data.scmxl The SCXML markup to set to the version
+     * @apiSuccessExample {json} Success
+     *    HTTP/1.1 200 OK
+     * @apiErrorExample {json} List error
+     *    HTTP/1.1 500 Internal Server Error
+     *    {
+     *      "Message": "error message"
+     *    }
+     */
     app.post('/API/version/setSCXML', function (req, res) {
         co(function*() {
             debug("setSCXML");
@@ -52,6 +114,19 @@ module.exports = function (app, engine) {
             res.json({error: err});
         });
     });
+    /**
+     * @api {post} /API/version/seal Seals a version
+     * @apiGroup Version
+     * @apiSuccess {Object} data
+     * @apiSuccess {Number} data.id The id of the version
+     * @apiSuccessExample {json} Success
+     *    HTTP/1.1 200 OK
+     * @apiErrorExample {json} List error
+     *    HTTP/1.1 500 Internal Server Error
+     *    {
+     *      "Message": "error message"
+     *    }
+     */
     app.post('/API/version/seal', function (req, res) {
         co(function*() {
             debug("seal");
@@ -66,6 +141,37 @@ module.exports = function (app, engine) {
             res.json({error: err});
         });
     });
+
+    /**
+     * @api {post} /API/version/allInstances Gets all the instances of a version of a state machine
+     * @apiGroup Version
+     * @apiSuccess {Object} data
+     * @apiSuccess {Number} data.id The id of the version
+     * @apiSuccessExample {json} Success
+     *    HTTP/1.1 200 OK
+     *    [
+     *      {
+     *          "id": 1,
+     *          "versionID": 1,
+     *          "hasStarted": false,
+     *          "hasEnded": false,
+     *          "updated_at": "2016-02-10T15:46:51.778Z",
+     *          "created_at": "2016-02-10T15:46:51.778Z"
+     *      }, {
+     *          "id": 2,
+     *          "versionID": 1,
+     *          "hasStarted": true,
+     *          "hasEnded": false,
+     *          "updated_at": "2016-02-10T15:46:51.778Z",
+     *          "created_at": "2016-02-10T15:46:51.778Z"
+     *      }
+     *    ]
+     * @apiErrorExample {json} List error
+     *    HTTP/1.1 500 Internal Server Error
+     *    {
+     *      "Message": "error message"
+     *    }
+     */
     app.post('/API/version/allInstances', function (req, res) {
         co(function*() {
             debug("allInstances");
@@ -80,6 +186,37 @@ module.exports = function (app, engine) {
             res.json({error: err});
         });
     });
+
+    /**
+     * @api {post} /API/version/allRunningInstances Gets all the running instances of a version of a state machine
+     * @apiGroup Version
+     * @apiSuccess {Object} data
+     * @apiSuccess {Number} data.id The id of the version
+     * @apiSuccessExample {json} Success
+     *    HTTP/1.1 200 OK
+     *    [
+     *      {
+     *          "id": 1,
+     *          "versionID": 1,
+     *          "hasStarted": true,
+     *          "hasEnded": false,
+     *          "updated_at": "2016-02-10T15:46:51.778Z",
+     *          "created_at": "2016-02-10T15:46:51.778Z"
+     *      }, {
+     *          "id": 2,
+     *          "versionID": 1,
+     *          "hasStarted": true,
+     *          "hasEnded": false,
+     *          "updated_at": "2016-02-10T15:46:51.778Z",
+     *          "created_at": "2016-02-10T15:46:51.778Z"
+     *      }
+     *    ]
+     * @apiErrorExample {json} List error
+     *    HTTP/1.1 500 Internal Server Error
+     *    {
+     *      "Message": "error message"
+     *    }
+     */
     app.post('/API/version/allRunningInstances', function (req, res) {
         co(function*() {
             debug("allRunningInstances");
