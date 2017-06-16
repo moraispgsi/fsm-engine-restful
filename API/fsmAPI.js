@@ -2,14 +2,15 @@
  * Created by Ricardo Morais on 16/05/2017.
  */
 module.exports = function (app, engine) {
-    let debug = require("debug")("fsm-api");
+    let debug = require("debug")("machine-api");
     let co = require("co");
-    app.post('/API/fsm/all', function (req, res) {
-        debug("POST: /API/fsm/all");
+
+    app.get('/api/machine', function (req, res) {
+        debug("GET: /api/machine");
         co(function*(){
-            let fsms = yield engine.getAllFsms();
+            let machinesNames = yield engine.getMachinesNames();
             res.json({
-                fsms: fsms
+                machinesNames: machinesNames
             });
         }).catch((err)=> {
             debug("Error: " + err);
@@ -19,24 +20,20 @@ module.exports = function (app, engine) {
     });
 
     /**
-     * @api {post} /API/fsm/create Creates a new state machine
-     * @apiGroup StateMachine
+     * @api {post} /api/machine/create Creates a new state machine
+     * @apiGroup Machine
      * @apiSuccess {Object} data
      * @apiSuccess {Number} data.name The name of the state machine
      * @apiSuccessExample {json} Success
      *    HTTP/1.1 200 OK
-     *    {
-     *      "fsmID": 1,
-     *      "versionID": 1,
-     *    }
      * @apiErrorExample {json} List error
      *    HTTP/1.1 500 Internal Server Error
      *    {
      *      "Message": "error message"
      *    }
      */
-    app.post('/API/fsm/create', function (req, res) {
-        debug("POST: /API/fsm/create");
+    app.post('/api/machine', function (req, res) {
+        debug("POST: /api/machine");
         co(function*() {
             if (!req.body.name) {
                 let message = "Name property is missing.";
@@ -44,11 +41,8 @@ module.exports = function (app, engine) {
                 res.status(500).send({message});
                 return;
             }
-            let data = yield engine.createFSM(req.body.name);
-            res.json({
-                fsmID: data.fsm.id,
-                versionID: data.version.id,
-            });
+            yield engine.addMachine(req.body.name);
+
         }).then().catch((err) => {
             debug("Error: " + err);
             let message = "Could not create the state machines.";
@@ -57,8 +51,8 @@ module.exports = function (app, engine) {
     });
 
     /**
-     * @api {post} /API/fsm/allVersions Gets all the versions of the state machine
-     * @apiGroup StateMachine
+     * @api {post} /api/machine/:id/version Gets all the versions of the state machine
+     * @apiGroup Machine
      * @apiSuccess {Object} data
      * @apiSuccess {Number} data.id The id of the state machine
      * @apiSuccessExample {json} Success
@@ -66,7 +60,7 @@ module.exports = function (app, engine) {
      *    [
      *       {
      *         "id": 2,
-     *         "fsmID": 1,
+     *         "machineID": 1,
      *         "isSealed": false,
      *         "scxml": "<scxml></scxml>",
      *         "parentVersionID": 1,
@@ -74,7 +68,7 @@ module.exports = function (app, engine) {
      *         "created_at": "2016-02-10T15:46:51.778Z"
      *       }, {
      *         "id": 3,
-     *         "fsmID": 1,
+     *         "machineID": 1,
      *         "isSealed": false,
      *         "scxml": "<scxml></scxml>",
      *         "parentVersionID": 2,
@@ -88,8 +82,8 @@ module.exports = function (app, engine) {
      *      "Message": "error message"
      *    }
      */
-    app.post('/API/fsm/allVersions', function (req, res) {
-        debug("POST: /API/fsm/allVersions");
+    app.get('/api/machine/:id/version', function (req, res) {
+        debug("POST: '/api/machine/:id/version");
         co(function*() {
             if (!req.body.id) {
                 let message = "ID property is missing.";
@@ -109,15 +103,15 @@ module.exports = function (app, engine) {
     });
 
     /**
-     * @api {post} /API/fsm/latestVersion Gets the latest version of the state machine
-     * @apiGroup StateMachine
+     * @api {post} /api/machine/latestVersion Gets the latest version of the state machine
+     * @apiGroup Machine
      * @apiSuccess {Object} data
      * @apiSuccess {Number} data.id The id of the state machine
      * @apiSuccessExample {json} Success
      *    HTTP/1.1 200 OK
      *    {
      *      "id": 2,
-     *      "fsmID": 1,
+     *      "machineID": 1,
      *      "isSealed": false,
      *      "scxml": "<scxml></scxml>",
      *      "parentVersionID": 1,
@@ -130,8 +124,8 @@ module.exports = function (app, engine) {
      *      "Message": "error message"
      *    }
      */
-    app.post('/API/fsm/latestVersion', function (req, res) {
-        debug("POST: /API/fsm/latestVersion");
+    app.post('/api/machine/latestVersion', function (req, res) {
+        debug("POST: /api/machine/latestVersion");
         co(function*() {
             if (!req.body.id) {
                 let message = "ID property is missing.";
@@ -148,15 +142,15 @@ module.exports = function (app, engine) {
         });
     });
     /**
-     * @api {post} /API/fsm/latestSealedVersion Gets the latest sealed version of the state machine
-     * @apiGroup StateMachine
+     * @api {post} /api/machine/latestSealedVersion Gets the latest sealed version of the state machine
+     * @apiGroup Machine
      * @apiSuccess {Object} data
      * @apiSuccess {Number} data.id The id of the state machine
      * @apiSuccessExample {json} Success
      *    HTTP/1.1 200 OK
      *    {
      *      "id": 2,
-     *      "fsmID": 1,
+     *      "machineID": 1,
      *      "isSealed": true,
      *      "scxml": "<scxml></scxml>",
      *      "parentVersionID": 1,
@@ -169,8 +163,8 @@ module.exports = function (app, engine) {
      *      "Message": "error message"
      *    }
      */
-    app.post('/API/fsm/latestSealedVersion', function (req, res) {
-        debug("POST: /API/fsm/latestSealedVersion");
+    app.post('/api/machine/latestSealedVersion', function (req, res) {
+        debug("POST: /api/machine/latestSealedVersion");
         co(function*() {
             if (!req.body.id) {
                 let message = "ID property is missing.";
@@ -187,8 +181,8 @@ module.exports = function (app, engine) {
     });
 
     /**
-     * @api {post} /API/fsm/newVersion Creates a new version of the finite state machine if the latest version is sealed
-     * @apiGroup StateMachine
+     * @api {post} /api/machine/newVersion Creates a new version of the finite state machine if the latest version is sealed
+     * @apiGroup Machine
      * @apiSuccess {Object} data
      * @apiSuccess {Number} data.id The id of the state machine
      * @apiSuccessExample {json} Success
@@ -202,8 +196,8 @@ module.exports = function (app, engine) {
      *      "Message": "error message"
      *    }
      */
-    app.post('/API/fsm/newVersion', function (req, res) {
-        debug("POST: /API/fsm/newVersion");
+    app.post('/api/machine/newVersion', function (req, res) {
+        debug("POST: /api/machine/newVersion");
         co(function*() {
             if (!req.body.id) {
                 let message = "ID property is missing.";
@@ -222,15 +216,15 @@ module.exports = function (app, engine) {
     });
 
     /**
-     * @api {post} /API/fsm/getById Gets a state machine by its id
-     * @apiGroup StateMachine
+     * @api {post} /api/machine/getById Gets a state machine by its id
+     * @apiGroup Machine
      * @apiSuccess {Object} data
      * @apiSuccess {String} data.name The name of the state machine
      * @apiSuccessExample {json} Success
      *    HTTP/1.1 200 OK
      *    {
      *      "id": 1,
-     *      "name": "myfsm",
+     *      "name": "mymachine",
      *      "updated_at": "2016-02-10T15:46:51.778Z",
      *      "created_at": "2016-02-10T15:46:51.778Z"
      *    }
@@ -240,8 +234,8 @@ module.exports = function (app, engine) {
      *      "Message": "error message"
      *    }
      */
-    app.post('/API/fsm/getById', function (req, res) {
-        debug("POST: /API/fsm/getById");
+    app.post('/api/machine/getById', function (req, res) {
+        debug("POST: /api/machine/getById");
         co(function*(){
             if (!req.body.id) {
                 let message = "ID property is missing.";
@@ -249,8 +243,8 @@ module.exports = function (app, engine) {
                 res.status(500).send({message});
                 return;
             }
-            let fsm = yield engine.getFsmById(req.body.id);
-            res.json(fsm);
+            let machine = yield engine.getFsmById(req.body.id);
+            res.json(machine);
         }).then().catch((err) => {
             debug("Error: " + err);
             res.json({error: err});
@@ -258,15 +252,15 @@ module.exports = function (app, engine) {
     });
 
     /**
-     * @api {post} /API/fsm/getByName Gets a state machine by its name
-     * @apiGroup StateMachine
+     * @api {post} /api/machine/getByName Gets a state machine by its name
+     * @apiGroup Machine
      * @apiSuccess {Object} data
      * @apiSuccess {String} data.name The name of the state machine
      * @apiSuccessExample {json} Success
      *    HTTP/1.1 200 OK
      *    {
      *      "id": 1,
-     *      "name": "myfsm",
+     *      "name": "mymachine",
      *      "updated_at": "2016-02-10T15:46:51.778Z",
      *      "created_at": "2016-02-10T15:46:51.778Z"
      *    }
@@ -276,8 +270,8 @@ module.exports = function (app, engine) {
      *      "Message": "error message"
      *    }
      */
-    app.post('/API/fsm/getByName', function (req, res) {
-        debug("POST: /API/fsm/getByName");
+    app.post('/api/machine/getByName', function (req, res) {
+        debug("POST: /api/machine/getByName");
         co(function*(){
             if (!req.body.name) {
                 let message = "Name property is missing.";
@@ -285,8 +279,8 @@ module.exports = function (app, engine) {
                 res.status(500).send({message});
                 return;
             }
-            let fsm = yield engine.getFsmById(req.body.name);
-            res.json(fsm);
+            let machine = yield engine.getFsmById(req.body.name);
+            res.json(machine);
         }).catch((err)=> {
             debug("Error: " + err);
             res.json({error: err});

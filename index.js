@@ -24,17 +24,10 @@
 //
 
 let co = require('co');
-let init = require("fsm-engine");
+let Engine = require("fsm-engine");
 co(function*(){
-    let engine = yield init(
-        process.env.DIALECT,
-        process.env.DATABASE_HOST,
-        process.env.DATABASE_USER,
-        process.env.DATABASE_PASSWORD,
-        process.env.DATABASE_NAME,
-        {logging: false, port: process.env.DATABASE_PORT},
-        process.env.ACTION_DISPATCHER_HOST
-    );
+    let engine = new Engine(process.env.ACTION_DISPATCHER_HOST, __dirname + "/repo");
+    yield engine.init();
 
     let express = require('express');
     let app = express();
@@ -43,18 +36,15 @@ co(function*(){
     app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
         extended: true
     }));
-    // app.use(express.static('public'));
+    app.use(express.static('doc'));
     app.all('*', function(req, res, next) {
         res.header('Access-Control-Allow-Origin', '*');
         res.header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS');
         res.header('Access-Control-Allow-Headers', 'Content-Type');
         next();
     });
-    //API
-    require("./API/fsmAPI")(app, engine);
-    require("./API/versionAPI")(app, engine);
-    require("./API/instanceAPI")(app, engine);
-    require("./API/globalAPI")(app, engine);
+
+    require("./webservice")(app, engine);
 
     //Start the server
     let server = app.listen(process.env.PORT || 8081, process.env.HOST || '0.0.0.0', function () {
