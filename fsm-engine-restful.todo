@@ -1,33 +1,36 @@
 Base: 
- ✔ try catch in API @done (17-05-20 03:55)  
- ✔ get the latest version of a finite-state machine by name @done (17-05-20 03:55)
- ☐ Create the github wiki
+ ☐ try catch in API  
+ ☐ install and unnistall new interpreters dynamically 
+         var exec = require('child_process').exec, child;
+
+         child = exec('npm install ffi',
+         function (error, stdout, stderr) {
+             console.log('stdout: ' + stdout);
+             console.log('stderr: ' + stderr);
+             if (error !== null) {
+                  console.log('exec error: ' + error);
+             }
+         });
+ ☐ create the github wiki
+ ☐ add error status codes
+ ☐ add engine @high
+ ☐ remove engine @high
+ ☐ use a API TOKEN in fsm-engine-restful @medium https://www.npmjs.com/package/node-oauth2-server
 API:
-  instanceAPI:
-       ✔ /API/instance/create @done (17-05-27 00:04)
-       ✔ /API/instance/start @done (17-05-27 00:04)
-       ✔ /API/instance/sendEvent @done (17-05-27 00:04)
-       ☐ /API/instance/all
-       ☐ /API/instance/allRunning
-       ☐ /API/instance/allStopped
-       ✔ /API/instance/snapshot @done (17-05-27 00:04)
-   versionAPI:      
-       ✔ /API/version/setSCXML @done (17-05-27 00:28)
-       ✔ /API/version/seal @done (17-05-27 00:28)
-       ✔ /API/version/allInstances @done (17-05-27 03:48)
-       ✔ /API/version/allRunningInstances @done (17-05-27 03:48)
-       ☐ /API/version/getById
-    fsmAPI:
-       ✔ /API/fsm/create @done (17-05-27 00:28)
-       ✔ /API/fsm/allVersions @done (17-05-27 03:19)
-       ✔ /API/fsm/latestVersion @done (17-05-27 03:19)
-       ✔ /API/fsm/latestSealedVersion @done (17-05-27 03:19)
-       ✔ /API/fsm/newVersion @done (17-05-27 03:19)
-       ✔ /API/fsm/getById @done (17-05-27 18:06)
-       ✔ /API/fsm/getByName @done (17-05-27 18:06)
-    globalAPI:
-       ✔ /api/global/sendEvent @done (17-05-27 0SS0:28)
-       ☐ /api/global/turnSimulationOn 
-       ☐ /api/global/turnSimulationOff 
-       ☐ /api/global/setSimulationDate 
+ ☐ start instance
+ ☐ send event to an instance
+ ☐ get all the instances that are running
+ ☐ get all the instances that have stopped
+ ☐ get a snapshot of an instance
+ ☐ seal a version
+ ☐ get all the instances of a fsm
+ ☐ get all the instances that are running of a fsm
+ ☐ get all the instances that have stopped of a fsm
+ ☐ send a global event to the server
+ ☐ add engine
+ ☐ remove engine
+ ☐ turnSimulationOn 
+ ☐ turnSimulationOff 
+ ☐ setSimulationDate 
+
 

@@ -18,6 +18,7 @@
     "ejs": "^2.5.6",
     "express": "^4.15.2",
     "fsm-engine": "0.0.4",
+    "fsm-engine-interpreter": "0.0.1",
     "json": "^9.0.6",
     "jsonfile": "^3.0.0",
     "mysql": "^2.13.0"

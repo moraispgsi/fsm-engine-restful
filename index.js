@@ -25,9 +25,12 @@
 
 let co = require('co');
 let Engine = require("fsm-engine");
+let interpreter = "fsm-engine-interpreter";
+let interpreterPath = require(interpreter).getPath();
+
 co(function*(){
-    let engine = new Engine(process.env.ACTION_DISPATCHER_HOST, __dirname + "/repo");
-    yield engine.init();
+    let engine = new Engine(process.env.ACTION_DISPATCHER_HOST, __dirname + "/repo", interpreterPath);
+    yield engine.init(process.env.CLONE_URL, process.env.PUBLIC_KEY, process.env.PRIVATE_KEY, process.env.PASSPHRASE);
 
     let express = require('express');
     let app = express();
