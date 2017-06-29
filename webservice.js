@@ -354,7 +354,7 @@ module.exports = function (app, engine) {
                 res.status(500).send({message});
                 return;
             }
-            engine.setVersionSCXML(req.params.name, req.params.version, req.body.model);
+            yield engine.setVersionSCXML(req.params.name, req.params.version, req.body.model);
             res.sendStatus(200);
         }).catch((err) => {
             debug("Error: " + err);
