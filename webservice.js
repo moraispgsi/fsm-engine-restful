@@ -425,9 +425,9 @@ module.exports = function (app, engine) {
                 res.status(500).send({message});
                 return;
             }
-            let instanceKey = yield engine.addInstance(req.params.name, req.params.version);
+            let instance = yield engine.addInstance(req.params.name, req.params.version);
             res.json({
-                instanceKey: instanceKey
+                instanceKey: instance.instanceKey
             });
         }).catch((err) => {
             debug("Error: " + err);
