@@ -138,7 +138,7 @@ define({ "api": [
   },
   {
     "type": "get",
-    "url": "/api/machine/:name/version/:version/instance",
+    "url": "/api/machine/:name/version/:version/instance/keys",
     "title": "Get all the instance keys",
     "group": "Instance",
     "parameter": {
@@ -182,7 +182,7 @@ define({ "api": [
     "version": "0.0.0",
     "filename": "./webservice.js",
     "groupTitle": "Instance",
-    "name": "GetApiMachineNameVersionVersionInstance"
+    "name": "GetApiMachineNameVersionVersionInstanceKeys"
   },
   {
     "type": "post",
@@ -630,8 +630,63 @@ define({ "api": [
   },
   {
     "type": "get",
-    "url": "/api/machine/:name/version/:version/instance/:instance/snapshot/:snapshot",
-    "title": "Get a snapshot",
+    "url": "/api/machine/:name/version/:version/instance/:instance/snapshot",
+    "title": "Take a snapshot",
+    "group": "Snapshot",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "name",
+            "description": "<p>The name of the machine</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "version",
+            "description": "<p>The version key</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "instance",
+            "description": "<p>The instance key</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success",
+          "content": "HTTP/1.1 200 OK\n{\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "examples": [
+        {
+          "title": "HTTP/1.1 500 Internal Server Error",
+          "content": "HTTP/1.1 500 Internal Server Error\n{\n  \"message\": \"error message\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "./webservice.js",
+    "groupTitle": "Snapshot",
+    "name": "GetApiMachineNameVersionVersionInstanceInstanceSnapshot"
+  },
+  {
+    "type": "get",
+    "url": "/api/machine/:name/version/:version/instance/:instance/snapshot/keys",
+    "title": "Get the snapshots keys",
     "group": "Snapshot",
     "parameter": {
       "fields": {
@@ -681,12 +736,12 @@ define({ "api": [
     "version": "0.0.0",
     "filename": "./webservice.js",
     "groupTitle": "Snapshot",
-    "name": "GetApiMachineNameVersionVersionInstanceInstanceSnapshotSnapshot"
+    "name": "GetApiMachineNameVersionVersionInstanceInstanceSnapshotKeys"
   },
   {
     "type": "get",
     "url": "/api/machine/:name/version/:version/instance/:instance/snapshot/:snapshot",
-    "title": "Get a snapshot",
+    "title": "Get a snapshot by it's key",
     "group": "Snapshot",
     "parameter": {
       "fields": {
@@ -747,7 +802,7 @@ define({ "api": [
   },
   {
     "type": "get",
-    "url": "/api/machine/:name/version",
+    "url": "/api/machine/:name/version/keys",
     "title": "Get all the versions keys of a machine",
     "group": "Version",
     "parameter": {
@@ -802,7 +857,7 @@ define({ "api": [
     "version": "0.0.0",
     "filename": "./webservice.js",
     "groupTitle": "Version",
-    "name": "GetApiMachineNameVersion"
+    "name": "GetApiMachineNameVersionKeys"
   },
   {
     "type": "get",
