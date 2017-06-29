@@ -180,7 +180,7 @@ module.exports = function (app, engine) {
     });
 
     /**
-     * @api {get} /api/machine/:name/version Get all the versions keys of a machine
+     * @api {get} /api/machine/:name/version/keys Get all the versions keys of a machine
      * @apiGroup Version
      * @apiParam {String} name The name of the machine
      * @apiSuccess {Object} data
@@ -200,8 +200,8 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.get('/api/machine/:name/version', function (req, res) {
-        debug("POST: '/api/machine/:name/version");
+    app.get('/api/machine/:name/version/keys', function (req, res) {
+        debug("POST: '/api/machine/:name/version/keys");
         co(function*() {
             if (!req.params.name) {
                 let message = "name property is missing.";
@@ -364,7 +364,7 @@ module.exports = function (app, engine) {
     });
 
     /**
-     * @api {get} /api/machine/:name/version/:version/instance Get all the instance keys
+     * @api {get} /api/machine/:name/version/:version/instance/keys Get all the instance keys
      * @apiGroup Instance
      * @apiParam {String} name The name of the machine
      * @apiParam {String} version The version key
@@ -383,8 +383,8 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.get('/api/machine/:name/version/:version/instance', function (req, res) {
-        debug("GET: '/api/machine/:name/version/instance");
+    app.get('/api/machine/:name/version/:version/instance/keys', function (req, res) {
+        debug("GET: '/api/machine/:name/version/instance/keys");
         co(function*() {
             if (!req.params.name) {
                 let message = "name property is missing.";
@@ -668,7 +668,7 @@ module.exports = function (app, engine) {
     });
 
     /**
-     * @api {get} /api/machine/:name/version/:version/instance/:instance/snapshot/:snapshot Get a snapshot
+     * @api {get} /api/machine/:name/version/:version/instance/:instance/snapshot/keys Get the snapshots keys
      * @apiGroup Snapshot
      * @apiParam {String} name The name of the machine
      * @apiParam {String} version The version key
@@ -688,8 +688,8 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.get('/api/machine/:name/version/:version/instance/:instance/snapshot', function (req, res) {
-        debug("GET: '/api/machine/:name/version/instance/:instance/snapshot");
+    app.get('/api/machine/:name/version/:version/instance/:instance/snapshot/keys', function (req, res) {
+        debug("GET: '/api/machine/:name/version/instance/:instance/snapshot/keys");
         co(function*() {
 
             if (!req.params.name) {
@@ -784,4 +784,57 @@ module.exports = function (app, engine) {
         });
     });
 
+    /**
+     * @api {get} /api/machine/:name/version/:version/instance/:instance/snapshot Get a snapshot
+     * @apiGroup Snapshot
+     * @apiParam {String} name The name of the machine
+     * @apiParam {String} version The version key
+     * @apiParam {String} instance The instance key
+     * @apiSuccessExample {json} Success
+     *    HTTP/1.1 200 OK
+     *    {
+     *    }
+     * @apiErrorExample {json}
+     *    HTTP/1.1 500 Internal Server Error
+     *    {
+     *      "message": "error message"
+     *    }
+     */
+    app.get('/api/machine/:name/version/:version/instance/:instance/snapshot', function (req, res) {
+        debug("GET: '/api/machine/:name/version/instance/:instance/snapshot");
+        co(function*() {
+
+            if (!req.params.name) {
+                let message = "name property is missing.";
+                debug("Error: " + message);
+                res.status(500).send({message});
+                return;
+            }
+
+            if (!req.params.version) {
+                let message = "version property is missing.";
+                debug("Error: " + message);
+                res.status(500).send({message});
+                return;
+            }
+
+            if (!req.params.instance) {
+                let message = "instance property is missing.";
+                debug("Error: " + message);
+                res.status(500).send({message});
+                return;
+            }
+
+            let instance = engine.getInstance(req.params.name, req.params.version, req.params.instance);
+            let snapshot = yield instance.getSnapshot();
+            res.json({
+                snapshot: snapshot
+            });
+
+        }).catch((err) => {
+            debug("Error: " + err);
+            let message = err.message;
+            res.status(500).send({message});
+        });
+    });
 };
