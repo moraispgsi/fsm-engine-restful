@@ -25,8 +25,6 @@
 
 let co = require('co');
 let Engine = require("fsm-engine");
-let interpreter = "fsm-engine-interpreter";
-let interpreterPath = require(interpreter).getPath();
 
 co(function*(){
     let engine = new Engine(process.env.ACTION_DISPATCHER_HOST, __dirname + "/repo", interpreterPath);

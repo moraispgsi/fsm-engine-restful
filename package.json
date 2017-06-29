@@ -17,8 +17,7 @@
     "debug": "^2.6.8",
     "ejs": "^2.5.6",
     "express": "^4.15.2",
-    "fsm-engine": "0.0.12",
-    "fsm-engine-interpreter": "0.0.5",
+    "fsm-engine": "0.0.13",
     "json": "^9.0.6",
     "jsonfile": "^3.0.0"
   },
