@@ -656,6 +656,61 @@ define({ "api": [
             "optional": false,
             "field": "instance",
             "description": "<p>The instance key</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success",
+          "content": "HTTP/1.1 200 OK\n{\n   \"snapshotKeys\": [\n      \"snapshot1\",\n      \"snapshot2\"\n   ]\n\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "examples": [
+        {
+          "title": "HTTP/1.1 500 Internal Server Error",
+          "content": "HTTP/1.1 500 Internal Server Error\n{\n  \"message\": \"error message\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "./webservice.js",
+    "groupTitle": "Snapshot",
+    "name": "GetApiMachineNameVersionVersionInstanceInstanceSnapshotSnapshot"
+  },
+  {
+    "type": "get",
+    "url": "/api/machine/:name/version/:version/instance/:instance/snapshot/:snapshot",
+    "title": "Get a snapshot",
+    "group": "Snapshot",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "name",
+            "description": "<p>The name of the machine</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "version",
+            "description": "<p>The version key</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "instance",
+            "description": "<p>The instance key</p>"
           },
           {
             "group": "Parameter",
@@ -671,7 +726,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success",
-          "content": "HTTP/1.1 200 OK",
+          "content": "HTTP/1.1 200 OK\n{\n}",
           "type": "json"
         }
       ]

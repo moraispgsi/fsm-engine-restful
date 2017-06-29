@@ -673,9 +673,69 @@ module.exports = function (app, engine) {
      * @apiParam {String} name The name of the machine
      * @apiParam {String} version The version key
      * @apiParam {String} instance The instance key
+     * @apiSuccessExample {json} Success
+     *    HTTP/1.1 200 OK
+     *    {
+     *       "snapshotKeys": [
+     *          "snapshot1",
+     *          "snapshot2"
+     *       ]
+     *
+     *    }
+     * @apiErrorExample {json}
+     *    HTTP/1.1 500 Internal Server Error
+     *    {
+     *      "message": "error message"
+     *    }
+     */
+    app.get('/api/machine/:name/version/:version/instance/:instance/snapshot', function (req, res) {
+        debug("GET: '/api/machine/:name/version/instance/:instance/snapshot");
+        co(function*() {
+
+            if (!req.params.name) {
+                let message = "name property is missing.";
+                debug("Error: " + message);
+                res.status(500).send({message});
+                return;
+            }
+
+            if (!req.params.version) {
+                let message = "version property is missing.";
+                debug("Error: " + message);
+                res.status(500).send({message});
+                return;
+            }
+
+            if (!req.params.instance) {
+                let message = "instance property is missing.";
+                debug("Error: " + message);
+                res.status(500).send({message});
+                return;
+            }
+
+            let snapshotsKeys = engine.getSnapshotsKeys(req.params.name, req.params.version, req.params.instance);
+            res.json({
+                snapshotsKeys: snapshotsKeys
+            });
+
+        }).catch((err) => {
+            debug("Error: " + err);
+            let message = err.message;
+            res.status(500).send({message});
+        });
+    });
+
+    /**
+     * @api {get} /api/machine/:name/version/:version/instance/:instance/snapshot/:snapshot Get a snapshot
+     * @apiGroup Snapshot
+     * @apiParam {String} name The name of the machine
+     * @apiParam {String} version The version key
+     * @apiParam {String} instance The instance key
      * @apiParam {String} snapshot The snapshot key
      * @apiSuccessExample {json} Success
      *    HTTP/1.1 200 OK
+     *    {
+     *    }
      * @apiErrorExample {json}
      *    HTTP/1.1 500 Internal Server Error
      *    {
@@ -707,8 +767,8 @@ module.exports = function (app, engine) {
                 return;
             }
 
-            if (!req.body.snapshotKey) {
-                let message = "snapshotKey is missing.";
+            if (!req.params.snapshot) {
+                let message = "snapshot is missing.";
                 debug("Error: " + message);
                 res.status(500).send({message});
                 return;
