@@ -726,7 +726,7 @@ module.exports = function (app, engine) {
     });
 
     /**
-     * @api {get} /api/machine/:name/version/:version/instance/:instance/snapshot/:snapshot Get a snapshot
+     * @api {get} /api/machine/:name/version/:version/instance/:instance/snapshot/:snapshot Get a snapshot by it's key
      * @apiGroup Snapshot
      * @apiParam {String} name The name of the machine
      * @apiParam {String} version The version key
@@ -785,7 +785,7 @@ module.exports = function (app, engine) {
     });
 
     /**
-     * @api {get} /api/machine/:name/version/:version/instance/:instance/snapshot Get a snapshot
+     * @api {get} /api/machine/:name/version/:version/instance/:instance/snapshot Take a snapshot
      * @apiGroup Snapshot
      * @apiParam {String} name The name of the machine
      * @apiParam {String} version The version key
