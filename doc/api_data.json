@@ -1,5 +1,33 @@
 [
   {
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "optional": false,
+            "field": "varname1",
+            "description": "<p>No type.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "varname2",
+            "description": "<p>With type.</p>"
+          }
+        ]
+      }
+    },
+    "type": "",
+    "url": "",
+    "version": "0.0.0",
+    "filename": "./doc/main.js",
+    "group": "C__Users_Ricardo_Morais_Desktop_INSTICC_Final_Course_Project_Repositories_fsm_engine_restful_doc_main_js",
+    "groupTitle": "C__Users_Ricardo_Morais_Desktop_INSTICC_Final_Course_Project_Repositories_fsm_engine_restful_doc_main_js",
+    "name": ""
+  },
+  {
     "type": "post",
     "url": "/api/engine/event",
     "title": "Send global event",

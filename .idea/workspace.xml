@@ -2,108 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="827bfd08-2f73-4cc5-b80a-0408a680842d" name="Default" comment="refactoring the API">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API/fsmAPI.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API/globalAPI.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API/instanceAPI.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API/versionAPI.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/api_data.js" afterPath="$PROJECT_DIR$/doc/api_data.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/api_data.json" afterPath="$PROJECT_DIR$/doc/api_data.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/api_project.js" afterPath="$PROJECT_DIR$/doc/api_project.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/api_project.json" afterPath="$PROJECT_DIR$/doc/api_project.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/css/style.css" afterPath="$PROJECT_DIR$/doc/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/doc/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/index.html" afterPath="$PROJECT_DIR$/doc/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/locales/ca.js" afterPath="$PROJECT_DIR$/doc/locales/ca.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/locales/de.js" afterPath="$PROJECT_DIR$/doc/locales/de.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/locales/es.js" afterPath="$PROJECT_DIR$/doc/locales/es.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/locales/fr.js" afterPath="$PROJECT_DIR$/doc/locales/fr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/locales/it.js" afterPath="$PROJECT_DIR$/doc/locales/it.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/locales/locale.js" afterPath="$PROJECT_DIR$/doc/locales/locale.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/locales/nl.js" afterPath="$PROJECT_DIR$/doc/locales/nl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/locales/pl.js" afterPath="$PROJECT_DIR$/doc/locales/pl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/locales/pt_br.js" afterPath="$PROJECT_DIR$/doc/locales/pt_br.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/locales/ro.js" afterPath="$PROJECT_DIR$/doc/locales/ro.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/locales/ru.js" afterPath="$PROJECT_DIR$/doc/locales/ru.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/locales/tr.js" afterPath="$PROJECT_DIR$/doc/locales/tr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/locales/vi.js" afterPath="$PROJECT_DIR$/doc/locales/vi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/locales/zh.js" afterPath="$PROJECT_DIR$/doc/locales/zh.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/locales/zh_cn.js" afterPath="$PROJECT_DIR$/doc/locales/zh_cn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/main.js" afterPath="$PROJECT_DIR$/doc/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/utils/handlebars_helper.js" afterPath="$PROJECT_DIR$/doc/utils/handlebars_helper.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/bootstrap.min.css" afterPath="$PROJECT_DIR$/doc/vendor/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/bootstrap.min.js" afterPath="$PROJECT_DIR$/doc/vendor/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/diff_match_patch.min.js" afterPath="$PROJECT_DIR$/doc/vendor/diff_match_patch.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/handlebars.min.js" afterPath="$PROJECT_DIR$/doc/vendor/handlebars.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/jquery.min.js" afterPath="$PROJECT_DIR$/doc/vendor/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/list.min.js" afterPath="$PROJECT_DIR$/doc/vendor/list.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/lodash.custom.min.js" afterPath="$PROJECT_DIR$/doc/vendor/lodash.custom.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/path-to-regexp/LICENSE" afterPath="$PROJECT_DIR$/doc/vendor/path-to-regexp/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/path-to-regexp/index.js" afterPath="$PROJECT_DIR$/doc/vendor/path-to-regexp/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/polyfill.js" afterPath="$PROJECT_DIR$/doc/vendor/polyfill.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify.css" afterPath="$PROJECT_DIR$/doc/vendor/prettify.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-Splus.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-Splus.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-aea.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-aea.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-agc.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-agc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-apollo.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-apollo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-basic.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-basic.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-cbm.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-cbm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-cl.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-cl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-clj.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-clj.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-css.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-css.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-dart.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-dart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-el.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-el.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-erl.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-erl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-erlang.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-erlang.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-fs.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-fs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-go.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-go.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-hs.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-hs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-lasso.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-lasso.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-lassoscript.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-lassoscript.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-latex.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-latex.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-lgt.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-lgt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-lisp.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-lisp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-ll.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-ll.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-llvm.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-llvm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-logtalk.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-logtalk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-ls.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-ls.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-lsp.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-lsp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-lua.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-lua.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-matlab.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-matlab.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-ml.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-ml.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-mumps.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-mumps.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-n.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-n.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-nemerle.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-nemerle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-pascal.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-pascal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-proto.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-proto.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-r.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-r.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-rd.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-rd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-rkt.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-rkt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-rust.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-rust.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-s.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-s.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-scala.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-scala.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-scm.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-scm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-sql.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-sql.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-ss.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-ss.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-swift.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-swift.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-tcl.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-tcl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-tex.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-tex.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-vb.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-vb.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-vbs.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-vbs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-vhd.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-vhd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-vhdl.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-vhdl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-wiki.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-wiki.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-xq.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-xq.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-xquery.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-xquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-yaml.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-yaml.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/lang-yml.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-yml.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/prettify.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/prettify.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/prettify/run_prettify.js" afterPath="$PROJECT_DIR$/doc/vendor/prettify/run_prettify.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/require.min.js" afterPath="$PROJECT_DIR$/doc/vendor/require.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/vendor/webfontloader.js" afterPath="$PROJECT_DIR$/doc/vendor/webfontloader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fsm-engine-restful.todo" afterPath="$PROJECT_DIR$/fsm-engine-restful.todo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webservice.js" afterPath="$PROJECT_DIR$/webservice.js" />
     </list>
@@ -123,14 +26,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-              <folding>
-                <marker date="1498475354147" expanded="true" signature="549:639" ph="{&quot;type&quot;: &quot;git&quot;...}" />
-              </folding>
+            <state relative-caret-position="340">
+              <caret line="20" column="35" lean-forward="false" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -138,14 +39,14 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="54" column="36" lean-forward="false" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
+            <state relative-caret-position="25">
+              <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
@@ -168,8 +69,8 @@
       <file leaf-file-name="webservice.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webservice.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1003">
-              <caret line="669" column="4" lean-forward="false" selection-start-line="669" selection-start-column="4" selection-end-line="669" selection-end-column="4" />
+            <state relative-caret-position="152">
+              <caret line="428" column="21" lean-forward="false" selection-start-line="428" selection-start-column="21" selection-end-line="428" selection-end-column="21" />
               <folding>
                 <element signature="e#125#418#0" expanded="false" />
                 <element signature="e#471#770#0" expanded="false" />
@@ -189,7 +90,6 @@
                 <element signature="e#4179#4310#0" expanded="false" />
                 <element signature="e#4326#4775#0" expanded="false" />
                 <element signature="e#4833#5387#0" expanded="false" />
-                <element signature="e#4903#5231#0" expanded="false" />
                 <element signature="e#4939#5131#0" expanded="false" />
                 <element signature="e#5248#5379#0" expanded="false" />
                 <element signature="e#5395#6020#0" expanded="false" />
@@ -224,11 +124,7 @@
                 <element signature="e#12803#12862#0" expanded="false" />
                 <element signature="e#12891#13022#0" expanded="false" />
                 <element signature="e#13038#13482#0" expanded="false" />
-                <element signature="e#13564#14216#0" expanded="false" />
-                <element signature="e#13650#14060#0" expanded="false" />
                 <element signature="e#13686#13877#0" expanded="false" />
-                <element signature="e#13992#14048#0" expanded="false" />
-                <element signature="e#14077#14208#0" expanded="false" />
                 <element signature="e#14224#14646#0" expanded="false" />
                 <element signature="e#14723#15537#0" expanded="false" />
                 <element signature="e#15545#16044#0" expanded="false" />
@@ -240,10 +136,9 @@
                 <element signature="e#18544#19351#0" expanded="false" />
                 <element signature="e#19449#20835#0" expanded="false" />
                 <element signature="e#20843#21467#0" expanded="false" />
+                <element signature="e#21565#23068#0" expanded="false" />
                 <element signature="e#23076#23635#0" expanded="false" />
                 <element signature="e#23745#25115#0" expanded="false" />
-                <marker date="1498486891041" expanded="false" signature="21565:23068" ph="{...}" />
-                <marker date="1498486891041" expanded="true" signature="21667:22912" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -252,8 +147,8 @@
       <file leaf-file-name="readme.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/readme.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -326,10 +221,10 @@
         <option value="$PROJECT_DIR$/doc/index.html" />
         <option value="$PROJECT_DIR$/readme.txt" />
         <option value="$PROJECT_DIR$/apidoc.json" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/webservice.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/webservice.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -911,7 +806,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="314353000" />
+    <option name="totallyTimeSpent" value="316428000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -924,7 +819,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20833333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -932,19 +826,28 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22735043" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26153848" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33333334" sideWeight="0.49702382" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33333334" sideWeight="0.49702382" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25128207" sideWeight="0.5029762" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43589744" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22735043" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26153848" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33333334" sideWeight="0.49702382" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20833333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.191453" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1021,9 +924,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <marker date="1498475354147" expanded="true" signature="549:639" ph="{&quot;type&quot;: &quot;git&quot;...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1039,9 +940,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <marker date="1498475354147" expanded="true" signature="549:639" ph="{&quot;type&quot;: &quot;git&quot;...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1058,9 +957,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1498475354147" expanded="true" signature="549:639" ph="{&quot;type&quot;: &quot;git&quot;...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1119,23 +1016,8 @@
     <entry file="file://$PROJECT_DIR$/repo/manifest.json" />
     <entry file="file://$PROJECT_DIR$/repo/machines/foo/versions/version1/model.scxml" />
     <entry file="file://$PROJECT_DIR$/node_modules/fsm-core/index.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/fsm-engine/index.js" />
-    <entry file="file://$PROJECT_DIR$/API/versionAPI.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2278">
-          <caret line="191" column="17" lean-forward="false" selection-start-line="191" selection-start-column="17" selection-end-line="191" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API/instanceAPI.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/API/versionAPI.js" />
+    <entry file="file://$PROJECT_DIR$/API/instanceAPI.js" />
     <entry file="file://$PROJECT_DIR$/doc/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-11322">
@@ -1157,22 +1039,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/API/fsmAPI.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1522">
-          <caret line="184" column="23" lean-forward="false" selection-start-line="184" selection-start-column="23" selection-end-line="184" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API/globalAPI.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/API/fsmAPI.js" />
+    <entry file="file://$PROJECT_DIR$/API/globalAPI.js" />
     <entry file="file://$PROJECT_DIR$/apidoc.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1181,28 +1049,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-          <folding>
-            <marker date="1498475354147" expanded="true" signature="549:639" ph="{&quot;type&quot;: &quot;git&quot;...}" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.txt">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="17">
+          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/fsm-engine/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="831" column="12" lean-forward="false" selection-start-line="831" selection-start-column="12" selection-end-line="831" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webservice.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="669" column="4" lean-forward="false" selection-start-line="669" selection-start-column="4" selection-end-line="669" selection-end-column="4" />
+        <state relative-caret-position="152">
+          <caret line="428" column="21" lean-forward="false" selection-start-line="428" selection-start-column="21" selection-end-line="428" selection-end-column="21" />
           <folding>
             <element signature="e#125#418#0" expanded="false" />
             <element signature="e#471#770#0" expanded="false" />
@@ -1222,7 +1104,6 @@
             <element signature="e#4179#4310#0" expanded="false" />
             <element signature="e#4326#4775#0" expanded="false" />
             <element signature="e#4833#5387#0" expanded="false" />
-            <element signature="e#4903#5231#0" expanded="false" />
             <element signature="e#4939#5131#0" expanded="false" />
             <element signature="e#5248#5379#0" expanded="false" />
             <element signature="e#5395#6020#0" expanded="false" />
@@ -1257,11 +1138,7 @@
             <element signature="e#12803#12862#0" expanded="false" />
             <element signature="e#12891#13022#0" expanded="false" />
             <element signature="e#13038#13482#0" expanded="false" />
-            <element signature="e#13564#14216#0" expanded="false" />
-            <element signature="e#13650#14060#0" expanded="false" />
             <element signature="e#13686#13877#0" expanded="false" />
-            <element signature="e#13992#14048#0" expanded="false" />
-            <element signature="e#14077#14208#0" expanded="false" />
             <element signature="e#14224#14646#0" expanded="false" />
             <element signature="e#14723#15537#0" expanded="false" />
             <element signature="e#15545#16044#0" expanded="false" />
@@ -1273,26 +1150,17 @@
             <element signature="e#18544#19351#0" expanded="false" />
             <element signature="e#19449#20835#0" expanded="false" />
             <element signature="e#20843#21467#0" expanded="false" />
+            <element signature="e#21565#23068#0" expanded="false" />
             <element signature="e#23076#23635#0" expanded="false" />
             <element signature="e#23745#25115#0" expanded="false" />
-            <marker date="1498486891041" expanded="false" signature="21565:23068" ph="{...}" />
-            <marker date="1498486891041" expanded="true" signature="21667:22912" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="54" column="36" lean-forward="false" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        <state relative-caret-position="340">
+          <caret line="20" column="35" lean-forward="false" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
           <folding />
         </state>
       </provider>
