@@ -17,11 +17,10 @@
     "debug": "^2.6.8",
     "ejs": "^2.5.6",
     "express": "^4.15.2",
-    "fsm-engine": "0.0.6",
+    "fsm-engine": "0.0.7",
     "fsm-engine-interpreter": "0.0.5",
     "json": "^9.0.6",
-    "jsonfile": "^3.0.0",
-    "mysql": "^2.13.0"
+    "jsonfile": "^3.0.0"
   },
   "repository": {
     "type": "git",
