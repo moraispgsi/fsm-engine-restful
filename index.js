@@ -28,7 +28,6 @@ let Engine = require("fsm-engine");
 
 co(function*(){
     let engine = new Engine(process.env.ACTION_DISPATCHER_HOST, __dirname + "/repo");
-    yield engine.init(process.env.CLONE_URL, process.env.PUBLIC_KEY, process.env.PRIVATE_KEY, process.env.PASSPHRASE);
 
     let express = require('express');
     let app = express();
@@ -53,6 +52,10 @@ co(function*(){
         let port = server.address().port;
         console.log("listening at http://%s:%s", host, port)
     });
+
+    //The server needs to be operational in order to bind the port within 90 seconds
+    //Therefore since the engine init is an expensive operation, we initialize the server first.
+    yield engine.init(process.env.CLONE_URL, process.env.PUBLIC_KEY, process.env.PRIVATE_KEY, process.env.PASSPHRASE);
 
 }).then().catch(function(err){
     console.log(err);
