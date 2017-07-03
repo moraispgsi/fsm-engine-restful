@@ -1,6 +1,6 @@
 Base: 
  ☐ try catch in API  
- ☐ install and unnistall new interpreters dynamically 
+ ☐ install and unninstall new interpreters dynamically 
          var exec = require('child_process').exec, child;
 
          child = exec('npm install ffi',
@@ -13,24 +13,17 @@ Base:
          });
  ☐ create the github wiki
  ☐ add error status codes
- ☐ add engine @high
- ☐ remove engine @high
  ☐ use a API TOKEN in fsm-engine-restful @medium https://www.npmjs.com/package/node-oauth2-server
 API:
- ☐ start instance
+ ✔ start instance @done (17-06-26 12:11)
  ☐ send event to an instance
  ☐ get all the instances that are running
  ☐ get all the instances that have stopped
  ☐ get a snapshot of an instance
- ☐ seal a version
+ ✔ seal a version @done (17-06-26 12:11)
  ☐ get all the instances of a fsm
  ☐ get all the instances that are running of a fsm
  ☐ get all the instances that have stopped of a fsm
  ☐ send a global event to the server
- ☐ add engine
- ☐ remove engine
- ☐ turnSimulationOn 
- ☐ turnSimulationOff 
- ☐ setSimulationDate 
 
 
