@@ -14,7 +14,7 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.put('/api/engine/stop', function (req, res) {
+    app.put('/api/engine/stop', app.oauth.authorise(), function (req, res) {
         debug("PUT: '/api/engine/stop");
         co(function*() {
             yield engine.stop();
@@ -37,7 +37,7 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.put('/api/engine/resume', function (req, res) {
+    app.put('/api/engine/resume', app.oauth.authorise(), function (req, res) {
         debug("PUT: '/api/engine/resume");
         co(function*() {
             yield engine.resume();
@@ -69,7 +69,7 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.post('/api/engine/event', function (req, res) {
+    app.post('/api/engine/event', app.oauth.authorise(), function (req, res) {
         debug("POST: '/api/engine/event");
         co(function*() {
             yield engine.resume();
@@ -100,7 +100,7 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.get('/api/machine', function (req, res) {
+    app.get('/api/machine', app.oauth.authorise(), function (req, res) {
 
         debug("GET: /api/machine");
         co(function*(){
@@ -128,7 +128,7 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.post('/api/machine', function (req, res) {
+    app.post('/api/machine', app.oauth.authorise(), function (req, res) {
         debug("POST: /api/machine");
         co(function*() {
             if (!req.body.name) {
@@ -160,7 +160,7 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.delete('/api/machine/:name', function (req, res) {
+    app.delete('/api/machine/:name', app.oauth.authorise(), function (req, res) {
         debug("DELETE: /api/machine/:name");
         co(function*() {
             if (!req.params.name) {
@@ -200,7 +200,7 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.get('/api/machine/:name/version/keys', function (req, res) {
+    app.get('/api/machine/:name/version/keys', app.oauth.authorise(), function (req, res) {
         debug("POST: '/api/machine/:name/version/keys");
         co(function*() {
             if (!req.params.name) {
@@ -242,7 +242,7 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.post('/api/machine/:name/version', function (req, res) {
+    app.post('/api/machine/:name/version', app.oauth.authorise(), function (req, res) {
         debug("POST: '/api/machine/:name/version");
         co(function*() {
             if (!req.params.name) {
@@ -278,7 +278,7 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.get('/api/machine/:name/version/:version/info', function (req, res) {
+    app.get('/api/machine/:name/version/:version/info', app.oauth.authorise(), function (req, res) {
         debug("GET: '/api/machine/:name/version/info");
         co(function*() {
             if (!req.params.name) {
@@ -312,7 +312,7 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.get('/api/machine/:name/version/:version/model', function (req, res) {
+    app.get('/api/machine/:name/version/:version/model', app.oauth.authorise(), function (req, res) {
         debug("GET: '/api/machine/:name/version/model");
         co(function*() {
             if (!req.params.name) {
@@ -345,7 +345,7 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.put('/api/machine/:name/version/:version/model', function (req, res) {
+    app.put('/api/machine/:name/version/:version/model', app.oauth.authorise(), function (req, res) {
         debug("PUT: '/api/machine/:name/version/model");
         co(function*() {
             if (!req.params.name) {
@@ -383,7 +383,7 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.get('/api/machine/:name/version/:version/instance/keys', function (req, res) {
+    app.get('/api/machine/:name/version/:version/instance/keys', app.oauth.authorise(), function (req, res) {
         debug("GET: '/api/machine/:name/version/instance/keys");
         co(function*() {
             if (!req.params.name) {
@@ -416,7 +416,7 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.post('/api/machine/:name/version/:version/instance', function (req, res) {
+    app.post('/api/machine/:name/version/:version/instance', app.oauth.authorise(), function (req, res) {
         debug("POST: '/api/machine/:name/version/instance");
         co(function*() {
             if (!req.params.name) {
@@ -449,7 +449,7 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.put('/api/machine/:name/version/:version/seal', function (req, res) {
+    app.put('/api/machine/:name/version/:version/seal', app.oauth.authorise(), function (req, res) {
         debug("PUT: '/api/machine/:name/version/seal");
         co(function*() {
             if (!req.params.name) {
@@ -487,7 +487,7 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.put('/api/machine/:name/version/:version/instance/:instance/start', function (req, res) {
+    app.put('/api/machine/:name/version/:version/instance/:instance/start', app.oauth.authorise(), function (req, res) {
         debug("PUT: '/api/machine/:name/version/instance/:instance/start");
         co(function*() {
             if (!req.params.name) {
@@ -520,7 +520,7 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.put('/api/machine/:name/version/:version/instance/:instance/stop', function (req, res) {
+    app.put('/api/machine/:name/version/:version/instance/:instance/stop', app.oauth.authorise(), function (req, res) {
         debug("PUT: '/api/machine/:name/version/instance/:instance/stop");
         co(function*() {
             if (!req.params.name) {
@@ -574,7 +574,7 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.post('/api/machine/:name/version/:version/instance/:instance/event', function (req, res) {
+    app.post('/api/machine/:name/version/:version/instance/:instance/event', app.oauth.authorise(), function (req, res) {
         debug("POST: '/api/machine/:name/version/instance/:instance/event");
         co(function*() {
             if (!req.params.name) {
@@ -628,7 +628,7 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.put('/api/machine/:name/version/:version/instance/:instance/revert', function (req, res) {
+    app.put('/api/machine/:name/version/:version/instance/:instance/revert', app.oauth.authorise(), function (req, res) {
         debug("PUT: '/api/machine/:name/version/instance/:instance/revert");
         co(function*() {
             if (!req.params.name) {
@@ -688,7 +688,7 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.get('/api/machine/:name/version/:version/instance/:instance/snapshot/keys', function (req, res) {
+    app.get('/api/machine/:name/version/:version/instance/:instance/snapshot/keys', app.oauth.authorise(), function (req, res) {
         debug("GET: '/api/machine/:name/version/instance/:instance/snapshot/keys");
         co(function*() {
 
@@ -742,7 +742,7 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.get('/api/machine/:name/version/:version/instance/:instance/snapshot/:snapshot', function (req, res) {
+    app.get('/api/machine/:name/version/:version/instance/:instance/snapshot/:snapshot', app.oauth.authorise(), function (req, res) {
         debug("GET: '/api/machine/:name/version/instance/:instance/snapshot/:snapshot");
         co(function*() {
 
@@ -800,7 +800,7 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.get('/api/machine/:name/version/:version/instance/:instance/snapshot', function (req, res) {
+    app.get('/api/machine/:name/version/:version/instance/:instance/snapshot', app.oauth.authorise(), function (req, res) {
         debug("GET: '/api/machine/:name/version/instance/:instance/snapshot");
         co(function*() {
 

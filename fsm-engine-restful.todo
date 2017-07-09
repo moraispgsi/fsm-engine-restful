@@ -1,8 +1,10 @@
-Base: 
- ☐ try catch in API  
- ☐ install and unninstall new interpreters dynamically 
+Primary:
+ ☐ use a API TOKEN in fsm-engine-restful @medium https://www.npmjs.com/package/node-oauth2-server
+Secondary:
+ ☐ create the github wiki
+ ☐ add error status codes
+ ☐ Install and unninstall new interpreters dynamically 
          var exec = require('child_process').exec, child;
-
          child = exec('npm install ffi',
          function (error, stdout, stderr) {
              console.log('stdout: ' + stdout);
@@ -11,19 +13,17 @@ Base:
                   console.log('exec error: ' + error);
              }
          });
- ☐ create the github wiki
- ☐ add error status codes
- ☐ use a API TOKEN in fsm-engine-restful @medium https://www.npmjs.com/package/node-oauth2-server
-API:
+ ☐ swap the actiondispatcher at runtime
+ ☐ get information about the repository @low
+ ☐ get all the instances that are running @low
+ ☐ get all the instances that have stopped @low
+ ☐ get all the instances that are running of a fsm @low
+ ☐ get all the instances that have stopped of a fsm @low
+Done: 
+ ✔ try catch in API @done (17-07-08 08:09)  
  ✔ start instance @done (17-06-26 12:11)
- ☐ send event to an instance
- ☐ get all the instances that are running
- ☐ get all the instances that have stopped
- ☐ get a snapshot of an instance
  ✔ seal a version @done (17-06-26 12:11)
- ☐ get all the instances of a fsm
- ☐ get all the instances that are running of a fsm
- ☐ get all the instances that have stopped of a fsm
- ☐ send a global event to the server
-
-
+ ✔ send event to an instance @done (17-07-08 08:11)
+ ✔ get a snapshot of an instance @done (17-07-08 08:11)
+ ✔ send a global event to the server @done (17-07-08 08:11)
+ ✔ get all the instances of a fsm @done (17-07-08 08:11)

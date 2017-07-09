@@ -32,10 +32,15 @@ co(function*(){
     let express = require('express');
     let app = express();
     let bodyParser = require('body-parser');
+
+
     app.use(bodyParser.json());         // to support JSON-encoded bodies
     app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
         extended: true
     }));
+
+    // initialize the oauth2
+    require('./oauth2.js')(app);
     app.use(express.static('doc'));
     app.all('*', function(req, res, next) {
         res.header('Access-Control-Allow-Origin', '*');
