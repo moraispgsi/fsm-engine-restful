@@ -1,4 +1,15 @@
 language: node_js
+sudo: true
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - build-essential
+      - libssl-dev
+      - gcc-4.9-multilib
+      - g++-4.9-multilib
+      - lcov
 node_js:
   - "7"
 jobs:
