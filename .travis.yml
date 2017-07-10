@@ -1,9 +1,10 @@
+language: node_js
+node_js:
+  - "7"
 jobs:
   include:
     - stage: unit tests
-      script: ""
-    - stage: unit tests
-      script: ""
+      script: "npm test"
     - stage: deploy to staging
       script: skip
       deploy: &heroku

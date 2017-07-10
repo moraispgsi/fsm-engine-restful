@@ -1,0 +1,31 @@
+{
+  "name": "fsm-engine-restful",
+  "version": "0.0.2",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "exit 0"
+  },
+  "engines": {
+    "node": "7.3.0"
+  },
+  "author": "Ricardo José Horta Morais",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "debug": "^2.6.8",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "fsm-engine": "0.0.17",
+    "json": "^9.0.6",
+    "jsonfile": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moraispgsi/fsm-engine-restful.git"
+  },
+  "devDependencies": {
+    "jest": "^20.0.4"
+  }
+}
