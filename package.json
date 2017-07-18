@@ -30,8 +30,7 @@
     "deploy": {
       "command": "npm run apidoc && npm run clusters",
       "env": {
-        "NODE_ENV": "production",
-        "DEBUG": "*"
+        "NODE_ENV": "production"
       }
     }
   },
