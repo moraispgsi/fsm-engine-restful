@@ -1,7 +1,6 @@
 import bcrypt from 'bcrypt';
 
 module.exports = (sequelize, DataType) => {
-
   const Users = sequelize.define('Users', {
     id: {
       type: DataType.INTEGER,
@@ -40,7 +39,6 @@ module.exports = (sequelize, DataType) => {
     },
     classMethods: {
       associate: models => {
-        Users.hasMany(models.Tasks);
       },
       isPassword: (encodedPassword, password) => {
         return bcrypt.compareSync(password, encodedPassword);
