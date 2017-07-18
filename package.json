@@ -4,7 +4,7 @@
   "description": "API server boilerplate using Node/Express/Sequelize",
   "main": "index.js",
   "scripts": {
-    "start": "npm run apidoc && npm run clusters",
+    "start": "better-npm-run deploy",
     "clusters": "babel-node clusters.js",
     "dev": "better-npm-run dev",
     "lint": "eslint .",
@@ -28,7 +28,7 @@
       }
     },
     "deploy": {
-      "command": "babel-node index.js",
+      "command": "npm run apidoc && npm run clusters",
       "env": {
         "NODE_ENV": "production",
         "DEBUG": "*"
