@@ -35,7 +35,7 @@ var _fsmEngine2 = _interopRequireDefault(_fsmEngine);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = function (app) {
-  app.set('port', 3004);
+  app.set('port', process.env.PORT);
   app.set('json spaces', 4);
   app.use((0, _morgan2.default)('common', {
     stream: {
