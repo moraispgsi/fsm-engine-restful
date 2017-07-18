@@ -4,8 +4,7 @@
   "description": "API server boilerplate using Node/Express/Sequelize",
   "main": "index.js",
   "scripts": {
-    "start": "better-npm-run deploy",
-    "clusters": "babel-node clusters.js",
+    "start": "cd build & node index.js",
     "dev": "better-npm-run dev",
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
@@ -28,7 +27,7 @@
       }
     },
     "deploy": {
-      "command": "npm run apidoc &&  babel-node index.js --ignore repository/",
+      "command": "babel -d ./build ./index.js -s & babel -d ./build ./auth.js & babel -d ./build ./db.js & babel ./libs --out-dir ./build/libs & babel ./routes --out-dir ./build/routes & babel ./models --out-dir ./build/models",
       "env": {
         "NODE_ENV": "production"
       }
