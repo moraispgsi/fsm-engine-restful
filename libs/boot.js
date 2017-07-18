@@ -7,7 +7,6 @@ import debugInit from 'debug';
 const debug = debugInit('boot');
 
 module.exports = app => {
-
   if (process.env.NODE_ENV === 'production') {
     const credentials = {
       key: fs.readFileSync('ntask.key', 'utf8'),

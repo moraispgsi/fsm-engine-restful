@@ -8,7 +8,7 @@ import logger from './logger.js';
 import Engine from 'fsm-engine';
 
 module.exports = app => {
-  app.set('port', 3004);
+  app.set('port', process.env.PORT);
   app.set('json spaces', 4);
   app.use(morgan('common', {
     stream: {
