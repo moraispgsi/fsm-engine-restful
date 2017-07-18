@@ -4,7 +4,7 @@
   "description": "API server boilerplate using Node/Express/Sequelize",
   "main": "index.js",
   "scripts": {
-    "start": "cd build & node index.js",
+    "start": "node start.js",
     "dev": "better-npm-run dev",
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
