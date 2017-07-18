@@ -1,10 +1,11 @@
 import bodyParser from 'body-parser';
 import express from 'express';
+import path from 'path';
 import morgan from 'morgan';
 import cors from 'cors';
 import helmet from 'helmet';
 import logger from './logger.js';
-let Engine = require("fsm-engine");
+import Engine from 'fsm-engine';
 
 module.exports = app => {
   app.set('port', 3004);
@@ -29,7 +30,6 @@ module.exports = app => {
     next();
   });
   app.use(express.static('public'));
-
-  app.engine = new Engine(process.env.ACTION_DISPATCHER_HOST, __dirname + "../repository");
-
+  app.engine = new Engine(process.env.DISPATCHER_URL, process.env.DISPATCHER_TOKEN,
+    path.join(__dirname, '../repository'), null);
 };

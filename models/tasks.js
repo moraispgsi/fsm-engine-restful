@@ -18,6 +18,7 @@ module.exports = (sequelize, DataType) => {
       defaultValue: false,
     },
   }, {
+    timestamps: false,
     classMethods: {
       associate: (models) => {
         Tasks.belongsTo(models.Users);

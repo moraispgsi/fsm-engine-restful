@@ -21,17 +21,17 @@
   },
   "betterScripts": {
     "dev": {
-      "command": "nodemon --exec babel-node index.js --ignore repository/",
+      "command": "nodemon --debug --exec babel-node index.js --ignore repository/",
       "env": {
         "NODE_ENV": "development",
         "DEBUG": "app:*"
       }
     },
     "deploy": {
-      "command": "echo TODO",
+      "command": "babel-node index.js",
       "env": {
         "NODE_ENV": "production",
-        "DEBUG": "app:*"
+        "DEBUG": "*"
       }
     }
   },
@@ -45,14 +45,18 @@
     "cors": "^2.7.1",
     "debug": "^2.6.8",
     "express": "^4.13.4",
-    "fsm-engine": "0.0.17",
+    "fsm-engine": "0.0.19",
     "helmet": "^1.1.0",
     "jwt-simple": "^0.4.1",
     "morgan": "^1.6.1",
+    "mysql2": "^1.3.6",
     "passport": "^0.3.2",
     "passport-jwt": "^2.0.0",
+    "pg": "^7.0.0",
+    "pg-hstore": "^2.3.2",
     "sequelize": "^3.19.2",
     "sqlite3": "^3.1.8",
+    "tedious": "^2.0.0",
     "winston": "^2.1.1"
   },
   "devDependencies": {

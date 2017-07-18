@@ -10,8 +10,11 @@ module.exports = app => {
     const sequelize = new Sequelize(
       config.database,
       config.username,
-      config.password,
-      config.params
+      config.password, {
+        host: config.host,
+        dialect: config.dialect,
+      },
+      config.params,
     );
     db = {
       sequelize,

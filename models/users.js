@@ -1,6 +1,7 @@
 import bcrypt from 'bcrypt';
 
 module.exports = (sequelize, DataType) => {
+
   const Users = sequelize.define('Users', {
     id: {
       type: DataType.INTEGER,
@@ -30,6 +31,7 @@ module.exports = (sequelize, DataType) => {
       },
     },
   }, {
+    timestamps: false,
     hooks: {
       beforeCreate: user => {
         const salt = bcrypt.genSaltSync();
