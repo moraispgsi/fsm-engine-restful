@@ -4,6 +4,10 @@ var _https = require('https');
 
 var _https2 = _interopRequireDefault(_https);
 
+var _http = require('http');
+
+var _http2 = _interopRequireDefault(_http);
+
 var _fs = require('fs');
 
 var _fs2 = _interopRequireDefault(_fs);
@@ -20,7 +24,18 @@ process.env.DEBUG = 'boot';
 var debug = (0, _debug2.default)('boot');
 
 module.exports = function (app) {
-  if (process.env.NODE_ENV === 'production') {
+  if (process.env.PLATFORM === 'heroku') {
+    app.db.sequelize.sync().done(function () {
+      _http2.default.createServer(app).listen(app.get('port'), function () {
+        // The server needs to be operational in order to bind the port within 90 seconds
+        // Therefore since the engine init is an expensive operation,
+        // we initialize the server first.
+        app.engine.init(process.env.CLONE_URL, process.env.PUBLIC_KEY, process.env.PRIVATE_KEY, process.env.PASSPHRASE).then(function () {
+          debug('Engine was initialized');
+        });
+      });
+    });
+  } else if (process.env.NODE_ENV === 'production') {
     var credentials = {
       key: _fs2.default.readFileSync('ntask.key', 'utf8'),
       cert: _fs2.default.readFileSync('ntask.cert', 'utf8')
