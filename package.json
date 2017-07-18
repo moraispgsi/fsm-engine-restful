@@ -57,7 +57,8 @@
     "sequelize": "^3.19.2",
     "sqlite3": "^3.1.8",
     "tedious": "^2.0.0",
-    "winston": "^2.1.1"
+    "winston": "^2.1.1",
+    "better-npm-run": "0.0.5"
   },
   "devDependencies": {
     "apidoc": "^0.15.1",

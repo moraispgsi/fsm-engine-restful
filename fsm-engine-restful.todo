@@ -1,0 +1,42 @@
+Primary:
+ ☐ add entry point to get the commit history
+Secondary:
+ ☐ create the github wiki
+ ☐ add error status codes
+ ☐ Install and unninstall new interpreters dynamically 
+         var exec = require('child_process').exec, child;
+         child = exec('npm install ffi',
+         function (error, stdout, stderr) {
+             console.log('stdout: ' + stdout);
+             console.log('stderr: ' + stderr);
+             if (error !== null) {
+                  console.log('exec error: ' + error);
+             }
+         });
+ ☐ swap the actiondispatcher 
+ ☐ get information about the repository @low
+ ☐ get all the instances that are running @low
+ ☐ get all the instances that have stopped @low
+ ☐ get all the instances that are running of a fsm @low
+ ☐ get all the instances that have stopped of a fsm @low
+
+Tests:
+  ☐ Test create machine
+  ☐ Test create version
+  ☐ Test create instance
+  ☐ Test force snapshot
+  ☐ Test start engine
+  ☐ Test stop engine
+  ☐ Test change dispatcher
+  ☐ Test commit history
+
+
+Done: 
+ ✔ use a API TOKEN in fsm-engine-restful @medium  @done (17-07-11 09:46)
+ ✔ try catch in API @done (17-07-08 08:09)  
+ ✔ start instance @done (17-06-26 12:11)
+ ✔ seal a version @done (17-06-26 12:11)
+ ✔ send event to an instance @done (17-07-08 08:11)
+ ✔ get a snapshot of an instance @done (17-07-08 08:11)
+ ✔ send a global event to the server @done (17-07-08 08:11)
+ ✔ get all the instances of a fsm @done (17-07-08 08:11)
