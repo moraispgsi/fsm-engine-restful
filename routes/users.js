@@ -23,6 +23,7 @@ module.exports = app => {
      *    HTTP/1.1 412 Precondition Failed
      */
     .get((req, res) => {
+
       Users.findAll({
         where: {
           id: req.user.id,

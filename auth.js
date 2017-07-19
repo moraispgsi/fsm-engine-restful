@@ -1,5 +1,7 @@
 import passport from 'passport';
 import { Strategy, ExtractJwt } from 'passport-jwt';
+import debugInit from 'debug';
+const debug = debugInit('auth');
 
 module.exports = app => {
   const Users = app.db.models.Users;
@@ -8,7 +10,9 @@ module.exports = app => {
     secretOrKey: cfg.jwtSecret,
     jwtFromRequest: ExtractJwt.fromAuthHeader(),
   };
+
   const strategy = new Strategy(params, (payload, done) => {
+
     Users.findAll({
       where: {
         id: payload.id,

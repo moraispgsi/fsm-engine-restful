@@ -63,7 +63,7 @@ module.exports = app => {
       key: fs.readFileSync('ntask.key', 'utf8'),
       cert: fs.readFileSync('ntask.cert', 'utf8'),
     };
-    app.db.sequelize.sync().done(() => {
+    app.db.sequelize.sync({ force: true }).done(() => {
       app.engine.init(process.env.CLONE_URL,
         process.env.PUBLIC_KEY, process.env.PRIVATE_KEY, process.env.PASSPHRASE)
         .then(() => {

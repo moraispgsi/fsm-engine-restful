@@ -42,8 +42,7 @@
     "test": {
       "command": "mocha test/**/*.js",
       "env": {
-        "NODE_ENV": "test",
-        "DEBUG": "engine core"
+        "NODE_ENV": "test"
       }
     }
   },

@@ -1,21 +1,33 @@
 import jwt from 'jwt-simple';
+import debugInit from 'debug';
+const debug = debugInit('auth');
+
 
 describe('Routes: Users', () => {
   const Users = app.db.models.Users;
   const jwtSecret = app.libs.config.jwtSecret;
   let token;
   beforeEach(done => {
-    Users
-      .destroy({ where: {} })
-      .then(() => Users.create({
-        name: 'John',
-        email: 'john@mail.net',
-        password: '12345',
-      }))
+    debug('ABC');
+    Users.findAll({ where: {} }).then((users) => {
+      return users.map((user) => user.destroy());
+    })
+      .then(() => {
+        return Users.findAll({ where: {} });
+      })
+      .then((users) => {
+        debug('ABC %s', JSON.stringify(users));
+        return Users.create({
+          name: 'John',
+          email: 'john@mail.net',
+          password: '12345',
+        });
+      })
       .then(user => {
         token = jwt.encode({ id: user.id }, jwtSecret);
-        setTimeout(done, 1000);
+        done();
       });
+
   });
   describe('GET /user', () => {
     describe('status 200', () => {
