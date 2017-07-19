@@ -9,17 +9,21 @@ module.exports = app => {
     jwtFromRequest: ExtractJwt.fromAuthHeader(),
   };
   const strategy = new Strategy(params, (payload, done) => {
-    Users.findById(payload.id)
-        .then(user => {
-          if (user) {
-            return done(null, {
-              id: user.id,
-              email: user.email,
-            });
-          }
-          return done(null, false);
-        })
-        .catch(error => done(error, null));
+    Users.findAll({
+      where: {
+        id: payload.id,
+      },
+    })
+    .then(users => {
+      if (users[0]) {
+        return done(null, {
+          id: users[0].id,
+          email: users[0].email,
+        });
+      }
+      return done(null, false);
+    })
+    .catch(error => done(error, null));
   });
   passport.use(strategy);
   return {

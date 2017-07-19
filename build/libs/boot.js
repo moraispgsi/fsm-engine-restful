@@ -71,12 +71,13 @@ module.exports = function (app) {
       cert: _fs2.default.readFileSync('ntask.cert', 'utf8')
     };
     app.db.sequelize.sync().done(function () {
-      _https2.default.createServer(_credentials2, app).listen(app.get('port'), function () {
-        // The server needs to be operational in order to bind the port within 90 seconds
-        // Therefore since the engine init is an expensive operation,
-        // we initialize the server first.
-        app.engine.init(process.env.CLONE_URL, process.env.PUBLIC_KEY, process.env.PRIVATE_KEY, process.env.PASSPHRASE).then(function () {
-          debug('Engine was initialized');
+      app.engine.init(process.env.CLONE_URL, process.env.PUBLIC_KEY, process.env.PRIVATE_KEY, process.env.PASSPHRASE).then(function () {
+        debug('Engine was initialized');
+        _https2.default.createServer(_credentials2, app).listen(app.get('port'), function () {
+          // The server needs to be operational in order to bind the port within 90 seconds
+          // Therefore since the engine init is an expensive operation,
+          // we initialize the server first.
+
         });
       });
     });
