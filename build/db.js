@@ -19,10 +19,7 @@ var db = null;
 module.exports = function (app) {
   if (!db) {
     var config = app.libs.config;
-    var sequelize = new _sequelize2.default(config.database, config.username, config.password, {
-      host: config.host,
-      dialect: config.dialect
-    }, config.params);
+    var sequelize = new _sequelize2.default(config.database, config.username, config.password, config.params);
     db = {
       sequelize: sequelize,
       Sequelize: _sequelize2.default,

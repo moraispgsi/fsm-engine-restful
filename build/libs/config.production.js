@@ -8,12 +8,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 module.exports = {
 
-  host: process.env.DB_SERVER,
   database: process.env.DB,
   username: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
-  dialect: process.env.DIALECT,
   params: {
+    host: process.env.DB_SERVER,
+    dialect: process.env.DIALECT,
     logging: function logging(sql) {
       _logger2.default.info('[' + new Date() + '] ' + sql);
     },

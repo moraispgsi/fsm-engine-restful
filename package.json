@@ -4,7 +4,7 @@
   "description": "API server boilerplate using Node/Express/Sequelize",
   "main": "index.js",
   "scripts": {
-    "start": "node build/index.js",
+    "start": "better-npm-run start",
     "dev": "better-npm-run dev",
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
@@ -23,13 +23,20 @@
       "command": "nodemon --debug --exec babel-node index.js --ignore repository/",
       "env": {
         "NODE_ENV": "development",
-        "DEBUG": "app:*"
+        "DEBUG": "engine core"
       }
     },
     "deploy": {
       "command": "babel -d ./build ./index.js -s & babel -d ./build ./auth.js & babel -d ./build ./db.js & babel ./libs --out-dir ./build/libs & babel ./routes --out-dir ./build/routes & babel ./models --out-dir ./build/models",
       "env": {
         "NODE_ENV": "production"
+      }
+    },
+    "start": {
+      "command": "node build/index.js",
+      "env": {
+        "NODE_ENV": "production",
+        "DEBUG": "engine core"
       }
     }
   },

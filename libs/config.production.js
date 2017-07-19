@@ -2,12 +2,12 @@ import logger from './logger.js';
 
 module.exports = {
 
-  host: process.env.DB_SERVER,
   database: process.env.DB,
   username: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
-  dialect: process.env.DIALECT,
   params: {
+    host: process.env.DB_SERVER,
+    dialect: process.env.DIALECT,
     logging: (sql) => {
       logger.info(`[${new Date()}] ${sql}`);
     },
@@ -18,3 +18,4 @@ module.exports = {
   jwtSecret: 'Nta$K-AP1',
   jwtSession: { session: false },
 };
+

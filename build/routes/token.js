@@ -31,9 +31,10 @@ module.exports = function (app) {
     if (req.body.email && req.body.password) {
       var email = req.body.email;
       var password = req.body.password;
-      Users.findOne({ where: { email: email } }).then(function (user) {
-        if (Users.isPassword(user.password, password)) {
-          var payload = { id: user.id };
+      Users.findAll({ where: { email: email } }).then(function (users) {
+        console.log(users);
+        if (Users.isPassword(users[0].password, password)) {
+          var payload = { id: users[0].id };
           res.json({
             token: _jwtSimple2.default.encode(payload, cfg.jwtSecret)
           });

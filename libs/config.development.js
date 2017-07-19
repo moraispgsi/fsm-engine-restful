@@ -4,7 +4,6 @@ module.exports = {
   database: 'database',
   username: '',
   password: '',
-  dialect: 'sqlite',
   params: {
     dialect: 'sqlite',
     storage: 'database.sqlite',

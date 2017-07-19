@@ -65,7 +65,7 @@ module.exports = app => {
     };
     app.db.sequelize.sync().done(() => {
       https.createServer(credentials, app)
-        .listen(app.get('port'), '0.0.0.0', () => {
+        .listen(app.get('port'), () => {
           // The server needs to be operational in order to bind the port within 90 seconds
           // Therefore since the engine init is an expensive operation,
           // we initialize the server first.

@@ -23,10 +23,13 @@ module.exports = app => {
      *    HTTP/1.1 412 Precondition Failed
      */
     .get((req, res) => {
-      Users.findById(req.user.id, {
+      Users.findAll({
+        where: {
+          id: req.user.id,
+        },
         attributes: ['id', 'name', 'email'],
       })
-      .then(result => res.json(result))
+      .then(result => res.json(result[0]))
       .catch(error => {
         res.status(412).json({ msg: error.message });
       });

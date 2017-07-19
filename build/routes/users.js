@@ -24,10 +24,13 @@ module.exports = function (app) {
    *    HTTP/1.1 412 Precondition Failed
    */
   .get(function (req, res) {
-    Users.findById(req.user.id, {
+    Users.findAll({
+      where: {
+        id: req.user.id
+      },
       attributes: ['id', 'name', 'email']
     }).then(function (result) {
-      return res.json(result);
+      return res.json(result[0]);
     }).catch(function (error) {
       res.status(412).json({ msg: error.message });
     });
