@@ -8,7 +8,7 @@
     "dev": "better-npm-run dev",
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
-    "test": "NODE_ENV=test mocha test/**/*.js",
+    "test": "better-npm-run test",
     "apidoc": "apidoc -i routes/ -o public/apidoc",
     "deploy": "better-npm-run deploy"
   },
@@ -36,6 +36,13 @@
       "command": "node build/index.js",
       "env": {
         "NODE_ENV": "production",
+        "DEBUG": "engine core"
+      }
+    },
+    "test": {
+      "command": "mocha test/**/*.js",
+      "env": {
+        "NODE_ENV": "test",
         "DEBUG": "engine core"
       }
     }
