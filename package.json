@@ -20,10 +20,10 @@
   },
   "betterScripts": {
     "dev": {
-      "command": "nodemon --debug --exec babel-node index.js --ignore repository/",
+      "command": "nodemon --exec babel-node index.js --ignore repository/",
       "env": {
         "NODE_ENV": "development",
-        "DEBUG": "engine core"
+        "DEBUG": "engine core instance-log vantage instance"
       }
     },
     "deploy": {
@@ -36,7 +36,7 @@
       "command": "node build/index.js",
       "env": {
         "NODE_ENV": "production",
-        "DEBUG": "engine core"
+        "DEBUG": "engine core instance-log vantage instance"
       }
     },
     "test": {
@@ -67,7 +67,7 @@
     "eslint-config-airbnb": "^5.0.1",
     "eslint-plugin-flow-vars": "^0.1.3",
     "express": "^4.13.4",
-    "fsm-engine": "0.0.19",
+    "fsm-engine": "0.0.22",
     "helmet": "^1.1.0",
     "jwt-simple": "^0.4.1",
     "mocha": "^2.4.5",
@@ -84,6 +84,7 @@
     "sqlite3": "^3.1.8",
     "supertest": "^1.2.0",
     "tedious": "^2.0.0",
+    "vantage": "moraispgsi/vantage",
     "winston": "^2.1.1"
   },
   "devDependencies": {

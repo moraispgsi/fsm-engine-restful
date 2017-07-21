@@ -1,3 +1,4 @@
+import Vantage from 'vantage';
 import bodyParser from 'body-parser';
 import express from 'express';
 import path from 'path';
@@ -8,7 +9,7 @@ import logger from './logger.js';
 import Engine from 'fsm-engine';
 
 module.exports = app => {
-  app.set('port', process.env.PORT);
+  app.set('port', process.env.PORT || 3001);
   app.set('json spaces', 4);
   app.use(morgan('common', {
     stream: {
@@ -30,6 +31,7 @@ module.exports = app => {
     next();
   });
   app.use(express.static('public'));
+  app.vantage = new Vantage();
   app.engine = new Engine(process.env.DISPATCHER_URL, process.env.DISPATCHER_TOKEN,
-    path.join(__dirname, '../repository'), null);
+    process.env.REPOSITORY_PATH || path.join(__dirname, '../repository'), null);
 };

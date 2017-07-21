@@ -12,7 +12,7 @@ module.exports = app => {
   };
 
   const strategy = new Strategy(params, (payload, done) => {
-
+    debug('Test');
     Users.findAll({
       where: {
         id: payload.id,

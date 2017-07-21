@@ -1,7 +1,7 @@
 module.exports = function (app, engine) {
 
-    let debug = require("debug")("machine-api");
-    let co = require("co");
+  let debug = require('debug')('machine-api');
+  let co = require('co');
 
     /**
      * @api {put} /api/engine/stop Stops the engine
@@ -14,15 +14,15 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.put('/api/engine/stop', app.oauth.authorise(), function (req, res) {
-        debug("PUT: '/api/engine/stop");
-        co(function*() {
-            yield engine.stop();
-            res.sendStatus(200);
+  app.put('/api/engine/stop', app.oauth.authorise(), function (req, res) {
+      debug("PUT: '/api/engine/stop");
+      co(function*() {
+          yield engine.stop();
+          res.sendStatus(200);
         }).catch((err) => {
-            debug("Error: " + err);
-            let message = err.message;
-            res.status(500).send({message});
+          debug('Error: ' + err);
+          let message = err.message;
+          res.status(500).send({ message });
         });
     });
 
@@ -37,15 +37,15 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.put('/api/engine/resume', app.oauth.authorise(), function (req, res) {
-        debug("PUT: '/api/engine/resume");
-        co(function*() {
-            yield engine.resume();
-            res.sendStatus(200);
+  app.put('/api/engine/resume', app.oauth.authorise(), function (req, res) {
+      debug("PUT: '/api/engine/resume");
+      co(function*() {
+          yield engine.resume();
+          res.sendStatus(200);
         }).catch((err) => {
-            debug("Error: " + err);
-            let message = err.message;
-            res.status(500).send({message});
+          debug('Error: ' + err);
+          let message = err.message;
+          res.status(500).send({ message });
         });
     });
 
@@ -69,15 +69,15 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.post('/api/engine/event', app.oauth.authorise(), function (req, res) {
-        debug("POST: '/api/engine/event");
-        co(function*() {
-            yield engine.resume();
-            res.sendStatus(200);
+  app.post('/api/engine/event', app.oauth.authorise(), function (req, res) {
+      debug("POST: '/api/engine/event");
+      co(function*() {
+          yield engine.resume();
+          res.sendStatus(200);
         }).catch((err) => {
-            debug("Error: " + err);
-            let message = err.message;
-            res.status(500).send({message});
+          debug('Error: ' + err);
+          let message = err.message;
+          res.status(500).send({ message });
         });
     });
 
@@ -100,18 +100,18 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.get('/api/machine', app.oauth.authorise(), function (req, res) {
+  app.get('/api/machine', app.oauth.authorise(), function (req, res) {
 
-        debug("GET: /api/machine");
-        co(function*(){
-            let machinesNames = yield engine.getMachinesNames();
-            res.json({
-                machinesNames: machinesNames
+      debug('GET: /api/machine');
+      co(function*() {
+          let machinesNames = yield engine.getMachinesNames();
+          res.json({
+              machinesNames: machinesNames
             });
-        }).catch((err)=> {
-            debug("Error: " + err);
-            let message = err.message;
-            res.status(500).send({message});
+        }).catch((err) => {
+          debug('Error: ' + err);
+          let message = err.message;
+          res.status(500).send({ message });
         });
     });
 
@@ -128,21 +128,21 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.post('/api/machine', app.oauth.authorise(), function (req, res) {
-        debug("POST: /api/machine");
-        co(function*() {
-            if (!req.body.name) {
-                let message = "Name property is missing.";
-                debug("Error: " + message);
-                res.status(500).send({message});
-                return;
+  app.post('/api/machine', app.oauth.authorise(), function (req, res) {
+      debug('POST: /api/machine');
+      co(function*() {
+          if (!req.body.name) {
+              let message = 'Name property is missing.';
+              debug('Error: ' + message);
+              res.status(500).send({ message });
+              return;
             }
-            yield engine.addMachine(req.body.name);
-            res.sendStatus(200);
+          yield engine.addMachine(req.body.name);
+          res.sendStatus(200);
         }).catch((err) => {
-            debug("Error: " + err);
-            let message = err.message;
-            res.status(500).send({message});
+          debug('Error: ' + err);
+          let message = err.message;
+          res.status(500).send({ message });
         });
     });
 
@@ -160,22 +160,22 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.delete('/api/machine/:name', app.oauth.authorise(), function (req, res) {
-        debug("DELETE: /api/machine/:name");
-        co(function*() {
-            if (!req.params.name) {
+  app.delete('/api/machine/:name', app.oauth.authorise(), function (req, res) {
+      debug('DELETE: /api/machine/:name');
+      co(function*() {
+          if (!req.params.name) {
 
-                let message = "Name property is missing.";
-                debug("Error: " + message);
-                res.status(500).send({message});
-                return;
+              let message = 'Name property is missing.';
+              debug('Error: ' + message);
+              res.status(500).send({ message });
+              return;
             }
-            yield engine.removeMachine(req.params.name);
-            res.sendStatus(200);
+          yield engine.removeMachine(req.params.name);
+          res.sendStatus(200);
         }).catch((err) => {
-            debug("Error: " + err);
-            let message = err.message;
-            res.status(500).send({message});
+          debug('Error: ' + err);
+          let message = err.message;
+          res.status(500).send({ message });
         });
     });
 
@@ -200,23 +200,23 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.get('/api/machine/:name/version/keys', app.oauth.authorise(), function (req, res) {
-        debug("POST: '/api/machine/:name/version/keys");
-        co(function*() {
-            if (!req.params.name) {
-                let message = "name property is missing.";
-                debug("Error: " + message);
-                res.status(500).send({message});
-                return;
+  app.get('/api/machine/:name/version/keys', app.oauth.authorise(), function (req, res) {
+      debug("POST: '/api/machine/:name/version/keys");
+      co(function*() {
+          if (!req.params.name) {
+              let message = 'name property is missing.';
+              debug('Error: ' + message);
+              res.status(500).send({ message });
+              return;
             }
-            let versionsKeys = yield engine.getVersionsKeys(req.params.name);
-            res.json({
-                versionsKeys: versionsKeys
+          let versionsKeys = yield engine.getVersionsKeys(req.params.name);
+          res.json({
+              versionsKeys: versionsKeys
             });
         }).catch((err) => {
-            debug("Error: " + err);
-            let message = err.message;
-            res.status(500).send({message});
+          debug('Error: ' + err);
+          let message = err.message;
+          res.status(500).send({ message });
         });
     });
 
@@ -242,23 +242,23 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.post('/api/machine/:name/version', app.oauth.authorise(), function (req, res) {
-        debug("POST: '/api/machine/:name/version");
-        co(function*() {
-            if (!req.params.name) {
-                let message = "name property is missing.";
-                debug("Error: " + message);
-                res.status(500).send({message});
-                return;
+  app.post('/api/machine/:name/version', app.oauth.authorise(), function (req, res) {
+      debug("POST: '/api/machine/:name/version");
+      co(function*() {
+          if (!req.params.name) {
+              let message = 'name property is missing.';
+              debug('Error: ' + message);
+              res.status(500).send({ message });
+              return;
             }
-            let versionKey = yield engine.addVersion(req.params.name);
-            res.json({
-                versionKey: versionKey
+          let versionKey = yield engine.addVersion(req.params.name);
+          res.json({
+              versionKey: versionKey
             });
         }).catch((err) => {
-            debug("Error: " + err);
-            let message = err.message;
-            res.status(500).send({message});
+          debug('Error: ' + err);
+          let message = err.message;
+          res.status(500).send({ message });
         });
     });
 
@@ -278,21 +278,21 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.get('/api/machine/:name/version/:version/info', app.oauth.authorise(), function (req, res) {
-        debug("GET: '/api/machine/:name/version/info");
-        co(function*() {
-            if (!req.params.name) {
-                let message = "name property is missing.";
-                debug("Error: " + message);
-                res.status(500).send({message});
-                return;
+  app.get('/api/machine/:name/version/:version/info', app.oauth.authorise(), function (req, res) {
+      debug("GET: '/api/machine/:name/version/info");
+      co(function*() {
+          if (!req.params.name) {
+              let message = 'name property is missing.';
+              debug('Error: ' + message);
+              res.status(500).send({ message });
+              return;
             }
-            let info = yield engine.getVersionInfo(req.params.name, req.params.version);
-            res.json(info);
+          let info = yield engine.getVersionInfo(req.params.name, req.params.version);
+          res.json(info);
         }).catch((err) => {
-            debug("Error: " + err);
-            let message = err.message;
-            res.status(500).send({message});
+          debug('Error: ' + err);
+          let message = err.message;
+          res.status(500).send({ message });
         });
     });
 
@@ -312,21 +312,21 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.get('/api/machine/:name/version/:version/model', app.oauth.authorise(), function (req, res) {
-        debug("GET: '/api/machine/:name/version/model");
-        co(function*() {
-            if (!req.params.name) {
-                let message = "name property is missing.";
-                debug("Error: " + message);
-                res.status(500).send({message});
-                return;
+  app.get('/api/machine/:name/version/:version/model', app.oauth.authorise(), function (req, res) {
+      debug("GET: '/api/machine/:name/version/model");
+      co(function*() {
+          if (!req.params.name) {
+              let message = 'name property is missing.';
+              debug('Error: ' + message);
+              res.status(500).send({ message });
+              return;
             }
-            let model = engine.getVersionSCXML(req.params.name, req.params.version);
-            res.json({model: model});
+          let model = engine.getVersionSCXML(req.params.name, req.params.version);
+          res.json({ model: model });
         }).catch((err) => {
-            debug("Error: " + err);
-            let message = err.message;
-            res.status(500).send({message});
+          debug('Error: ' + err);
+          let message = err.message;
+          res.status(500).send({ message });
         });
     });
 
@@ -345,21 +345,21 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.put('/api/machine/:name/version/:version/model', app.oauth.authorise(), function (req, res) {
-        debug("PUT: '/api/machine/:name/version/model");
-        co(function*() {
-            if (!req.params.name) {
-                let message = "name property is missing.";
-                debug("Error: " + message);
-                res.status(500).send({message});
-                return;
+  app.put('/api/machine/:name/version/:version/model', app.oauth.authorise(), function (req, res) {
+      debug("PUT: '/api/machine/:name/version/model");
+      co(function*() {
+          if (!req.params.name) {
+              let message = 'name property is missing.';
+              debug('Error: ' + message);
+              res.status(500).send({ message });
+              return;
             }
-            yield engine.setVersionSCXML(req.params.name, req.params.version, req.body.model);
-            res.sendStatus(200);
+          yield engine.setVersionSCXML(req.params.name, req.params.version, req.body.model);
+          res.sendStatus(200);
         }).catch((err) => {
-            debug("Error: " + err);
-            let message = err.message;
-            res.status(500).send({message});
+          debug('Error: ' + err);
+          let message = err.message;
+          res.status(500).send({ message });
         });
     });
 
@@ -383,23 +383,23 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.get('/api/machine/:name/version/:version/instance/keys', app.oauth.authorise(), function (req, res) {
-        debug("GET: '/api/machine/:name/version/instance/keys");
-        co(function*() {
-            if (!req.params.name) {
-                let message = "name property is missing.";
-                debug("Error: " + message);
-                res.status(500).send({message});
-                return;
+  app.get('/api/machine/:name/version/:version/instance/keys', app.oauth.authorise(), function (req, res) {
+      debug("GET: '/api/machine/:name/version/instance/keys");
+      co(function*() {
+          if (!req.params.name) {
+              let message = 'name property is missing.';
+              debug('Error: ' + message);
+              res.status(500).send({ message });
+              return;
             }
-            let instancesKeys = engine.getInstancesKeys(req.params.name, req.params.version);
-            res.json({
-               instancesKeys: instancesKeys
+          let instancesKeys = engine.getInstancesKeys(req.params.name, req.params.version);
+          res.json({
+              instancesKeys: instancesKeys
             });
         }).catch((err) => {
-            debug("Error: " + err);
-            let message = err.message;
-            res.status(500).send({message});
+          debug('Error: ' + err);
+          let message = err.message;
+          res.status(500).send({ message });
         });
     });
 
@@ -416,23 +416,23 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.post('/api/machine/:name/version/:version/instance', app.oauth.authorise(), function (req, res) {
-        debug("POST: '/api/machine/:name/version/instance");
-        co(function*() {
-            if (!req.params.name) {
-                let message = "name property is missing.";
-                debug("Error: " + message);
-                res.status(500).send({message});
-                return;
+  app.post('/api/machine/:name/version/:version/instance', app.oauth.authorise(), function (req, res) {
+      debug("POST: '/api/machine/:name/version/instance");
+      co(function*() {
+          if (!req.params.name) {
+              let message = 'name property is missing.';
+              debug('Error: ' + message);
+              res.status(500).send({ message });
+              return;
             }
-            let instance = yield engine.addInstance(req.params.name, req.params.version);
-            res.json({
-                instanceKey: instance.instanceKey
+          let instance = yield engine.addInstance(req.params.name, req.params.version);
+          res.json({
+              instanceKey: instance.instanceKey
             });
         }).catch((err) => {
-            debug("Error: " + err);
-            let message = err.message;
-            res.status(500).send({message});
+          debug('Error: ' + err);
+          let message = err.message;
+          res.status(500).send({ message });
         });
     });
 
@@ -449,27 +449,27 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.put('/api/machine/:name/version/:version/seal', app.oauth.authorise(), function (req, res) {
-        debug("PUT: '/api/machine/:name/version/seal");
-        co(function*() {
-            if (!req.params.name) {
-                let message = "name property is missing.";
-                debug("Error: " + message);
-                res.status(500).send({message});
-                return;
+  app.put('/api/machine/:name/version/:version/seal', app.oauth.authorise(), function (req, res) {
+      debug("PUT: '/api/machine/:name/version/seal");
+      co(function*() {
+          if (!req.params.name) {
+              let message = 'name property is missing.';
+              debug('Error: ' + message);
+              res.status(500).send({ message });
+              return;
             }
-            if (!req.params.version) {
-                let message = "version property is missing.";
-                debug("Error: " + message);
-                res.status(500).send({message});
-                return;
+          if (!req.params.version) {
+              let message = 'version property is missing.';
+              debug('Error: ' + message);
+              res.status(500).send({ message });
+              return;
             }
-            yield engine.sealVersion(req.params.name, req.params.version);
-            res.sendStatus(200);
+          yield engine.sealVersion(req.params.name, req.params.version);
+          res.sendStatus(200);
         }).catch((err) => {
-            debug("Error: " + err);
-            let message = err.message;
-            res.status(500).send({message});
+          debug('Error: ' + err);
+          let message = err.message;
+          res.status(500).send({ message });
         });
     });
 
@@ -487,22 +487,22 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.put('/api/machine/:name/version/:version/instance/:instance/start', app.oauth.authorise(), function (req, res) {
-        debug("PUT: '/api/machine/:name/version/instance/:instance/start");
-        co(function*() {
-            if (!req.params.name) {
-                let message = "name property is missing.";
-                debug("Error: " + message);
-                res.status(500).send({message});
-                return;
+  app.put('/api/machine/:name/version/:version/instance/:instance/start', app.oauth.authorise(), function (req, res) {
+      debug("PUT: '/api/machine/:name/version/instance/:instance/start");
+      co(function*() {
+          if (!req.params.name) {
+              let message = 'name property is missing.';
+              debug('Error: ' + message);
+              res.status(500).send({ message });
+              return;
             }
-            let instance = engine.getInstance(req.params.name, req.params.version, req.params.instance);
-            yield instance.start();
-            res.sendStatus(200);
+          let instance = engine.getInstance(req.params.name, req.params.version, req.params.instance);
+          yield instance.start();
+          res.sendStatus(200);
         }).catch((err) => {
-            debug("Error: " + err);
-            let message = err.message;
-            res.status(500).send({message});
+          debug('Error: ' + err);
+          let message = err.message;
+          res.status(500).send({ message });
         });
     });
 
@@ -520,34 +520,34 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.put('/api/machine/:name/version/:version/instance/:instance/stop', app.oauth.authorise(), function (req, res) {
-        debug("PUT: '/api/machine/:name/version/instance/:instance/stop");
-        co(function*() {
-            if (!req.params.name) {
-                let message = "name property is missing.";
-                debug("Error: " + message);
-                res.status(500).send({message});
-                return;
+  app.put('/api/machine/:name/version/:version/instance/:instance/stop', app.oauth.authorise(), function (req, res) {
+      debug("PUT: '/api/machine/:name/version/instance/:instance/stop");
+      co(function*() {
+          if (!req.params.name) {
+              let message = 'name property is missing.';
+              debug('Error: ' + message);
+              res.status(500).send({ message });
+              return;
             }
-            if (!req.params.version) {
-                let message = "version property is missing.";
-                debug("Error: " + message);
-                res.status(500).send({message});
-                return;
+          if (!req.params.version) {
+              let message = 'version property is missing.';
+              debug('Error: ' + message);
+              res.status(500).send({ message });
+              return;
             }
-            if (!req.params.instance) {
-                let message = "instance property is missing.";
-                debug("Error: " + message);
-                res.status(500).send({message});
-                return;
+          if (!req.params.instance) {
+              let message = 'instance property is missing.';
+              debug('Error: ' + message);
+              res.status(500).send({ message });
+              return;
             }
-            let instance = engine.getInstance(req.params.name, req.params.version, req.params.instance);
-            instance.stop();
-            res.sendStatus(200);
+          let instance = engine.getInstance(req.params.name, req.params.version, req.params.instance);
+          instance.stop();
+          res.sendStatus(200);
         }).catch((err) => {
-            debug("Error: " + err);
-            let message = err.message;
-            res.status(500).send({message});
+          debug('Error: ' + err);
+          let message = err.message;
+          res.status(500).send({ message });
         });
     });
 
@@ -574,41 +574,41 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.post('/api/machine/:name/version/:version/instance/:instance/event', app.oauth.authorise(), function (req, res) {
-        debug("POST: '/api/machine/:name/version/instance/:instance/event");
-        co(function*() {
-            if (!req.params.name) {
-                let message = "name property is missing.";
-                debug("Error: " + message);
-                res.status(500).send({message});
-                return;
+  app.post('/api/machine/:name/version/:version/instance/:instance/event', app.oauth.authorise(), function (req, res) {
+      debug("POST: '/api/machine/:name/version/instance/:instance/event");
+      co(function*() {
+          if (!req.params.name) {
+              let message = 'name property is missing.';
+              debug('Error: ' + message);
+              res.status(500).send({ message });
+              return;
             }
-            if (!req.params.version) {
-                let message = "version property is missing.";
-                debug("Error: " + message);
-                res.status(500).send({message});
-                return;
+          if (!req.params.version) {
+              let message = 'version property is missing.';
+              debug('Error: ' + message);
+              res.status(500).send({ message });
+              return;
             }
-            if (!req.params.instance) {
-                let message = "instance property is missing.";
-                debug("Error: " + message);
-                res.status(500).send({message});
-                return;
+          if (!req.params.instance) {
+              let message = 'instance property is missing.';
+              debug('Error: ' + message);
+              res.status(500).send({ message });
+              return;
             }
-            if (!req.body.event) {
-                let message = "event is missing.";
-                debug("Error: " + message);
-                res.status(500).send({message});
-                return;
+          if (!req.body.event) {
+              let message = 'event is missing.';
+              debug('Error: ' + message);
+              res.status(500).send({ message });
+              return;
             }
 
-            let instance = engine.getInstance(req.params.name, req.params.version, req.params.instance);
-            yield instance.sendEvent(req.body.event, req.body.data);
-            res.sendStatus(200);
+          let instance = engine.getInstance(req.params.name, req.params.version, req.params.instance);
+          yield instance.sendEvent(req.body.event, req.body.data);
+          res.sendStatus(200);
         }).catch((err) => {
-            debug("Error: " + err);
-            let message = err.message;
-            res.status(500).send({message});
+          debug('Error: ' + err);
+          let message = err.message;
+          res.status(500).send({ message });
         });
     });
 
@@ -628,42 +628,42 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.put('/api/machine/:name/version/:version/instance/:instance/revert', app.oauth.authorise(), function (req, res) {
-        debug("PUT: '/api/machine/:name/version/instance/:instance/revert");
-        co(function*() {
-            if (!req.params.name) {
-                let message = "name property is missing.";
-                debug("Error: " + message);
-                res.status(500).send({message});
-                return;
+  app.put('/api/machine/:name/version/:version/instance/:instance/revert', app.oauth.authorise(), function (req, res) {
+      debug("PUT: '/api/machine/:name/version/instance/:instance/revert");
+      co(function*() {
+          if (!req.params.name) {
+              let message = 'name property is missing.';
+              debug('Error: ' + message);
+              res.status(500).send({ message });
+              return;
             }
-            if (!req.params.version) {
-                let message = "version property is missing.";
-                debug("Error: " + message);
-                res.status(500).send({message});
-                return;
+          if (!req.params.version) {
+              let message = 'version property is missing.';
+              debug('Error: ' + message);
+              res.status(500).send({ message });
+              return;
             }
-            if (!req.params.instance) {
-                let message = "instance property is missing.";
-                debug("Error: " + message);
-                res.status(500).send({message});
-                return;
+          if (!req.params.instance) {
+              let message = 'instance property is missing.';
+              debug('Error: ' + message);
+              res.status(500).send({ message });
+              return;
             }
-            if (!req.body.snapshotKey) {
-                let message = "snapshotKey is missing.";
-                debug("Error: " + message);
-                res.status(500).send({message});
-                return;
+          if (!req.body.snapshotKey) {
+              let message = 'snapshotKey is missing.';
+              debug('Error: ' + message);
+              res.status(500).send({ message });
+              return;
             }
 
-            let instance = engine.getInstance(req.params.name, req.params.version, req.params.instance);
-            let snapshot = engine.getSnapshotInfo(req.params.name, req.params.version, req.params.instance, req.body.snapshotKey);
-            yield engine.revert(snapshot);
-            res.sendStatus(200);
+          let instance = engine.getInstance(req.params.name, req.params.version, req.params.instance);
+          let snapshot = engine.getSnapshotInfo(req.params.name, req.params.version, req.params.instance, req.body.snapshotKey);
+          yield engine.revert(snapshot);
+          res.sendStatus(200);
         }).catch((err) => {
-            debug("Error: " + err);
-            let message = err.message;
-            res.status(500).send({message});
+          debug('Error: ' + err);
+          let message = err.message;
+          res.status(500).send({ message });
         });
     });
 
@@ -688,40 +688,40 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.get('/api/machine/:name/version/:version/instance/:instance/snapshot/keys', app.oauth.authorise(), function (req, res) {
-        debug("GET: '/api/machine/:name/version/instance/:instance/snapshot/keys");
-        co(function*() {
+  app.get('/api/machine/:name/version/:version/instance/:instance/snapshot/keys', app.oauth.authorise(), function (req, res) {
+      debug("GET: '/api/machine/:name/version/instance/:instance/snapshot/keys");
+      co(function*() {
 
-            if (!req.params.name) {
-                let message = "name property is missing.";
-                debug("Error: " + message);
-                res.status(500).send({message});
-                return;
+          if (!req.params.name) {
+              let message = 'name property is missing.';
+              debug('Error: ' + message);
+              res.status(500).send({ message });
+              return;
             }
 
-            if (!req.params.version) {
-                let message = "version property is missing.";
-                debug("Error: " + message);
-                res.status(500).send({message});
-                return;
+          if (!req.params.version) {
+              let message = 'version property is missing.';
+              debug('Error: ' + message);
+              res.status(500).send({ message });
+              return;
             }
 
-            if (!req.params.instance) {
-                let message = "instance property is missing.";
-                debug("Error: " + message);
-                res.status(500).send({message});
-                return;
+          if (!req.params.instance) {
+              let message = 'instance property is missing.';
+              debug('Error: ' + message);
+              res.status(500).send({ message });
+              return;
             }
 
-            let snapshotsKeys = engine.getSnapshotsKeys(req.params.name, req.params.version, req.params.instance);
-            res.json({
-                snapshotsKeys: snapshotsKeys
+          let snapshotsKeys = engine.getSnapshotsKeys(req.params.name, req.params.version, req.params.instance);
+          res.json({
+              snapshotsKeys: snapshotsKeys
             });
 
         }).catch((err) => {
-            debug("Error: " + err);
-            let message = err.message;
-            res.status(500).send({message});
+          debug('Error: ' + err);
+          let message = err.message;
+          res.status(500).send({ message });
         });
     });
 
@@ -742,45 +742,45 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.get('/api/machine/:name/version/:version/instance/:instance/snapshot/:snapshot', app.oauth.authorise(), function (req, res) {
-        debug("GET: '/api/machine/:name/version/instance/:instance/snapshot/:snapshot");
-        co(function*() {
+  app.get('/api/machine/:name/version/:version/instance/:instance/snapshot/:snapshot', app.oauth.authorise(), function (req, res) {
+      debug("GET: '/api/machine/:name/version/instance/:instance/snapshot/:snapshot");
+      co(function*() {
 
-            if (!req.params.name) {
-                let message = "name property is missing.";
-                debug("Error: " + message);
-                res.status(500).send({message});
-                return;
+          if (!req.params.name) {
+              let message = 'name property is missing.';
+              debug('Error: ' + message);
+              res.status(500).send({ message });
+              return;
             }
 
-            if (!req.params.version) {
-                let message = "version property is missing.";
-                debug("Error: " + message);
-                res.status(500).send({message});
-                return;
+          if (!req.params.version) {
+              let message = 'version property is missing.';
+              debug('Error: ' + message);
+              res.status(500).send({ message });
+              return;
             }
 
-            if (!req.params.instance) {
-                let message = "instance property is missing.";
-                debug("Error: " + message);
-                res.status(500).send({message});
-                return;
+          if (!req.params.instance) {
+              let message = 'instance property is missing.';
+              debug('Error: ' + message);
+              res.status(500).send({ message });
+              return;
             }
 
-            if (!req.params.snapshot) {
-                let message = "snapshot is missing.";
-                debug("Error: " + message);
-                res.status(500).send({message});
-                return;
+          if (!req.params.snapshot) {
+              let message = 'snapshot is missing.';
+              debug('Error: ' + message);
+              res.status(500).send({ message });
+              return;
             }
 
-            let snapshot = engine.getSnapshotInfo(req.params.name, req.params.version, req.params.instance, req.params.snapshot);
-            res.json(snapshot);
+          let snapshot = engine.getSnapshotInfo(req.params.name, req.params.version, req.params.instance, req.params.snapshot);
+          res.json(snapshot);
 
         }).catch((err) => {
-            debug("Error: " + err);
-            let message = err.message;
-            res.status(500).send({message});
+          debug('Error: ' + err);
+          let message = err.message;
+          res.status(500).send({ message });
         });
     });
 
@@ -800,41 +800,41 @@ module.exports = function (app, engine) {
      *      "message": "error message"
      *    }
      */
-    app.get('/api/machine/:name/version/:version/instance/:instance/snapshot', app.oauth.authorise(), function (req, res) {
-        debug("GET: '/api/machine/:name/version/instance/:instance/snapshot");
-        co(function*() {
+  app.get('/api/machine/:name/version/:version/instance/:instance/snapshot', app.oauth.authorise(), function (req, res) {
+      debug("GET: '/api/machine/:name/version/instance/:instance/snapshot");
+      co(function*() {
 
-            if (!req.params.name) {
-                let message = "name property is missing.";
-                debug("Error: " + message);
-                res.status(500).send({message});
-                return;
+          if (!req.params.name) {
+              let message = 'name property is missing.';
+              debug('Error: ' + message);
+              res.status(500).send({ message });
+              return;
             }
 
-            if (!req.params.version) {
-                let message = "version property is missing.";
-                debug("Error: " + message);
-                res.status(500).send({message});
-                return;
+          if (!req.params.version) {
+              let message = 'version property is missing.';
+              debug('Error: ' + message);
+              res.status(500).send({ message });
+              return;
             }
 
-            if (!req.params.instance) {
-                let message = "instance property is missing.";
-                debug("Error: " + message);
-                res.status(500).send({message});
-                return;
+          if (!req.params.instance) {
+              let message = 'instance property is missing.';
+              debug('Error: ' + message);
+              res.status(500).send({ message });
+              return;
             }
 
-            let instance = engine.getInstance(req.params.name, req.params.version, req.params.instance);
-            let snapshot = yield instance.getSnapshot();
-            res.json({
-                snapshot: snapshot
+          let instance = engine.getInstance(req.params.name, req.params.version, req.params.instance);
+          let snapshot = yield instance.getSnapshot();
+          res.json({
+              snapshot: snapshot
             });
 
         }).catch((err) => {
-            debug("Error: " + err);
-            let message = err.message;
-            res.status(500).send({message});
+          debug('Error: ' + err);
+          let message = err.message;
+          res.status(500).send({ message });
         });
     });
 };

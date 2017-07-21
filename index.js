@@ -1,6 +1,6 @@
 import express from 'express';
 import consign from 'consign';
-
+require('babel-polyfill');
 const app = express();
 
 consign({ verbose: false, cwd: __dirname })

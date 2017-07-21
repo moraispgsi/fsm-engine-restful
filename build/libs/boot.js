@@ -1,16 +1,20 @@
 'use strict';
 
-var _https = require('https');
+var _boot = require('./boot.production');
 
-var _https2 = _interopRequireDefault(_https);
+var _boot2 = _interopRequireDefault(_boot);
 
-var _http = require('http');
+var _boot3 = require('./boot.test');
 
-var _http2 = _interopRequireDefault(_http);
+var _boot4 = _interopRequireDefault(_boot3);
 
-var _fs = require('fs');
+var _boot5 = require('./boot.development');
 
-var _fs2 = _interopRequireDefault(_fs);
+var _boot6 = _interopRequireDefault(_boot5);
+
+var _boot7 = require('./boot.heroku');
+
+var _boot8 = _interopRequireDefault(_boot7);
 
 var _debug = require('debug');
 
@@ -18,68 +22,29 @@ var _debug2 = _interopRequireDefault(_debug);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-process.env.DEBUG = 'boot';
-
-
 var debug = (0, _debug2.default)('boot');
 
 module.exports = function (app) {
-  if (process.env.PLATFORM === 'heroku') {
-    app.db.sequelize.sync().done(function () {
-      _http2.default.createServer(app).listen(app.get('port'), function () {
-        // The server needs to be operational in order to bind the port within 90 seconds
-        // Therefore since the engine init is an expensive operation,
-        // we initialize the server first.
-        app.engine.init(process.env.CLONE_URL, process.env.PUBLIC_KEY, process.env.PRIVATE_KEY, process.env.PASSPHRASE).then(function () {
-          debug('Engine was initialized');
-        });
-      });
-    });
-  } else if (process.env.NODE_ENV === 'production') {
-    var credentials = {
-      key: _fs2.default.readFileSync('ntask.key', 'utf8'),
-      cert: _fs2.default.readFileSync('ntask.cert', 'utf8')
-    };
-    app.db.sequelize.sync().done(function () {
-      _https2.default.createServer(credentials, app).listen(app.get('port'), function () {
-        // The server needs to be operational in order to bind the port within 90 seconds
-        // Therefore since the engine init is an expensive operation,
-        // we initialize the server first.
-        app.engine.init(process.env.CLONE_URL, process.env.PUBLIC_KEY, process.env.PRIVATE_KEY, process.env.PASSPHRASE).then(function () {
-          debug('Engine was initialized');
-        });
-      });
-    });
-  } else if (process.env.NODE_ENV !== 'test') {
-    var _credentials = {
-      key: _fs2.default.readFileSync('ntask.key', 'utf8'),
-      cert: _fs2.default.readFileSync('ntask.cert', 'utf8')
-    };
-    app.db.sequelize.sync().done(function () {
-      _https2.default.createServer(_credentials, app).listen(app.get('port'), function () {
-        // The server needs to be operational in order to bind the port within 90 seconds
-        // Therefore since the engine init is an expensive operation,
-        // we initialize the server first.
-        app.engine.init(process.env.CLONE_URL, process.env.PUBLIC_KEY, process.env.PRIVATE_KEY, process.env.PASSPHRASE).then(function () {
-          debug('Engine was initialized');
-        });
-      });
-    });
-  } else {
-    var _credentials2 = {
-      key: _fs2.default.readFileSync('ntask.key', 'utf8'),
-      cert: _fs2.default.readFileSync('ntask.cert', 'utf8')
-    };
-    app.db.sequelize.sync().done(function () {
-      app.engine.init(process.env.CLONE_URL, process.env.PUBLIC_KEY, process.env.PRIVATE_KEY, process.env.PASSPHRASE).then(function () {
-        debug('Engine was initialized');
-        _https2.default.createServer(_credentials2, app).listen(app.get('port'), function () {
-          // The server needs to be operational in order to bind the port within 90 seconds
-          // Therefore since the engine init is an expensive operation,
-          // we initialize the server first.
-
-        });
-      });
-    });
+  debug('Booting in %s mode.', process.env.NODE_ENV);
+  process.on('uncaughtException', function (err) {
+    console.log('Caught exception: ' + err);
+  });
+  switch (process.env.NODE_ENV) {
+    case 'production':
+      if (process.env.PLATFORM === 'heroku') {
+        (0, _boot8.default)(app);
+      } else {
+        (0, _boot2.default)(app);
+      }
+      break;
+    case 'development':
+      (0, _boot6.default)(app);
+      break;
+    case 'test':
+      (0, _boot4.default)(app);
+      break;
+    default:
+      (0, _boot6.default)(app);
+      break;
   }
 };

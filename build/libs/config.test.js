@@ -16,9 +16,7 @@ module.exports = {
     logging: function logging(sql) {
       _logger2.default.info('[' + new Date() + '] ' + sql);
     },
-    define: {
-      underscored: true
-    }
+    underscored: true
   },
   jwtSecret: 'Nta$K-AP1',
   jwtSession: { session: false }

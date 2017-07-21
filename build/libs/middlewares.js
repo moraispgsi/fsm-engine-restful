@@ -1,5 +1,9 @@
 'use strict';
 
+var _vantage = require('vantage');
+
+var _vantage2 = _interopRequireDefault(_vantage);
+
 var _bodyParser = require('body-parser');
 
 var _bodyParser2 = _interopRequireDefault(_bodyParser);
@@ -35,7 +39,7 @@ var _fsmEngine2 = _interopRequireDefault(_fsmEngine);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = function (app) {
-  app.set('port', process.env.PORT);
+  app.set('port', process.env.PORT || 3001);
   app.set('json spaces', 4);
   app.use((0, _morgan2.default)('common', {
     stream: {
@@ -57,5 +61,6 @@ module.exports = function (app) {
     next();
   });
   app.use(_express2.default.static('public'));
-  app.engine = new _fsmEngine2.default(process.env.DISPATCHER_URL, process.env.DISPATCHER_TOKEN, _path2.default.join(__dirname, '../repository'), null);
+  app.vantage = new _vantage2.default();
+  app.engine = new _fsmEngine2.default(process.env.DISPATCHER_URL, process.env.DISPATCHER_TOKEN, process.env.REPOSITORY_PATH || _path2.default.join(__dirname, '../repository'), null);
 };

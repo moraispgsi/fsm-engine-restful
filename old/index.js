@@ -24,44 +24,44 @@
 //
 
 let co = require('co');
-let Engine = require("fsm-engine");
+let Engine = require('fsm-engine');
 
-co(function*(){
-    let engine = new Engine(process.env.ACTION_DISPATCHER_HOST, __dirname + "/repo");
+co(function*() {
+  let engine = new Engine(process.env.ACTION_DISPATCHER_HOST, __dirname + '/repo');
 
-    let express = require('express');
-    let app = express();
-    let bodyParser = require('body-parser');
+  let express = require('express');
+  let app = express();
+  let bodyParser = require('body-parser');
 
-    app.use(bodyParser.json());         // to support JSON-encoded bodies
-    app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
-        extended: true
+  app.use(bodyParser.json());         // to support JSON-encoded bodies
+  app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
+      extended: true
     }));
 
     // initialize the oauth2
-    require('./oauth2.js')(app);
-    app.use(express.static('doc'));
-    app.all('*', function(req, res, next) {
-        res.header('Access-Control-Allow-Origin', '*');
-        res.header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS');
-        res.header('Access-Control-Allow-Headers', 'Content-Type');
-        next();
+  require('./oauth2.js')(app);
+  app.use(express.static('doc'));
+  app.all('*', function (req, res, next) {
+      res.header('Access-Control-Allow-Origin', '*');
+      res.header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS');
+      res.header('Access-Control-Allow-Headers', 'Content-Type');
+      next();
     });
 
-    require("./webservice")(app, engine);
+  require('./webservice')(app, engine);
 
     //Start the server
-    let server = app.listen(process.env.PORT || 8081, process.env.HOST || '0.0.0.0', function () {
-        let host = server.address().address;
-        let port = server.address().port;
-        console.log("listening at http://%s:%s", host, port)
+  let server = app.listen(process.env.PORT || 8081, process.env.HOST || '0.0.0.0', function () {
+      let host = server.address().address;
+      let port = server.address().port;
+      console.log('listening at http://%s:%s', host, port);
     });
 
     //The server needs to be operational in order to bind the port within 90 seconds
     //Therefore since the engine init is an expensive operation, we initialize the server first.
-    yield engine.init(process.env.CLONE_URL, process.env.PUBLIC_KEY, process.env.PRIVATE_KEY, process.env.PASSPHRASE);
+  yield engine.init(process.env.CLONE_URL, process.env.PUBLIC_KEY, process.env.PRIVATE_KEY, process.env.PASSPHRASE);
 
-}).then().catch(function(err){
-    console.log(err);
+}).then().catch(function (err) {
+  console.log(err);
 });
 

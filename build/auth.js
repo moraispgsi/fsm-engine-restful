@@ -6,7 +6,13 @@ var _passport2 = _interopRequireDefault(_passport);
 
 var _passportJwt = require('passport-jwt');
 
+var _debug = require('debug');
+
+var _debug2 = _interopRequireDefault(_debug);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var debug = (0, _debug2.default)('auth');
 
 module.exports = function (app) {
   var Users = app.db.models.Users;
@@ -15,12 +21,18 @@ module.exports = function (app) {
     secretOrKey: cfg.jwtSecret,
     jwtFromRequest: _passportJwt.ExtractJwt.fromAuthHeader()
   };
+
   var strategy = new _passportJwt.Strategy(params, function (payload, done) {
-    Users.findById(payload.id).then(function (user) {
-      if (user) {
+    debug('Test');
+    Users.findAll({
+      where: {
+        id: payload.id
+      }
+    }).then(function (users) {
+      if (users[0]) {
         return done(null, {
-          id: user.id,
-          email: user.email
+          id: users[0].id,
+          email: users[0].email
         });
       }
       return done(null, false);

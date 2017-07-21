@@ -32,7 +32,6 @@ module.exports = function (app) {
       var email = req.body.email;
       var password = req.body.password;
       Users.findAll({ where: { email: email } }).then(function (users) {
-        console.log(users);
         if (Users.isPassword(users[0].password, password)) {
           var payload = { id: users[0].id };
           res.json({

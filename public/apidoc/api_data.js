@@ -66,6 +66,115 @@ define({ "api": [
     "name": "PostToken"
   },
   {
+    "type": "post",
+    "url": "/engine/event",
+    "title": "Send global event",
+    "group": "Engine",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "data",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.event",
+            "description": "<p>The name of the event</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "data.data",
+            "description": "<p>The data that goes along with the event</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success",
+          "content": "HTTP/1.1 200 OK\n{\n     \"event\": \"foo\",\n     \"data\": {\n          \"bar\": 5\n     }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "examples": [
+        {
+          "title": "HTTP/1.1 500 Internal Server Error",
+          "content": "HTTP/1.1 500 Internal Server Error\n{\n  \"message\": \"error message\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "routes/engine.js",
+    "groupTitle": "Engine",
+    "name": "PostEngineEvent"
+  },
+  {
+    "type": "put",
+    "url": "/api/engine/stop",
+    "title": "Stops the engine",
+    "group": "Engine",
+    "success": {
+      "examples": [
+        {
+          "title": "Success",
+          "content": "HTTP/1.1 200 OK",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "examples": [
+        {
+          "title": "HTTP/1.1 500 Internal Server Error",
+          "content": "HTTP/1.1 500 Internal Server Error\n{\n  \"message\": \"error message\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "routes/engine.js",
+    "groupTitle": "Engine",
+    "name": "PutApiEngineStop"
+  },
+  {
+    "type": "put",
+    "url": "/engine/resume",
+    "title": "Resumes the engine's execution",
+    "group": "Engine",
+    "success": {
+      "examples": [
+        {
+          "title": "Success",
+          "content": "HTTP/1.1 200 OK",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "examples": [
+        {
+          "title": "HTTP/1.1 500 Internal Server Error",
+          "content": "HTTP/1.1 500 Internal Server Error\n{\n  \"message\": \"error message\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "routes/engine.js",
+    "groupTitle": "Engine",
+    "name": "PutEngineResume"
+  },
+  {
     "type": "get",
     "url": "/machine/:name/version/:version/instance/keys",
     "title": "Get all the instance keys",
@@ -593,7 +702,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success",
-          "content": "HTTP/1.1 200 OK\n{\n}",
+          "content": "HTTP/1.1 200 OK\n{\n  snapshot: [[\"initial\"],{},false,{\n    \"machine\":\"machine1\",\n    \"versionKey\":\"version1\",\n    \"instanceKey\":\"instance1\"\n  }]\n}",
           "type": "json"
         }
       ]
