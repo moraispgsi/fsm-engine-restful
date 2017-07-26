@@ -635,23 +635,23 @@ module.exports = function (app) {
   });
 
   /**
-   * @api {put} /machine/:name/version/:version/instance/:instance/start Starts the instance
+   * @api {GET} /machine/:name/version/:version/instance/:instance/info Get the instance information
    * @apiGroup Instance
-   * @apiParam {String} name The name of the machine
-   * @apiParam {String} version The version key
-   * @apiParam {String} instance The instance key
    * @apiSuccessExample {json} Success
    *    HTTP/1.1 200 OK
+   *    {
+   *        "info": {}
+   *    }
    * @apiErrorExample {json}
    *    HTTP/1.1 500 Internal Server Error
    *    {
    *      "message": "error message"
    *    }
    */
-  app.put('/machine/:name/version/:version/instance/:instance/start', app.auth.authenticate(), function (req, res) {
-    debug("PUT: '/machine/:name/version/instance/:instance/start");
+  app.get('/machine/:name/version/:version/instance/:instance/info', app.auth.authenticate(), function (req, res) {
+    debug("GET: '/machine/:name/version/instance/:instance/info");
     co(regeneratorRuntime.mark(function _callee12() {
-      var message, instance;
+      var message, info;
       return regeneratorRuntime.wrap(function _callee12$(_context12) {
         while (1) {
           switch (_context12.prev = _context12.next) {
@@ -668,8 +668,58 @@ module.exports = function (app) {
               return _context12.abrupt('return');
 
             case 5:
+              info = engine.getInstanceInfo(req.params.name, req.params.version, req.params.instance);
+
+              res.json(info);
+
+            case 7:
+            case 'end':
+              return _context12.stop();
+          }
+        }
+      }, _callee12, this);
+    })).catch(function (err) {
+      debug('Error: ' + err);
+      var message = err.message;
+      res.status(500).send({ message: message });
+    });
+  });
+  /**
+   * @api {put} /machine/:name/version/:version/instance/:instance/start Starts the instance
+   * @apiGroup Instance
+   * @apiParam {String} name The name of the machine
+   * @apiParam {String} version The version key
+   * @apiParam {String} instance The instance key
+   * @apiSuccessExample {json} Success
+   *    HTTP/1.1 200 OK
+   * @apiErrorExample {json}
+   *    HTTP/1.1 500 Internal Server Error
+   *    {
+   *      "message": "error message"
+   *    }
+   */
+  app.put('/machine/:name/version/:version/instance/:instance/start', app.auth.authenticate(), function (req, res) {
+    debug("PUT: '/machine/:name/version/instance/:instance/start");
+    co(regeneratorRuntime.mark(function _callee13() {
+      var message, instance;
+      return regeneratorRuntime.wrap(function _callee13$(_context13) {
+        while (1) {
+          switch (_context13.prev = _context13.next) {
+            case 0:
+              if (req.params.name) {
+                _context13.next = 5;
+                break;
+              }
+
+              message = 'name property is missing.';
+
+              debug('Error: ' + message);
+              res.status(500).send({ message: message });
+              return _context13.abrupt('return');
+
+            case 5:
               instance = engine.getInstance(req.params.name, req.params.version, req.params.instance);
-              _context12.next = 8;
+              _context13.next = 8;
               return instance.start();
 
             case 8:
@@ -677,10 +727,10 @@ module.exports = function (app) {
 
             case 9:
             case 'end':
-              return _context12.stop();
+              return _context13.stop();
           }
         }
-      }, _callee12, this);
+      }, _callee13, this);
     })).catch(function (err) {
       debug('Error: ' + err);
       var message = err.message;
@@ -704,15 +754,15 @@ module.exports = function (app) {
    */
   app.put('/machine/:name/version/:version/instance/:instance/stop', app.auth.authenticate(), function (req, res) {
     debug("PUT: '/machine/:name/version/instance/:instance/stop");
-    co(regeneratorRuntime.mark(function _callee13() {
+    co(regeneratorRuntime.mark(function _callee14() {
       var message, _message2, _message3, instance;
 
-      return regeneratorRuntime.wrap(function _callee13$(_context13) {
+      return regeneratorRuntime.wrap(function _callee14$(_context14) {
         while (1) {
-          switch (_context13.prev = _context13.next) {
+          switch (_context14.prev = _context14.next) {
             case 0:
               if (req.params.name) {
-                _context13.next = 5;
+                _context14.next = 5;
                 break;
               }
 
@@ -720,11 +770,11 @@ module.exports = function (app) {
 
               debug('Error: ' + message);
               res.status(500).send({ message: message });
-              return _context13.abrupt('return');
+              return _context14.abrupt('return');
 
             case 5:
               if (req.params.version) {
-                _context13.next = 10;
+                _context14.next = 10;
                 break;
               }
 
@@ -732,11 +782,11 @@ module.exports = function (app) {
 
               debug('Error: ' + _message2);
               res.status(500).send({ message: _message2 });
-              return _context13.abrupt('return');
+              return _context14.abrupt('return');
 
             case 10:
               if (req.params.instance) {
-                _context13.next = 15;
+                _context14.next = 15;
                 break;
               }
 
@@ -744,7 +794,7 @@ module.exports = function (app) {
 
               debug('Error: ' + _message3);
               res.status(500).send({ message: _message3 });
-              return _context13.abrupt('return');
+              return _context14.abrupt('return');
 
             case 15:
               instance = engine.getInstance(req.params.name, req.params.version, req.params.instance);
@@ -754,10 +804,10 @@ module.exports = function (app) {
 
             case 18:
             case 'end':
-              return _context13.stop();
+              return _context14.stop();
           }
         }
-      }, _callee13, this);
+      }, _callee14, this);
     })).catch(function (err) {
       debug('Error: ' + err);
       var message = err.message;
@@ -791,15 +841,15 @@ module.exports = function (app) {
    */
   app.post('/machine/:name/version/:version/instance/:instance/event', app.auth.authenticate(), function (req, res) {
     debug("POST: '/machine/:name/version/instance/:instance/event");
-    co(regeneratorRuntime.mark(function _callee14() {
+    co(regeneratorRuntime.mark(function _callee15() {
       var message, _message4, _message5, _message6, instance;
 
-      return regeneratorRuntime.wrap(function _callee14$(_context14) {
+      return regeneratorRuntime.wrap(function _callee15$(_context15) {
         while (1) {
-          switch (_context14.prev = _context14.next) {
+          switch (_context15.prev = _context15.next) {
             case 0:
               if (req.params.name) {
-                _context14.next = 5;
+                _context15.next = 5;
                 break;
               }
 
@@ -807,11 +857,11 @@ module.exports = function (app) {
 
               debug('Error: ' + message);
               res.status(500).send({ message: message });
-              return _context14.abrupt('return');
+              return _context15.abrupt('return');
 
             case 5:
               if (req.params.version) {
-                _context14.next = 10;
+                _context15.next = 10;
                 break;
               }
 
@@ -819,11 +869,11 @@ module.exports = function (app) {
 
               debug('Error: ' + _message4);
               res.status(500).send({ message: _message4 });
-              return _context14.abrupt('return');
+              return _context15.abrupt('return');
 
             case 10:
               if (req.params.instance) {
-                _context14.next = 15;
+                _context15.next = 15;
                 break;
               }
 
@@ -831,11 +881,11 @@ module.exports = function (app) {
 
               debug('Error: ' + _message5);
               res.status(500).send({ message: _message5 });
-              return _context14.abrupt('return');
+              return _context15.abrupt('return');
 
             case 15:
               if (req.body.event) {
-                _context14.next = 20;
+                _context15.next = 20;
                 break;
               }
 
@@ -843,11 +893,11 @@ module.exports = function (app) {
 
               debug('Error: ' + _message6);
               res.status(500).send({ message: _message6 });
-              return _context14.abrupt('return');
+              return _context15.abrupt('return');
 
             case 20:
               instance = engine.getInstance(req.params.name, req.params.version, req.params.instance);
-              _context14.next = 23;
+              _context15.next = 23;
               return instance.sendEvent(req.body.event, req.body.data);
 
             case 23:
@@ -855,10 +905,10 @@ module.exports = function (app) {
 
             case 24:
             case 'end':
-              return _context14.stop();
+              return _context15.stop();
           }
         }
-      }, _callee14, this);
+      }, _callee15, this);
     })).catch(function (err) {
       debug('Error: ' + err);
       var message = err.message;
@@ -885,15 +935,15 @@ module.exports = function (app) {
    */
   app.put('/machine/:name/version/:version/instance/:instance/revert', app.auth.authenticate(), function (req, res) {
     debug("PUT: '/machine/:name/version/instance/:instance/revert");
-    co(regeneratorRuntime.mark(function _callee15() {
+    co(regeneratorRuntime.mark(function _callee16() {
       var message, _message7, _message8, _message9, instance, snapshot;
 
-      return regeneratorRuntime.wrap(function _callee15$(_context15) {
+      return regeneratorRuntime.wrap(function _callee16$(_context16) {
         while (1) {
-          switch (_context15.prev = _context15.next) {
+          switch (_context16.prev = _context16.next) {
             case 0:
               if (req.params.name) {
-                _context15.next = 5;
+                _context16.next = 5;
                 break;
               }
 
@@ -901,11 +951,11 @@ module.exports = function (app) {
 
               debug('Error: ' + message);
               res.status(500).send({ message: message });
-              return _context15.abrupt('return');
+              return _context16.abrupt('return');
 
             case 5:
               if (req.params.version) {
-                _context15.next = 10;
+                _context16.next = 10;
                 break;
               }
 
@@ -913,11 +963,11 @@ module.exports = function (app) {
 
               debug('Error: ' + _message7);
               res.status(500).send({ message: _message7 });
-              return _context15.abrupt('return');
+              return _context16.abrupt('return');
 
             case 10:
               if (req.params.instance) {
-                _context15.next = 15;
+                _context16.next = 15;
                 break;
               }
 
@@ -925,11 +975,11 @@ module.exports = function (app) {
 
               debug('Error: ' + _message8);
               res.status(500).send({ message: _message8 });
-              return _context15.abrupt('return');
+              return _context16.abrupt('return');
 
             case 15:
               if (req.body.snapshotKey) {
-                _context15.next = 20;
+                _context16.next = 20;
                 break;
               }
 
@@ -937,12 +987,12 @@ module.exports = function (app) {
 
               debug('Error: ' + _message9);
               res.status(500).send({ message: _message9 });
-              return _context15.abrupt('return');
+              return _context16.abrupt('return');
 
             case 20:
               instance = engine.getInstance(req.params.name, req.params.version, req.params.instance);
               snapshot = engine.getSnapshotInfo(req.params.name, req.params.version, req.params.instance, req.body.snapshotKey);
-              _context15.next = 24;
+              _context16.next = 24;
               return instance.revert(snapshot);
 
             case 24:
@@ -950,10 +1000,10 @@ module.exports = function (app) {
 
             case 25:
             case 'end':
-              return _context15.stop();
+              return _context16.stop();
           }
         }
-      }, _callee15, this);
+      }, _callee16, this);
     })).catch(function (err) {
       debug('Error: ' + err);
       var message = err.message;
@@ -985,15 +1035,15 @@ module.exports = function (app) {
    */
   app.get('/machine/:name/version/:version/instance/:instance/snapshot/keys', app.auth.authenticate(), function (req, res) {
     debug("GET: '/machine/:name/version/instance/:instance/snapshot/keys");
-    co(regeneratorRuntime.mark(function _callee16() {
+    co(regeneratorRuntime.mark(function _callee17() {
       var message, _message10, _message11, snapshotsKeys;
 
-      return regeneratorRuntime.wrap(function _callee16$(_context16) {
+      return regeneratorRuntime.wrap(function _callee17$(_context17) {
         while (1) {
-          switch (_context16.prev = _context16.next) {
+          switch (_context17.prev = _context17.next) {
             case 0:
               if (req.params.name) {
-                _context16.next = 5;
+                _context17.next = 5;
                 break;
               }
 
@@ -1001,11 +1051,11 @@ module.exports = function (app) {
 
               debug('Error: ' + message);
               res.status(500).send({ message: message });
-              return _context16.abrupt('return');
+              return _context17.abrupt('return');
 
             case 5:
               if (req.params.version) {
-                _context16.next = 10;
+                _context17.next = 10;
                 break;
               }
 
@@ -1013,11 +1063,11 @@ module.exports = function (app) {
 
               debug('Error: ' + _message10);
               res.status(500).send({ message: _message10 });
-              return _context16.abrupt('return');
+              return _context17.abrupt('return');
 
             case 10:
               if (req.params.instance) {
-                _context16.next = 15;
+                _context17.next = 15;
                 break;
               }
 
@@ -1025,7 +1075,7 @@ module.exports = function (app) {
 
               debug('Error: ' + _message11);
               res.status(500).send({ message: _message11 });
-              return _context16.abrupt('return');
+              return _context17.abrupt('return');
 
             case 15:
               snapshotsKeys = engine.getSnapshotsKeys(req.params.name, req.params.version, req.params.instance);
@@ -1036,10 +1086,10 @@ module.exports = function (app) {
 
             case 17:
             case 'end':
-              return _context16.stop();
+              return _context17.stop();
           }
         }
-      }, _callee16, this);
+      }, _callee17, this);
     })).catch(function (err) {
       debug('Error: ' + err);
       var message = err.message;
@@ -1067,15 +1117,15 @@ module.exports = function (app) {
    */
   app.get('/machine/:name/version/:version/instance/:instance/snapshot/:snapshot', app.auth.authenticate(), function (req, res) {
     debug("GET: '/machine/:name/version/instance/:instance/snapshot/:snapshot");
-    co(regeneratorRuntime.mark(function _callee17() {
+    co(regeneratorRuntime.mark(function _callee18() {
       var message, _message12, _message13, _message14, snapshot;
 
-      return regeneratorRuntime.wrap(function _callee17$(_context17) {
+      return regeneratorRuntime.wrap(function _callee18$(_context18) {
         while (1) {
-          switch (_context17.prev = _context17.next) {
+          switch (_context18.prev = _context18.next) {
             case 0:
               if (req.params.name) {
-                _context17.next = 5;
+                _context18.next = 5;
                 break;
               }
 
@@ -1083,11 +1133,11 @@ module.exports = function (app) {
 
               debug('Error: ' + message);
               res.status(500).send({ message: message });
-              return _context17.abrupt('return');
+              return _context18.abrupt('return');
 
             case 5:
               if (req.params.version) {
-                _context17.next = 10;
+                _context18.next = 10;
                 break;
               }
 
@@ -1095,11 +1145,11 @@ module.exports = function (app) {
 
               debug('Error: ' + _message12);
               res.status(500).send({ message: _message12 });
-              return _context17.abrupt('return');
+              return _context18.abrupt('return');
 
             case 10:
               if (req.params.instance) {
-                _context17.next = 15;
+                _context18.next = 15;
                 break;
               }
 
@@ -1107,11 +1157,11 @@ module.exports = function (app) {
 
               debug('Error: ' + _message13);
               res.status(500).send({ message: _message13 });
-              return _context17.abrupt('return');
+              return _context18.abrupt('return');
 
             case 15:
               if (req.params.snapshot) {
-                _context17.next = 20;
+                _context18.next = 20;
                 break;
               }
 
@@ -1119,7 +1169,7 @@ module.exports = function (app) {
 
               debug('Error: ' + _message14);
               res.status(500).send({ message: _message14 });
-              return _context17.abrupt('return');
+              return _context18.abrupt('return');
 
             case 20:
               snapshot = engine.getSnapshotInfo(req.params.name, req.params.version, req.params.instance, req.params.snapshot);
@@ -1128,10 +1178,10 @@ module.exports = function (app) {
 
             case 22:
             case 'end':
-              return _context17.stop();
+              return _context18.stop();
           }
         }
-      }, _callee17, this);
+      }, _callee18, this);
     })).catch(function (err) {
       debug('Error: ' + err);
       var message = err.message;
@@ -1162,15 +1212,15 @@ module.exports = function (app) {
    */
   app.get('/machine/:name/version/:version/instance/:instance/snapshot', app.auth.authenticate(), function (req, res) {
     debug("GET: '/machine/:name/version/instance/:instance/snapshot");
-    co(regeneratorRuntime.mark(function _callee18() {
+    co(regeneratorRuntime.mark(function _callee19() {
       var message, _message15, _message16, instance, snapshot;
 
-      return regeneratorRuntime.wrap(function _callee18$(_context18) {
+      return regeneratorRuntime.wrap(function _callee19$(_context19) {
         while (1) {
-          switch (_context18.prev = _context18.next) {
+          switch (_context19.prev = _context19.next) {
             case 0:
               if (req.params.name) {
-                _context18.next = 5;
+                _context19.next = 5;
                 break;
               }
 
@@ -1178,11 +1228,11 @@ module.exports = function (app) {
 
               debug('Error: ' + message);
               res.status(500).send({ message: message });
-              return _context18.abrupt('return');
+              return _context19.abrupt('return');
 
             case 5:
               if (req.params.version) {
-                _context18.next = 10;
+                _context19.next = 10;
                 break;
               }
 
@@ -1190,11 +1240,11 @@ module.exports = function (app) {
 
               debug('Error: ' + _message15);
               res.status(500).send({ message: _message15 });
-              return _context18.abrupt('return');
+              return _context19.abrupt('return');
 
             case 10:
               if (req.params.instance) {
-                _context18.next = 15;
+                _context19.next = 15;
                 break;
               }
 
@@ -1202,15 +1252,15 @@ module.exports = function (app) {
 
               debug('Error: ' + _message16);
               res.status(500).send({ message: _message16 });
-              return _context18.abrupt('return');
+              return _context19.abrupt('return');
 
             case 15:
               instance = engine.getInstance(req.params.name, req.params.version, req.params.instance);
-              _context18.next = 18;
+              _context19.next = 18;
               return instance.getSnapshot();
 
             case 18:
-              snapshot = _context18.sent;
+              snapshot = _context19.sent;
 
               res.json({
                 snapshot: snapshot
@@ -1218,10 +1268,10 @@ module.exports = function (app) {
 
             case 20:
             case 'end':
-              return _context18.stop();
+              return _context19.stop();
           }
         }
-      }, _callee18, this);
+      }, _callee19, this);
     })).catch(function (err) {
       debug('Error: ' + err);
       var message = err.message;

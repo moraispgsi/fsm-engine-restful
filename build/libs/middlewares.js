@@ -49,11 +49,7 @@ module.exports = function (app) {
     }
   }));
   app.use((0, _helmet2.default)());
-  app.use((0, _cors2.default)({
-    origin: ['http://localhost:3001'],
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-Type', 'Authorization']
-  }));
+  app.use((0, _cors2.default)());
   app.use(_bodyParser2.default.json());
   app.use(app.auth.initialize());
   app.use(function (req, res, next) {

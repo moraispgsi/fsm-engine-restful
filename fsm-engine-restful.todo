@@ -1,5 +1,10 @@
 Primary:
  ☐ add entry point to get the commit history
+
+ na documentacao
+tens que actualizar tambem os valores retornados no sucess,
+tens descrito que retornar uma objecto data, mas isso nunca aparece, tens que tirar isso
+so para nao te esqueçeres
 Secondary:
  ☐ create the github wiki
  ☐ add error status codes

@@ -395,6 +395,39 @@ module.exports = app => {
   });
 
   /**
+   * @api {GET} /machine/:name/version/:version/instance/:instance/info Get the instance information
+   * @apiGroup Instance
+   * @apiSuccessExample {json} Success
+   *    HTTP/1.1 200 OK
+   *    {
+   *        "info": {}
+   *    }
+   * @apiErrorExample {json}
+   *    HTTP/1.1 500 Internal Server Error
+   *    {
+   *      "message": "error message"
+   *    }
+   */
+  app.get('/machine/:name/version/:version/instance/:instance/info',
+    app.auth.authenticate(), (req, res) => {
+      debug("GET: '/machine/:name/version/instance/:instance/info");
+      co(function*() {
+        if (!req.params.name) {
+          const message = 'name property is missing.';
+          debug(`Error: ${message}`);
+          res.status(500).send({ message });
+          return;
+        }
+        const info =
+          engine.getInstanceInfo(req.params.name, req.params.version, req.params.instance);
+        res.json(info);
+      }).catch((err) => {
+        debug(`Error: ${err}`);
+        const message = err.message;
+        res.status(500).send({ message });
+      });
+    });
+  /**
    * @api {put} /machine/:name/version/:version/instance/:instance/start Starts the instance
    * @apiGroup Instance
    * @apiParam {String} name The name of the machine

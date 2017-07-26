@@ -1,0 +1,33 @@
+open CMD
+
+$ npm install vantage -g
+
+$ vantage [url or port]
+
+enter the server REPL
+
+$ server
+
+//Set a global váriable with the content of the GET content of an URL(usefull to load a SCXML file)
+$ request('URL', function(a,b,body) { global.machine1 =  body })
+
+//Add a new machine to the engine
+engine.addMachine('machine1');
+
+//sets the SCXML of a unsealed version to be equal to the content of the global.machine1 variable
+engine.setVersionSCXML('machine1', 'version1', global.machine1);
+
+//seals the version
+engine.sealVersion('machine1', 'version1');
+
+//gets the information about the version
+engine.getVersionInfo('machine1', 'version1');
+
+//Adds a new instance using a version
+engine.addInstance('machine1', 'version1').then()
+
+//Gets an instance by its instanceKey
+var instance = engine.getInstance('machine1', 'version1', 'instance1');
+
+//Get a snapshot of the instance
+instance.getSnapshot().then((s)=> log(JSON.stringify(s)));

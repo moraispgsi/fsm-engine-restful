@@ -66,6 +66,62 @@
     "name": "PostToken"
   },
   {
+    "type": "get",
+    "url": "/engine/commits",
+    "title": "",
+    "group": "Engine",
+    "success": {
+      "examples": [
+        {
+          "title": "Success",
+          "content": "HTTP/1.1 200 OK\n[\n    {\n        \"sha\": \"acaf60d25a80c241d6bf7edd89b60709f701eb39\",\n        \"author\": \"default\",\n        \"email\": \"None\",\n        \"date\": \"2017-07-25T20:07:49.000Z\",\n        \"message\": \"Changed the info for the instance3 of the version1 of the \\\"machine1\\\" machine\"\n    }\n]",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "examples": [
+        {
+          "title": "HTTP/1.1 500 Internal Server Error",
+          "content": "HTTP/1.1 500 Internal Server Error\n{\n  \"message\": \"error message\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "routes/engine.js",
+    "groupTitle": "Engine",
+    "name": "GetEngineCommits"
+  },
+  {
+    "type": "get",
+    "url": "/engine/manifest",
+    "title": "",
+    "group": "Engine",
+    "success": {
+      "examples": [
+        {
+          "title": "Success",
+          "content": "   HTTP/1.1 200 OK\n   {\n    \"machines\": {\n      \"machine1\": {\n        \"route\": \"machines/machine1\",\n        \"versions\": {\n          \"version1\": {\n            \"route\": \"machines/machine1/versions/version1\",\n            \"instances\": {\n              \"instance1\": {\n                \"route\": \"machines/machine1/versions/version1/instances/instance1\",\n                \"snapshots\": {\n                  \"snapshot1\": {\n                    \"route\": \"machines/machine1/versions/version1/instances/instance1/snapshots/snapshot1\"\n                  }\n                }\n              },\n              \"instance2\": {\n                \"route\": \"machines/machine1/versions/version1/instances/instance2\",\n                \"snapshots\": {}\n              }\n            }\n          }\n        }\n      },\n      \"machine2\": {\n        \"route\": \"machines/machine2\",\n        \"versions\": {\n          \"version1\": {\n            \"route\": \"machines/machine2/versions/version1\",\n            \"instances\": {}\n          }\n        }\n      }\n    }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "examples": [
+        {
+          "title": "HTTP/1.1 500 Internal Server Error",
+          "content": "HTTP/1.1 500 Internal Server Error\n{\n  \"message\": \"error message\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "routes/engine.js",
+    "groupTitle": "Engine",
+    "name": "GetEngineManifest"
+  },
+  {
     "type": "post",
     "url": "/engine/event",
     "title": "Send global event",
@@ -173,6 +229,34 @@
     "filename": "routes/engine.js",
     "groupTitle": "Engine",
     "name": "PutEngineResume"
+  },
+  {
+    "type": "GET",
+    "url": "/machine/:name/version/:version/instance/:instance/info",
+    "title": "Get the instance information",
+    "group": "Instance",
+    "success": {
+      "examples": [
+        {
+          "title": "Success",
+          "content": "HTTP/1.1 200 OK\n{\n    \"info\": {}\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "examples": [
+        {
+          "title": "HTTP/1.1 500 Internal Server Error",
+          "content": "HTTP/1.1 500 Internal Server Error\n{\n  \"message\": \"error message\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "routes/machines.js",
+    "groupTitle": "Instance",
+    "name": "GetMachineNameVersionVersionInstanceInstanceInfo"
   },
   {
     "type": "get",
