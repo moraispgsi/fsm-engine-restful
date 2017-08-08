@@ -8,7 +8,6 @@ describe('Routes: Users', () => {
   const jwtSecret = app.libs.config.jwtSecret;
   let token;
   beforeEach(done => {
-    debug('ABC');
     Users.findAll({ where: {} }).then((users) => {
       return users.map((user) => user.destroy());
     })
@@ -27,7 +26,6 @@ describe('Routes: Users', () => {
         token = jwt.encode({ id: user.id }, jwtSecret);
         done();
       });
-
   });
   describe('GET /user', () => {
     describe('status 200', () => {
